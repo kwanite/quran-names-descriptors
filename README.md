@@ -1,6 +1,6 @@
 # Names & Descriptors of Allah in the Quran
 
-**A Quran-only, text-first research corpus. This is not a traditional “99 Names of Allah” list.**
+**A Quran-only, text-first research corpus. This is not a traditional “Names of Allah” list.**
 
 **Interactive viewer:** https://kwanite.github.io/quran-names-descriptors/
 
