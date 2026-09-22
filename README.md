@@ -2,6 +2,8 @@
 
 **A Quran-only, text-first research corpus. This is not a traditional “99 Names of Allah” list.**
 
+**Interactive viewer:** https://kwanite.github.io/quran-names-descriptors/
+
 This project asks a different question:
 
 > **What names and explicit descriptive expressions does the Quran itself use for Allah when the Quran is examined without beginning from a pre-existing list of divine names?**
@@ -18,7 +20,7 @@ Finite verbs are not converted into inferred divine descriptors merely because t
 
 ## Browse the data
 
-The GitHub Pages viewer is the easiest way to browse the corpus in a user-friendly form. After Pages is enabled for this repository, the site is served directly from the repository root.
+The GitHub Pages viewer is the easiest way to browse the corpus in a user-friendly form: https://kwanite.github.io/quran-names-descriptors/
 
 The viewer exposes:
 
