@@ -1,0 +1,59 @@
+{
+  "version": "publication-v1",
+  "publication_final": true,
+  "quran_source_sha256": "10b63cb29e329de93f80ff60eb332e52b3a72be8f68f6eb6272a03d4cb16084c",
+  "source_semantic_version": "semantic_exclusions_v2",
+  "source_licenses": {
+    "project_owned_material": {
+      "license": "GPL-3.0-only",
+      "scope": "Project-authored code, documentation, compilation/arrangement, and original human/AI-assisted synthesis to the extent rights are held by the project."
+    },
+    "tanzil_quran_text": {
+      "license": "CC-BY-3.0",
+      "copyright": "Copyright (C) 2007-2021 Tanzil Project",
+      "terms_url": "https://tanzil.net/docs/Text_License",
+      "requirements": [
+        "Quran text must remain verbatim; changing it is not allowed.",
+        "Clearly attribute Tanzil Project and link to tanzil.net.",
+        "Reproduce the Tanzil notice appropriately in files derived from or containing a substantial portion of the Quran text."
+      ]
+    },
+    "quranic_arabic_corpus": {
+      "source": "Quranic Arabic Corpus version 0.4 morphology/annotations",
+      "download_page_license": "GNU GPL",
+      "terms_url": "https://corpus.quran.com/download/",
+      "faq_url": "https://corpus.quran.com/faq.jsp",
+      "caveat": "QAC public pages are not fully internally consistent: the download page states GNU GPL while the FAQ describes research/non-commercial use. This release does not represent QAC-derived fields as cleared for unrestricted commercial reuse."
+    },
+    "quran_foundation": {
+      "included_in_publication_data": false,
+      "note": "Raw Quran Foundation/Quran.com API content is not included in publication data. Project-derived transliterations/glosses are separate project metadata."
+    }
+  },
+  "files": {
+    "descriptors.json": {
+      "sha256": "60804f3449f3812e7d70b4e753942221592bec1e6d77bdf184c7d66f22d81113",
+      "bytes": 112761
+    },
+    "occurrence_ledger.json": {
+      "sha256": "4dea715b320902b2e2049886105b09045bb663dc0297c4b050a51c83f9e05391",
+      "bytes": 3703099
+    },
+    "lexical_index.json": {
+      "sha256": "87423b66cacf5d2369c695e6f5876401161b4c6a690c5c57fc3b9dcfa752727b",
+      "bytes": 126176
+    },
+    "exclusion_history.json": {
+      "sha256": "0555b0defce9bcfef287108f7f582c5f12f0fe2aad9ee6a85f83677db37e1c20",
+      "bytes": 102901
+    },
+    "root_links.json": {
+      "sha256": "b16325e82eae2d65aa09c862112b1761c508b4019a1f79e9e8695e13b3546680",
+      "bytes": 4681293
+    },
+    "validation_report.json": {
+      "sha256": "55f8ed7f76ca096bef1c3943050ab77581172f7c169c326a3996ee041e6aa669",
+      "bytes": 2645
+    }
+  }
+}

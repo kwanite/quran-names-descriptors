@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "publication_final": true,
+  "semantic_version": "semantic_exclusions_v2",
+  "source_licenses": {
+    "project_owned_material": {
+      "license": "GPL-3.0-only",
+      "scope": "Project-authored code, documentation, compilation/arrangement, and original human/AI-assisted synthesis to the extent rights are held by the project."
+    },
+    "tanzil_quran_text": {
+      "license": "CC-BY-3.0",
+      "copyright": "Copyright (C) 2007-2021 Tanzil Project",
+      "terms_url": "https://tanzil.net/docs/Text_License",
+      "requirements": [
+        "Quran text must remain verbatim; changing it is not allowed.",
+        "Clearly attribute Tanzil Project and link to tanzil.net.",
+        "Reproduce the Tanzil notice appropriately in files derived from or containing a substantial portion of the Quran text."
+      ]
+    },
+    "quranic_arabic_corpus": {
+      "source": "Quranic Arabic Corpus version 0.4 morphology/annotations",
+      "download_page_license": "GNU GPL",
+      "terms_url": "https://corpus.quran.com/download/",
+      "faq_url": "https://corpus.quran.com/faq.jsp",
+      "caveat": "QAC public pages are not fully internally consistent: the download page states GNU GPL while the FAQ describes research/non-commercial use. This release does not represent QAC-derived fields as cleared for unrestricted commercial reuse."
+    },
+    "quran_foundation": {
+      "included_in_publication_data": false,
+      "note": "Raw Quran Foundation/Quran.com API content is not included in publication data. Project-derived transliterations/glosses are separate project metadata."
+    }
+  },
+  "counts": {
+    "lexical_identities": 225,
+    "numbered_occurrences": 5037,
+    "numbered_exact_surfaces": 404,
+    "one_word_identities": 125,
+    "one_word_numbered_occurrences": 4798,
+    "multiword_identities": 100,
+    "multiword_numbered_occurrences": 239,
+    "ayah0_basmala_records": 112,
+    "ayah0_descriptor_occurrences": 336,
+    "combined_descriptor_occurrences": 5373
+  },
+  "assertions": {
+    "quran_source_sha_unchanged": true,
+    "semantic_review_reconciled": true,
+    "all_numbered_occurrence_ids_unique": true,
+    "all_combined_occurrence_ids_unique": true,
+    "all_preferred_display_forms_quran_attested": true,
+    "all_descriptors_have_transliteration": true,
+    "all_descriptors_have_english_gloss": true,
+    "all_one_word_root_links_exact_and_matched": true,
+    "all_one_word_root_links_have_public_dictionary_url": true,
+    "all_multiword_root_links_resolved": true,
+    "ayah0_qac_links_explicitly_null_not_fabricated": true,
+    "no_new_semantic_identities_created_by_basmala": true
+  }
+}

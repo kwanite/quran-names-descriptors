@@ -1,0 +1,2104 @@
+{
+  "version": "publication-v1",
+  "source_licenses": {
+    "project_owned_material": {
+      "license": "GPL-3.0-only",
+      "scope": "Project-authored code, documentation, compilation/arrangement, and original human/AI-assisted synthesis to the extent rights are held by the project."
+    },
+    "tanzil_quran_text": {
+      "license": "CC-BY-3.0",
+      "copyright": "Copyright (C) 2007-2021 Tanzil Project",
+      "terms_url": "https://tanzil.net/docs/Text_License",
+      "requirements": [
+        "Quran text must remain verbatim; changing it is not allowed.",
+        "Clearly attribute Tanzil Project and link to tanzil.net.",
+        "Reproduce the Tanzil notice appropriately in files derived from or containing a substantial portion of the Quran text."
+      ]
+    },
+    "quranic_arabic_corpus": {
+      "source": "Quranic Arabic Corpus version 0.4 morphology/annotations",
+      "download_page_license": "GNU GPL",
+      "terms_url": "https://corpus.quran.com/download/",
+      "faq_url": "https://corpus.quran.com/faq.jsp",
+      "caveat": "QAC public pages are not fully internally consistent: the download page states GNU GPL while the FAQ describes research/non-commercial use. This release does not represent QAC-derived fields as cleared for unrestricted commercial reuse."
+    },
+    "quran_foundation": {
+      "included_in_publication_data": false,
+      "note": "Raw Quran Foundation/Quran.com API content is not included in publication data. Project-derived transliterations/glosses are separate project metadata."
+    }
+  },
+  "descriptor_level": {
+    "version": "semantic-exclusions-v2",
+    "parent_version": "semantic-exclusions-v1",
+    "excluded_identity_count": 30,
+    "new_excluded_identity_count": 8,
+    "cumulative_excluded_occurrence_count": 80,
+    "cumulative_excluded_occurrence_surface_count": 42,
+    "exclusions": [
+      {
+        "decision_id": "SEMEX-V1-001",
+        "lexical_identity_arabic": "غَافِل",
+        "transliteration": "Ghāfil",
+        "provisional_english_gloss": "Heedless / unaware",
+        "category": "NEGATED_OR_NON_DIVINE",
+        "decision": "EXCLUDE",
+        "rationale": "Negative sentence: the Quran denies heedlessness/unawareness of God.",
+        "occurrence_count": 11,
+        "exact_surface_count": 3,
+        "member_surfaces": [
+          "غَافِلٍ",
+          "غَافِلًا",
+          "غَافِلِينَ"
+        ],
+        "verse_keys": [
+          "2:74",
+          "2:85",
+          "2:140",
+          "2:144",
+          "2:149",
+          "3:99",
+          "6:132",
+          "11:123",
+          "14:42",
+          "23:17",
+          "27:93"
+        ],
+        "occurrence_ids": [
+          "2:74:d03",
+          "2:85:d02",
+          "2:140:d05",
+          "2:144:d03",
+          "2:149:d03",
+          "3:99:d03",
+          "6:132:d02",
+          "11:123:d03",
+          "14:42:d02",
+          "23:17:d01",
+          "27:93:d03"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-002",
+        "lexical_identity_arabic": "ظَلَّام",
+        "transliteration": "Ẓallām",
+        "provisional_english_gloss": "Very unjust / wronging",
+        "category": "NEGATED_OR_NON_DIVINE",
+        "decision": "EXCLUDE",
+        "rationale": "Negative sentence: the Quran denies that God is extremely unjust / wronging.",
+        "occurrence_count": 5,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "ظَلَّامٍ"
+        ],
+        "verse_keys": [
+          "3:182",
+          "8:51",
+          "22:10",
+          "41:46",
+          "50:29"
+        ],
+        "occurrence_ids": [
+          "3:182:d02",
+          "8:51:d02",
+          "22:10:d02",
+          "41:46:d02",
+          "50:29:d01"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-003",
+        "lexical_identity_arabic": "مَسْبُوق",
+        "transliteration": "Masbūq",
+        "provisional_english_gloss": "Outstripped / forestalled",
+        "category": "NEGATED_OR_NON_DIVINE",
+        "decision": "EXCLUDE",
+        "rationale": "Negative sentence: the Quran denies that God can be outstripped / forestalled.",
+        "occurrence_count": 2,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "مَسْبُوقِينَ"
+        ],
+        "verse_keys": [
+          "56:60",
+          "70:41"
+        ],
+        "occurrence_ids": [
+          "56:60:d01",
+          "70:41:d01"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-004",
+        "lexical_identity_arabic": "إِلَـٰه غَيْر",
+        "transliteration": "Ilāh ghayr",
+        "provisional_english_gloss": "Another / other deity",
+        "category": "NEGATED_OR_NON_DIVINE",
+        "decision": "EXCLUDE",
+        "rationale": "Pharaoh's words about taking another deity; not a Quran-endorsed descriptor of the one God.",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "إِلَـٰهًا غَيْرِي"
+        ],
+        "verse_keys": [
+          "26:29"
+        ],
+        "occurrence_ids": [
+          "26:29:d01"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-005",
+        "lexical_identity_arabic": "ظَالِم",
+        "transliteration": "Ẓālim",
+        "provisional_english_gloss": "Unjust / wrongdoer",
+        "category": "NEGATED_OR_NON_DIVINE",
+        "decision": "EXCLUDE",
+        "rationale": "Negative sentence: the Quran denies wrongdoing / injustice of God.",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "ظَالِمِينَ"
+        ],
+        "verse_keys": [
+          "26:209"
+        ],
+        "occurrence_ids": [
+          "26:209:d01"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-006",
+        "lexical_identity_arabic": "غَائِب",
+        "transliteration": "Ghāʾib",
+        "provisional_english_gloss": "Absent",
+        "category": "NEGATED_OR_NON_DIVINE",
+        "decision": "EXCLUDE",
+        "rationale": "Negative sentence: the Quran denies absence.",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "غَائِبِينَ"
+        ],
+        "verse_keys": [
+          "7:7"
+        ],
+        "occurrence_ids": [
+          "7:7:d01"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-007",
+        "lexical_identity_arabic": "فَقِير",
+        "transliteration": "Faqīr",
+        "provisional_english_gloss": "Poor / needy",
+        "category": "NEGATED_OR_NON_DIVINE",
+        "decision": "EXCLUDE",
+        "rationale": "False hostile attribution reported from others: they say that God is poor/needy.",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "فَقِيرٌ"
+        ],
+        "verse_keys": [
+          "3:181"
+        ],
+        "occurrence_ids": [
+          "3:181:d03"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-008",
+        "lexical_identity_arabic": "لَاعِب",
+        "transliteration": "Lāʿib",
+        "provisional_english_gloss": "Playing / player",
+        "category": "NEGATED_OR_NON_DIVINE",
+        "decision": "EXCLUDE",
+        "rationale": "Negative sentence: the Quran denies that God's creation is play.",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "لَاعِبِينَ"
+        ],
+        "verse_keys": [
+          "44:38"
+        ],
+        "occurrence_ids": [
+          "44:38:d01"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-009",
+        "lexical_identity_arabic": "نَسِيّ",
+        "transliteration": "Nasiyy",
+        "provisional_english_gloss": "Forgetful",
+        "category": "NEGATED_OR_NON_DIVINE",
+        "decision": "EXCLUDE",
+        "rationale": "Negative sentence: 'your Lord is not forgetful'; the denied predicate must not become a descriptor.",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "نَسِيًّا"
+        ],
+        "verse_keys": [
+          "19:64"
+        ],
+        "occurrence_ids": [
+          "19:64:d03"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-010",
+        "lexical_identity_arabic": "يَد",
+        "transliteration": "Yad",
+        "provisional_english_gloss": "Hand",
+        "category": "BODY_PART_RHETORICAL",
+        "decision": "EXCLUDE",
+        "rationale": "Human body-part term used rhetorically/analogically; excluded as a standalone definition of God.",
+        "occurrence_count": 3,
+        "exact_surface_count": 3,
+        "member_surfaces": [
+          "أَيْدِينَا",
+          "يَدَيَّ",
+          "يَدِهِ"
+        ],
+        "verse_keys": [
+          "36:71",
+          "36:83",
+          "38:75"
+        ],
+        "occurrence_ids": [
+          "36:71:d01",
+          "36:83:d01",
+          "38:75:d01"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-011",
+        "lexical_identity_arabic": "عَيْن",
+        "transliteration": "ʿAyn",
+        "provisional_english_gloss": "Eye",
+        "category": "BODY_PART_RHETORICAL",
+        "decision": "EXCLUDE",
+        "rationale": "Human body-part term used rhetorically/analogically; excluded as a standalone definition of God.",
+        "occurrence_count": 2,
+        "exact_surface_count": 2,
+        "member_surfaces": [
+          "أَعْيُنِنَا",
+          "عَيْنِي"
+        ],
+        "verse_keys": [
+          "20:39",
+          "54:14"
+        ],
+        "occurrence_ids": [
+          "20:39:d01",
+          "54:14:d01"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-012",
+        "lexical_identity_arabic": "وَجْه",
+        "transliteration": "Wajh",
+        "provisional_english_gloss": "Face",
+        "category": "BODY_PART_RHETORICAL",
+        "decision": "EXCLUDE",
+        "rationale": "Human body-part term used rhetorically/analogically; excluded as a standalone definition of God.",
+        "occurrence_count": 2,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "وَجْهَهُ"
+        ],
+        "verse_keys": [
+          "6:52",
+          "28:88"
+        ],
+        "occurrence_ids": [
+          "6:52:d02",
+          "28:88:d03"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-013",
+        "lexical_identity_arabic": "إِلَـٰه مُوسَىٰ",
+        "transliteration": "Ilāh Mūsā",
+        "provisional_english_gloss": "God of Moses",
+        "category": "TOO_SPECIFIC_CONTEXTUAL",
+        "decision": "EXCLUDE",
+        "rationale": "Pharaoh-context expression 'God of Moses'; too speaker-/context-specific for the descriptor inventory.",
+        "occurrence_count": 2,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "إِلَـٰهِ مُوسَىٰ"
+        ],
+        "verse_keys": [
+          "28:38",
+          "40:37"
+        ],
+        "occurrence_ids": [
+          "28:38:d01",
+          "40:37:d01"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-014",
+        "lexical_identity_arabic": "رَبّ مُوسَىٰ وَهَارُون",
+        "transliteration": "Rabb Mūsā wa-Hārūn",
+        "provisional_english_gloss": "Lord of Moses and Aaron",
+        "category": "TOO_SPECIFIC_CONTEXTUAL",
+        "decision": "EXCLUDE",
+        "rationale": "Believers' expression 'Lord of Moses and Aaron'; valid in context but too specific for the retained descriptor inventory.",
+        "occurrence_count": 2,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "رَبِّ مُوسَىٰ وَهَارُونَ"
+        ],
+        "verse_keys": [
+          "7:122",
+          "26:48"
+        ],
+        "occurrence_ids": [
+          "7:122:d01",
+          "26:48:d01"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-015",
+        "lexical_identity_arabic": "رَبّ هَارُون وَمُوسَىٰ",
+        "transliteration": "Rabb Hārūn wa-Mūsā",
+        "provisional_english_gloss": "Lord of Aaron and Moses",
+        "category": "TOO_SPECIFIC_CONTEXTUAL",
+        "decision": "EXCLUDE",
+        "rationale": "Context-specific contrast identifying the one true God worshipped by Aaron and Moses; too specific for the retained descriptor inventory.",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "رَبِّ هَارُونَ وَمُوسَىٰ"
+        ],
+        "verse_keys": [
+          "20:70"
+        ],
+        "occurrence_ids": [
+          "20:70:d01"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-016",
+        "lexical_identity_arabic": "جَاعِل",
+        "transliteration": "Jāʿil",
+        "provisional_english_gloss": "Maker / one who makes",
+        "category": "TOO_GENERAL",
+        "decision": "EXCLUDE",
+        "rationale": "Too general as a standalone identity ('maker/one who makes'); excluded from the curated descriptor set.",
+        "occurrence_count": 3,
+        "exact_surface_count": 3,
+        "member_surfaces": [
+          "جَاعِلٌ",
+          "جَاعِلُ",
+          "جَاعِلُوهُ"
+        ],
+        "verse_keys": [
+          "2:30",
+          "3:55",
+          "28:7"
+        ],
+        "occurrence_ids": [
+          "2:30:d02",
+          "3:55:d05",
+          "28:7:d02"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-017",
+        "lexical_identity_arabic": "فَاعِل",
+        "transliteration": "Fāʿil",
+        "provisional_english_gloss": "Doer",
+        "category": "TOO_GENERAL",
+        "decision": "EXCLUDE",
+        "rationale": "Too general as a standalone identity ('doer'); excluded from the curated descriptor set.",
+        "occurrence_count": 3,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "فَاعِلِينَ"
+        ],
+        "verse_keys": [
+          "21:17",
+          "21:79",
+          "21:104"
+        ],
+        "occurrence_ids": [
+          "21:17:d01",
+          "21:79:d01",
+          "21:104:d01"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-018",
+        "lexical_identity_arabic": "فَعَّال",
+        "transliteration": "Faʿʿāl",
+        "provisional_english_gloss": "Effecter / doer",
+        "category": "TOO_GENERAL",
+        "decision": "EXCLUDE",
+        "rationale": "Too general as a standalone identity ('effecter/doer'); excluded from the curated descriptor set.",
+        "occurrence_count": 2,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "فَعَّالٌ"
+        ],
+        "verse_keys": [
+          "11:107",
+          "85:16"
+        ],
+        "occurrence_ids": [
+          "11:107:d03",
+          "85:16:d01"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-019",
+        "lexical_identity_arabic": "عِزَّة",
+        "transliteration": "ʿIzza",
+        "provisional_english_gloss": "Might / honor",
+        "category": "OTHER_SCOPE",
+        "decision": "EXCLUDE",
+        "rationale": "Abstract noun 'might/honor', not an explicit standalone descriptor; the related descriptor ʿAzīz already covers the concept.",
+        "occurrence_count": 2,
+        "exact_surface_count": 2,
+        "member_surfaces": [
+          "الْعِزَّةُ",
+          "عِزَّتِكَ"
+        ],
+        "verse_keys": [
+          "38:82",
+          "63:8"
+        ],
+        "occurrence_ids": [
+          "38:82:d01",
+          "63:8:d02"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-020",
+        "lexical_identity_arabic": "نَفْس",
+        "transliteration": "Nafs",
+        "provisional_english_gloss": "Self",
+        "category": "OTHER_SCOPE",
+        "decision": "EXCLUDE",
+        "rationale": "Functions as self-reference ('Himself/Myself') rather than as an independent descriptor.",
+        "occurrence_count": 2,
+        "exact_surface_count": 2,
+        "member_surfaces": [
+          "نَفْسِهِ",
+          "نَفْسِي"
+        ],
+        "verse_keys": [
+          "6:54",
+          "20:41"
+        ],
+        "occurrence_ids": [
+          "6:54:d02",
+          "20:41:d01"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-021",
+        "lexical_identity_arabic": "رَابِع",
+        "transliteration": "Rābiʿ",
+        "provisional_english_gloss": "Fourth",
+        "category": "ORDINAL_RELATIONAL",
+        "decision": "EXCLUDE",
+        "rationale": "Relational ordinal in a passage about God's presence with a group; not a rank or standalone divine descriptor.",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "رَابِعُهُمْ"
+        ],
+        "verse_keys": [
+          "58:7"
+        ],
+        "occurrence_ids": [
+          "58:7:d02"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V1-022",
+        "lexical_identity_arabic": "سَادِس",
+        "transliteration": "Sādis",
+        "provisional_english_gloss": "Sixth",
+        "category": "ORDINAL_RELATIONAL",
+        "decision": "EXCLUDE",
+        "rationale": "Relational ordinal in a passage about God's presence with a group; not a rank or standalone divine descriptor.",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "سَادِسُهُمْ"
+        ],
+        "verse_keys": [
+          "58:7"
+        ],
+        "occurrence_ids": [
+          "58:7:d03"
+        ]
+      },
+      {
+        "decision_id": "SEMEX-V2-001",
+        "lexical_identity_arabic": "مُهْلِك الْقُرَىٰ",
+        "category": "NEGATED_OR_CONDITIONED_PREDICATE",
+        "decision": "EXCLUDE",
+        "rationale": "NEGATED_OR_CONDITIONED_PREDICATE",
+        "occurrence_count": 3,
+        "exact_surface_count": 2,
+        "member_surfaces": [
+          "مُهْلِكَ الْقُرَىٰ",
+          "مُهْلِكِي الْقُرَىٰ"
+        ],
+        "verse_keys": [
+          "6:131",
+          "28:59",
+          "28:59"
+        ],
+        "occurrence_ids": [
+          "6:131:d02",
+          "28:59:d02",
+          "28:59:d03"
+        ],
+        "source": "manual_review_decisions_v1_reconciled.json"
+      },
+      {
+        "decision_id": "SEMEX-V2-002",
+        "lexical_identity_arabic": "وَحْد",
+        "category": "ADVERBIAL_EXCLUSIVITY_NOT_DESCRIPTOR",
+        "decision": "EXCLUDE",
+        "rationale": "ADVERBIAL_EXCLUSIVITY_NOT_DESCRIPTOR",
+        "occurrence_count": 3,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "وَحْدَهُ"
+        ],
+        "verse_keys": [
+          "17:46",
+          "40:84",
+          "60:4"
+        ],
+        "occurrence_ids": [
+          "17:46:d02",
+          "40:84:d02",
+          "60:4:d03"
+        ],
+        "source": "manual_review_decisions_v1_reconciled.json"
+      },
+      {
+        "decision_id": "SEMEX-V2-003",
+        "lexical_identity_arabic": "جَدّ رَبّ",
+        "category": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR",
+        "decision": "EXCLUDE",
+        "rationale": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "جَدُّ رَبِّنَا"
+        ],
+        "verse_keys": [
+          "72:3"
+        ],
+        "occurrence_ids": [
+          "72:3:d01"
+        ],
+        "source": "manual_review_decisions_v1_reconciled.json"
+      },
+      {
+        "decision_id": "SEMEX-V2-004",
+        "lexical_identity_arabic": "كِبْرِيَاء",
+        "category": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR",
+        "decision": "EXCLUDE",
+        "rationale": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "الْكِبْرِيَاءُ"
+        ],
+        "verse_keys": [
+          "45:37"
+        ],
+        "occurrence_ids": [
+          "45:37:d01"
+        ],
+        "source": "manual_review_decisions_v1_reconciled.json"
+      },
+      {
+        "decision_id": "SEMEX-V2-005",
+        "lexical_identity_arabic": "مَثَل الْأَعْلَىٰ",
+        "category": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR",
+        "decision": "EXCLUDE",
+        "rationale": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "الْمَثَلُ الْأَعْلَىٰ"
+        ],
+        "verse_keys": [
+          "16:60"
+        ],
+        "occurrence_ids": [
+          "16:60:d02"
+        ],
+        "source": "manual_review_decisions_v1_reconciled.json"
+      },
+      {
+        "decision_id": "SEMEX-V2-006",
+        "lexical_identity_arabic": "مُخْلِف",
+        "category": "NEGATED_PREDICATE",
+        "decision": "EXCLUDE",
+        "rationale": "NEGATED_PREDICATE",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "مُخْلِفَ"
+        ],
+        "verse_keys": [
+          "14:47"
+        ],
+        "occurrence_ids": [
+          "14:47:d02"
+        ],
+        "source": "manual_review_decisions_v1_reconciled.json"
+      },
+      {
+        "decision_id": "SEMEX-V2-007",
+        "lexical_identity_arabic": "مُغَيِّر",
+        "category": "NEGATED_OR_CONDITIONED_PREDICATE",
+        "decision": "EXCLUDE",
+        "rationale": "NEGATED_OR_CONDITIONED_PREDICATE",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "مُغَيِّرًا"
+        ],
+        "verse_keys": [
+          "8:53"
+        ],
+        "occurrence_ids": [
+          "8:53:d02"
+        ],
+        "source": "manual_review_decisions_v1_reconciled.json"
+      },
+      {
+        "decision_id": "SEMEX-V2-008",
+        "lexical_identity_arabic": "مُلْك السَّمَاوَات وَالْأَرْض",
+        "category": "POSSESSED_DOMAIN_NOT_REFERENTIAL_DESCRIPTOR",
+        "decision": "EXCLUDE",
+        "rationale": "POSSESSED_DOMAIN_NOT_REFERENTIAL_DESCRIPTOR",
+        "occurrence_count": 1,
+        "exact_surface_count": 1,
+        "member_surfaces": [
+          "مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ"
+        ],
+        "verse_keys": [
+          "45:27"
+        ],
+        "occurrence_ids": [
+          "45:27:d02"
+        ],
+        "source": "manual_review_decisions_v1_reconciled.json"
+      }
+    ]
+  },
+  "occurrence_level": {
+    "version": "semantic-exclusions-v2",
+    "parent_version": "semantic-exclusions-v1",
+    "occurrence_count": 80,
+    "new_occurrence_count": 30,
+    "occurrences": [
+      {
+        "occurrence_id": "2:74:d03",
+        "packet_id": "allah-names-v1-s002-c02-a051-100",
+        "verse_key": "2:74",
+        "verse_text": "ثُمَّ قَسَتْ قُلُوبُكُمْ مِنْ بَعْدِ ذَٰلِكَ فَهِيَ كَالْحِجَارَةِ أَوْ أَشَدُّ قَسْوَةً ۚ وَإِنَّ مِنَ الْحِجَارَةِ لَمَا يَتَفَجَّرُ مِنْهُ الْأَنْهَارُ ۚ وَإِنَّ مِنْهَا لَمَا يَشَّقَّقُ فَيَخْرُجُ مِنْهُ الْمَاءُ ۚ وَإِنَّ مِنْهَا لَمَا يَهْبِطُ مِنْ خَشْيَةِ اللَّهِ ۗ وَمَا اللَّهُ بِغَافِلٍ عَمَّا تَعْمَلُونَ",
+        "surface_arabic": "غَافِلٍ",
+        "start_offset": 290,
+        "end_offset": 297,
+        "manual_review": false,
+        "lexical_identity_arabic": "غَافِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-001",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies heedlessness/unawareness of God."
+      },
+      {
+        "occurrence_id": "2:85:d02",
+        "packet_id": "allah-names-v1-s002-c02-a051-100",
+        "verse_key": "2:85",
+        "verse_text": "ثُمَّ أَنْتُمْ هَـٰؤُلَاءِ تَقْتُلُونَ أَنْفُسَكُمْ وَتُخْرِجُونَ فَرِيقًا مِنْكُمْ مِنْ دِيَارِهِمْ تَظَاهَرُونَ عَلَيْهِمْ بِالْإِثْمِ وَالْعُدْوَانِ وَإِنْ يَأْتُوكُمْ أُسَارَىٰ تُفَادُوهُمْ وَهُوَ مُحَرَّمٌ عَلَيْكُمْ إِخْرَاجُهُمْ ۚ أَفَتُؤْمِنُونَ بِبَعْضِ الْكِتَابِ وَتَكْفُرُونَ بِبَعْضٍ ۚ فَمَا جَزَاءُ مَنْ يَفْعَلُ ذَٰلِكَ مِنْكُمْ إِلَّا خِزْيٌ فِي الْحَيَاةِ الدُّنْيَا ۖ وَيَوْمَ الْقِيَامَةِ يُرَدُّونَ إِلَىٰ أَشَدِّ الْعَذَابِ ۗ وَمَا اللَّهُ بِغَافِلٍ عَمَّا تَعْمَلُونَ",
+        "surface_arabic": "غَافِلٍ",
+        "start_offset": 463,
+        "end_offset": 470,
+        "manual_review": false,
+        "lexical_identity_arabic": "غَافِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-001",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies heedlessness/unawareness of God."
+      },
+      {
+        "occurrence_id": "2:140:d05",
+        "packet_id": "allah-names-v1-s002-c03-a101-150",
+        "verse_key": "2:140",
+        "verse_text": "أَمْ تَقُولُونَ إِنَّ إِبْرَاهِيمَ وَإِسْمَاعِيلَ وَإِسْحَاقَ وَيَعْقُوبَ وَالْأَسْبَاطَ كَانُوا هُودًا أَوْ نَصَارَىٰ ۗ قُلْ أَأَنْتُمْ أَعْلَمُ أَمِ اللَّهُ ۗ وَمَنْ أَظْلَمُ مِمَّنْ كَتَمَ شَهَادَةً عِنْدَهُ مِنَ اللَّهِ ۗ وَمَا اللَّهُ بِغَافِلٍ عَمَّا تَعْمَلُونَ",
+        "surface_arabic": "غَافِلٍ",
+        "start_offset": 242,
+        "end_offset": 249,
+        "manual_review": false,
+        "lexical_identity_arabic": "غَافِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-001",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies heedlessness/unawareness of God."
+      },
+      {
+        "occurrence_id": "2:144:d03",
+        "packet_id": "allah-names-v1-s002-c03-a101-150",
+        "verse_key": "2:144",
+        "verse_text": "قَدْ نَرَىٰ تَقَلُّبَ وَجْهِكَ فِي السَّمَاءِ ۖ فَلَنُوَلِّيَنَّكَ قِبْلَةً تَرْضَاهَا ۚ فَوَلِّ وَجْهَكَ شَطْرَ الْمَسْجِدِ الْحَرَامِ ۚ وَحَيْثُ مَا كُنْتُمْ فَوَلُّوا وُجُوهَكُمْ شَطْرَهُ ۗ وَإِنَّ الَّذِينَ أُوتُوا الْكِتَابَ لَيَعْلَمُونَ أَنَّهُ الْحَقُّ مِنْ رَبِّهِمْ ۗ وَمَا اللَّهُ بِغَافِلٍ عَمَّا يَعْمَلُونَ",
+        "surface_arabic": "غَافِلٍ",
+        "start_offset": 294,
+        "end_offset": 301,
+        "manual_review": false,
+        "lexical_identity_arabic": "غَافِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-001",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies heedlessness/unawareness of God."
+      },
+      {
+        "occurrence_id": "2:149:d03",
+        "packet_id": "allah-names-v1-s002-c03-a101-150",
+        "verse_key": "2:149",
+        "verse_text": "وَمِنْ حَيْثُ خَرَجْتَ فَوَلِّ وَجْهَكَ شَطْرَ الْمَسْجِدِ الْحَرَامِ ۖ وَإِنَّهُ لَلْحَقُّ مِنْ رَبِّكَ ۗ وَمَا اللَّهُ بِغَافِلٍ عَمَّا تَعْمَلُونَ",
+        "surface_arabic": "غَافِلٍ",
+        "start_offset": 123,
+        "end_offset": 130,
+        "manual_review": false,
+        "lexical_identity_arabic": "غَافِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-001",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies heedlessness/unawareness of God."
+      },
+      {
+        "occurrence_id": "3:99:d03",
+        "packet_id": "allah-names-v1-s003-c02-a051-100",
+        "verse_key": "3:99",
+        "verse_text": "قُلْ يَا أَهْلَ الْكِتَابِ لِمَ تَصُدُّونَ عَنْ سَبِيلِ اللَّهِ مَنْ آمَنَ تَبْغُونَهَا عِوَجًا وَأَنْتُمْ شُهَدَاءُ ۗ وَمَا اللَّهُ بِغَافِلٍ عَمَّا تَعْمَلُونَ",
+        "surface_arabic": "غَافِلٍ",
+        "start_offset": 135,
+        "end_offset": 142,
+        "manual_review": false,
+        "lexical_identity_arabic": "غَافِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-001",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies heedlessness/unawareness of God."
+      },
+      {
+        "occurrence_id": "6:132:d02",
+        "packet_id": "allah-names-v1-s006-c03-a101-150",
+        "verse_key": "6:132",
+        "verse_text": "وَلِكُلٍّ دَرَجَاتٌ مِمَّا عَمِلُوا ۚ وَمَا رَبُّكَ بِغَافِلٍ عَمَّا يَعْمَلُونَ",
+        "surface_arabic": "غَافِلٍ",
+        "start_offset": 54,
+        "end_offset": 61,
+        "manual_review": false,
+        "lexical_identity_arabic": "غَافِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-001",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies heedlessness/unawareness of God."
+      },
+      {
+        "occurrence_id": "11:123:d03",
+        "packet_id": "allah-names-v1-s011-c03-a101-123",
+        "verse_key": "11:123",
+        "verse_text": "وَلِلَّهِ غَيْبُ السَّمَاوَاتِ وَالْأَرْضِ وَإِلَيْهِ يُرْجَعُ الْأَمْرُ كُلُّهُ فَاعْبُدْهُ وَتَوَكَّلْ عَلَيْهِ ۚ وَمَا رَبُّكَ بِغَافِلٍ عَمَّا تَعْمَلُونَ",
+        "surface_arabic": "غَافِلٍ",
+        "start_offset": 132,
+        "end_offset": 139,
+        "manual_review": false,
+        "lexical_identity_arabic": "غَافِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-001",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies heedlessness/unawareness of God."
+      },
+      {
+        "occurrence_id": "14:42:d02",
+        "packet_id": "allah-names-v1-s014-c01-a001-050",
+        "verse_key": "14:42",
+        "verse_text": "وَلَا تَحْسَبَنَّ اللَّهَ غَافِلًا عَمَّا يَعْمَلُ الظَّالِمُونَ ۚ إِنَّمَا يُؤَخِّرُهُمْ لِيَوْمٍ تَشْخَصُ فِيهِ الْأَبْصَارُ",
+        "surface_arabic": "غَافِلًا",
+        "start_offset": 26,
+        "end_offset": 34,
+        "manual_review": false,
+        "lexical_identity_arabic": "غَافِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-001",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies heedlessness/unawareness of God."
+      },
+      {
+        "occurrence_id": "23:17:d01",
+        "packet_id": "allah-names-v1-s023-c01-a001-050",
+        "verse_key": "23:17",
+        "verse_text": "وَلَقَدْ خَلَقْنَا فَوْقَكُمْ سَبْعَ طَرَائِقَ وَمَا كُنَّا عَنِ الْخَلْقِ غَافِلِينَ",
+        "surface_arabic": "غَافِلِينَ",
+        "start_offset": 75,
+        "end_offset": 85,
+        "manual_review": false,
+        "lexical_identity_arabic": "غَافِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-001",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies heedlessness/unawareness of God."
+      },
+      {
+        "occurrence_id": "27:93:d03",
+        "packet_id": "allah-names-v1-s027-c02-a051-093",
+        "verse_key": "27:93",
+        "verse_text": "وَقُلِ الْحَمْدُ لِلَّهِ سَيُرِيكُمْ آيَاتِهِ فَتَعْرِفُونَهَا ۚ وَمَا رَبُّكَ بِغَافِلٍ عَمَّا تَعْمَلُونَ",
+        "surface_arabic": "غَافِلٍ",
+        "start_offset": 81,
+        "end_offset": 88,
+        "manual_review": false,
+        "lexical_identity_arabic": "غَافِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-001",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies heedlessness/unawareness of God."
+      },
+      {
+        "occurrence_id": "3:182:d02",
+        "packet_id": "allah-names-v1-s003-c04-a151-200",
+        "verse_key": "3:182",
+        "verse_text": "ذَٰلِكَ بِمَا قَدَّمَتْ أَيْدِيكُمْ وَأَنَّ اللَّهَ لَيْسَ بِظَلَّامٍ لِلْعَبِيدِ",
+        "surface_arabic": "ظَلَّامٍ",
+        "start_offset": 61,
+        "end_offset": 69,
+        "manual_review": false,
+        "lexical_identity_arabic": "ظَلَّام",
+        "semantic_exclusion_decision_id": "SEMEX-V1-002",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies that God is extremely unjust / wronging."
+      },
+      {
+        "occurrence_id": "8:51:d02",
+        "packet_id": "allah-names-v1-s008-c02-a051-075",
+        "verse_key": "8:51",
+        "verse_text": "ذَٰلِكَ بِمَا قَدَّمَتْ أَيْدِيكُمْ وَأَنَّ اللَّهَ لَيْسَ بِظَلَّامٍ لِلْعَبِيدِ",
+        "surface_arabic": "ظَلَّامٍ",
+        "start_offset": 61,
+        "end_offset": 69,
+        "manual_review": false,
+        "lexical_identity_arabic": "ظَلَّام",
+        "semantic_exclusion_decision_id": "SEMEX-V1-002",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies that God is extremely unjust / wronging."
+      },
+      {
+        "occurrence_id": "22:10:d02",
+        "packet_id": "allah-names-v1-s022-c01-a001-050",
+        "verse_key": "22:10",
+        "verse_text": "ذَٰلِكَ بِمَا قَدَّمَتْ يَدَاكَ وَأَنَّ اللَّهَ لَيْسَ بِظَلَّامٍ لِلْعَبِيدِ",
+        "surface_arabic": "ظَلَّامٍ",
+        "start_offset": 57,
+        "end_offset": 65,
+        "manual_review": false,
+        "lexical_identity_arabic": "ظَلَّام",
+        "semantic_exclusion_decision_id": "SEMEX-V1-002",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies that God is extremely unjust / wronging."
+      },
+      {
+        "occurrence_id": "41:46:d02",
+        "packet_id": "allah-names-v1-s041-c01-a001-050",
+        "verse_key": "41:46",
+        "verse_text": "مَنْ عَمِلَ صَالِحًا فَلِنَفْسِهِ ۖ وَمَنْ أَسَاءَ فَعَلَيْهَا ۗ وَمَا رَبُّكَ بِظَلَّامٍ لِلْعَبِيدِ",
+        "surface_arabic": "ظَلَّامٍ",
+        "start_offset": 81,
+        "end_offset": 89,
+        "manual_review": false,
+        "lexical_identity_arabic": "ظَلَّام",
+        "semantic_exclusion_decision_id": "SEMEX-V1-002",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies that God is extremely unjust / wronging."
+      },
+      {
+        "occurrence_id": "50:29:d01",
+        "packet_id": "allah-names-v1-s050-c01-a001-045",
+        "verse_key": "50:29",
+        "verse_text": "مَا يُبَدَّلُ الْقَوْلُ لَدَيَّ وَمَا أَنَا بِظَلَّامٍ لِلْعَبِيدِ",
+        "surface_arabic": "ظَلَّامٍ",
+        "start_offset": 46,
+        "end_offset": 54,
+        "manual_review": false,
+        "lexical_identity_arabic": "ظَلَّام",
+        "semantic_exclusion_decision_id": "SEMEX-V1-002",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies that God is extremely unjust / wronging."
+      },
+      {
+        "occurrence_id": "56:60:d01",
+        "packet_id": "allah-names-v1-s056-c02-a051-096",
+        "verse_key": "56:60",
+        "verse_text": "نَحْنُ قَدَّرْنَا بَيْنَكُمُ الْمَوْتَ وَمَا نَحْنُ بِمَسْبُوقِينَ",
+        "surface_arabic": "مَسْبُوقِينَ",
+        "start_offset": 54,
+        "end_offset": 66,
+        "manual_review": false,
+        "lexical_identity_arabic": "مَسْبُوق",
+        "semantic_exclusion_decision_id": "SEMEX-V1-003",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies that God can be outstripped / forestalled."
+      },
+      {
+        "occurrence_id": "70:41:d01",
+        "packet_id": "allah-names-v1-s070-c01-a001-044",
+        "verse_key": "70:41",
+        "verse_text": "عَلَىٰ أَنْ نُبَدِّلَ خَيْرًا مِنْهُمْ وَمَا نَحْنُ بِمَسْبُوقِينَ",
+        "surface_arabic": "مَسْبُوقِينَ",
+        "start_offset": 54,
+        "end_offset": 66,
+        "manual_review": false,
+        "lexical_identity_arabic": "مَسْبُوق",
+        "semantic_exclusion_decision_id": "SEMEX-V1-003",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies that God can be outstripped / forestalled."
+      },
+      {
+        "occurrence_id": "26:29:d01",
+        "packet_id": "allah-names-v1-s026-c01-a001-050",
+        "verse_key": "26:29",
+        "verse_text": "قَالَ لَئِنِ اتَّخَذْتَ إِلَـٰهًا غَيْرِي لَأَجْعَلَنَّكَ مِنَ الْمَسْجُونِينَ",
+        "surface_arabic": "إِلَـٰهًا غَيْرِي",
+        "start_offset": 24,
+        "end_offset": 41,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه غَيْر",
+        "semantic_exclusion_decision_id": "SEMEX-V1-004",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Pharaoh's words about taking another deity; not a Quran-endorsed descriptor of the one God."
+      },
+      {
+        "occurrence_id": "26:209:d01",
+        "packet_id": "allah-names-v1-s026-c05-a201-227",
+        "verse_key": "26:209",
+        "verse_text": "ذِكْرَىٰ وَمَا كُنَّا ظَالِمِينَ",
+        "surface_arabic": "ظَالِمِينَ",
+        "start_offset": 22,
+        "end_offset": 32,
+        "manual_review": false,
+        "lexical_identity_arabic": "ظَالِم",
+        "semantic_exclusion_decision_id": "SEMEX-V1-005",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies wrongdoing / injustice of God."
+      },
+      {
+        "occurrence_id": "7:7:d01",
+        "packet_id": "allah-names-v1-s007-c01-a001-050",
+        "verse_key": "7:7",
+        "verse_text": "فَلَنَقُصَّنَّ عَلَيْهِمْ بِعِلْمٍ ۖ وَمَا كُنَّا غَائِبِينَ",
+        "surface_arabic": "غَائِبِينَ",
+        "start_offset": 50,
+        "end_offset": 60,
+        "manual_review": false,
+        "lexical_identity_arabic": "غَائِب",
+        "semantic_exclusion_decision_id": "SEMEX-V1-006",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies absence."
+      },
+      {
+        "occurrence_id": "3:181:d03",
+        "packet_id": "allah-names-v1-s003-c04-a151-200",
+        "verse_key": "3:181",
+        "verse_text": "لَقَدْ سَمِعَ اللَّهُ قَوْلَ الَّذِينَ قَالُوا إِنَّ اللَّهَ فَقِيرٌ وَنَحْنُ أَغْنِيَاءُ ۘ سَنَكْتُبُ مَا قَالُوا وَقَتْلَهُمُ الْأَنْبِيَاءَ بِغَيْرِ حَقٍّ وَنَقُولُ ذُوقُوا عَذَابَ الْحَرِيقِ",
+        "surface_arabic": "فَقِيرٌ",
+        "start_offset": 61,
+        "end_offset": 68,
+        "manual_review": false,
+        "lexical_identity_arabic": "فَقِير",
+        "semantic_exclusion_decision_id": "SEMEX-V1-007",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "False hostile attribution reported from others: they say that God is poor/needy."
+      },
+      {
+        "occurrence_id": "44:38:d01",
+        "packet_id": "allah-names-v1-s044-c01-a001-050",
+        "verse_key": "44:38",
+        "verse_text": "وَمَا خَلَقْنَا السَّمَاوَاتِ وَالْأَرْضَ وَمَا بَيْنَهُمَا لَاعِبِينَ",
+        "surface_arabic": "لَاعِبِينَ",
+        "start_offset": 60,
+        "end_offset": 70,
+        "manual_review": false,
+        "lexical_identity_arabic": "لَاعِب",
+        "semantic_exclusion_decision_id": "SEMEX-V1-008",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: the Quran denies that God's creation is play."
+      },
+      {
+        "occurrence_id": "19:64:d03",
+        "packet_id": "allah-names-v1-s019-c02-a051-098",
+        "verse_key": "19:64",
+        "verse_text": "وَمَا نَتَنَزَّلُ إِلَّا بِأَمْرِ رَبِّكَ ۖ لَهُ مَا بَيْنَ أَيْدِينَا وَمَا خَلْفَنَا وَمَا بَيْنَ ذَٰلِكَ ۚ وَمَا كَانَ رَبُّكَ نَسِيًّا",
+        "surface_arabic": "نَسِيًّا",
+        "start_offset": 130,
+        "end_offset": 138,
+        "manual_review": false,
+        "lexical_identity_arabic": "نَسِيّ",
+        "semantic_exclusion_decision_id": "SEMEX-V1-009",
+        "semantic_exclusion_category": "NEGATED_OR_NON_DIVINE",
+        "semantic_exclusion_rationale": "Negative sentence: 'your Lord is not forgetful'; the denied predicate must not become a descriptor."
+      },
+      {
+        "occurrence_id": "36:71:d01",
+        "packet_id": "allah-names-v1-s036-c02-a051-083",
+        "verse_key": "36:71",
+        "verse_text": "أَوَلَمْ يَرَوْا أَنَّا خَلَقْنَا لَهُمْ مِمَّا عَمِلَتْ أَيْدِينَا أَنْعَامًا فَهُمْ لَهَا مَالِكُونَ",
+        "surface_arabic": "أَيْدِينَا",
+        "start_offset": 57,
+        "end_offset": 67,
+        "manual_review": false,
+        "lexical_identity_arabic": "يَد",
+        "semantic_exclusion_decision_id": "SEMEX-V1-010",
+        "semantic_exclusion_category": "BODY_PART_RHETORICAL",
+        "semantic_exclusion_rationale": "Human body-part term used rhetorically/analogically; excluded as a standalone definition of God."
+      },
+      {
+        "occurrence_id": "36:83:d01",
+        "packet_id": "allah-names-v1-s036-c02-a051-083",
+        "verse_key": "36:83",
+        "verse_text": "فَسُبْحَانَ الَّذِي بِيَدِهِ مَلَكُوتُ كُلِّ شَيْءٍ وَإِلَيْهِ تُرْجَعُونَ",
+        "surface_arabic": "يَدِهِ",
+        "start_offset": 22,
+        "end_offset": 28,
+        "manual_review": false,
+        "lexical_identity_arabic": "يَد",
+        "semantic_exclusion_decision_id": "SEMEX-V1-010",
+        "semantic_exclusion_category": "BODY_PART_RHETORICAL",
+        "semantic_exclusion_rationale": "Human body-part term used rhetorically/analogically; excluded as a standalone definition of God."
+      },
+      {
+        "occurrence_id": "38:75:d01",
+        "packet_id": "allah-names-v1-s038-c02-a051-088",
+        "verse_key": "38:75",
+        "verse_text": "قَالَ يَا إِبْلِيسُ مَا مَنَعَكَ أَنْ تَسْجُدَ لِمَا خَلَقْتُ بِيَدَيَّ ۖ أَسْتَكْبَرْتَ أَمْ كُنْتَ مِنَ الْعَالِينَ",
+        "surface_arabic": "يَدَيَّ",
+        "start_offset": 64,
+        "end_offset": 71,
+        "manual_review": false,
+        "lexical_identity_arabic": "يَد",
+        "semantic_exclusion_decision_id": "SEMEX-V1-010",
+        "semantic_exclusion_category": "BODY_PART_RHETORICAL",
+        "semantic_exclusion_rationale": "Human body-part term used rhetorically/analogically; excluded as a standalone definition of God."
+      },
+      {
+        "occurrence_id": "20:39:d01",
+        "packet_id": "allah-names-v1-s020-c01-a001-050",
+        "verse_key": "20:39",
+        "verse_text": "أَنِ اقْذِفِيهِ فِي التَّابُوتِ فَاقْذِفِيهِ فِي الْيَمِّ فَلْيُلْقِهِ الْيَمُّ بِالسَّاحِلِ يَأْخُذْهُ عَدُوٌّ لِي وَعَدُوٌّ لَهُ ۚ وَأَلْقَيْتُ عَلَيْكَ مَحَبَّةً مِنِّي وَلِتُصْنَعَ عَلَىٰ عَيْنِي",
+        "surface_arabic": "عَيْنِي",
+        "start_offset": 192,
+        "end_offset": 199,
+        "manual_review": false,
+        "lexical_identity_arabic": "عَيْن",
+        "semantic_exclusion_decision_id": "SEMEX-V1-011",
+        "semantic_exclusion_category": "BODY_PART_RHETORICAL",
+        "semantic_exclusion_rationale": "Human body-part term used rhetorically/analogically; excluded as a standalone definition of God."
+      },
+      {
+        "occurrence_id": "54:14:d01",
+        "packet_id": "allah-names-v1-s054-c01-a001-050",
+        "verse_key": "54:14",
+        "verse_text": "تَجْرِي بِأَعْيُنِنَا جَزَاءً لِمَنْ كَانَ كُفِرَ",
+        "surface_arabic": "أَعْيُنِنَا",
+        "start_offset": 10,
+        "end_offset": 21,
+        "manual_review": false,
+        "lexical_identity_arabic": "عَيْن",
+        "semantic_exclusion_decision_id": "SEMEX-V1-011",
+        "semantic_exclusion_category": "BODY_PART_RHETORICAL",
+        "semantic_exclusion_rationale": "Human body-part term used rhetorically/analogically; excluded as a standalone definition of God."
+      },
+      {
+        "occurrence_id": "6:52:d02",
+        "packet_id": "allah-names-v1-s006-c02-a051-100",
+        "verse_key": "6:52",
+        "verse_text": "وَلَا تَطْرُدِ الَّذِينَ يَدْعُونَ رَبَّهُمْ بِالْغَدَاةِ وَالْعَشِيِّ يُرِيدُونَ وَجْهَهُ ۖ مَا عَلَيْكَ مِنْ حِسَابِهِمْ مِنْ شَيْءٍ وَمَا مِنْ حِسَابِكَ عَلَيْهِمْ مِنْ شَيْءٍ فَتَطْرُدَهُمْ فَتَكُونَ مِنَ الظَّالِمِينَ",
+        "surface_arabic": "وَجْهَهُ",
+        "start_offset": 82,
+        "end_offset": 90,
+        "manual_review": false,
+        "lexical_identity_arabic": "وَجْه",
+        "semantic_exclusion_decision_id": "SEMEX-V1-012",
+        "semantic_exclusion_category": "BODY_PART_RHETORICAL",
+        "semantic_exclusion_rationale": "Human body-part term used rhetorically/analogically; excluded as a standalone definition of God."
+      },
+      {
+        "occurrence_id": "28:88:d03",
+        "packet_id": "allah-names-v1-s028-c02-a051-088",
+        "verse_key": "28:88",
+        "verse_text": "وَلَا تَدْعُ مَعَ اللَّهِ إِلَـٰهًا آخَرَ ۘ لَا إِلَـٰهَ إِلَّا هُوَ ۚ كُلُّ شَيْءٍ هَالِكٌ إِلَّا وَجْهَهُ ۚ لَهُ الْحُكْمُ وَإِلَيْهِ تُرْجَعُونَ",
+        "surface_arabic": "وَجْهَهُ",
+        "start_offset": 99,
+        "end_offset": 107,
+        "manual_review": false,
+        "lexical_identity_arabic": "وَجْه",
+        "semantic_exclusion_decision_id": "SEMEX-V1-012",
+        "semantic_exclusion_category": "BODY_PART_RHETORICAL",
+        "semantic_exclusion_rationale": "Human body-part term used rhetorically/analogically; excluded as a standalone definition of God."
+      },
+      {
+        "occurrence_id": "28:38:d01",
+        "packet_id": "allah-names-v1-s028-c01-a001-050",
+        "verse_key": "28:38",
+        "verse_text": "وَقَالَ فِرْعَوْنُ يَا أَيُّهَا الْمَلَأُ مَا عَلِمْتُ لَكُمْ مِنْ إِلَـٰهٍ غَيْرِي فَأَوْقِدْ لِي يَا هَامَانُ عَلَى الطِّينِ فَاجْعَلْ لِي صَرْحًا لَعَلِّي أَطَّلِعُ إِلَىٰ إِلَـٰهِ مُوسَىٰ وَإِنِّي لَأَظُنُّهُ مِنَ الْكَاذِبِينَ",
+        "surface_arabic": "إِلَـٰهِ مُوسَىٰ",
+        "start_offset": 175,
+        "end_offset": 191,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه مُوسَىٰ",
+        "semantic_exclusion_decision_id": "SEMEX-V1-013",
+        "semantic_exclusion_category": "TOO_SPECIFIC_CONTEXTUAL",
+        "semantic_exclusion_rationale": "Pharaoh-context expression 'God of Moses'; too speaker-/context-specific for the descriptor inventory."
+      },
+      {
+        "occurrence_id": "40:37:d01",
+        "packet_id": "allah-names-v1-s040-c01-a001-050",
+        "verse_key": "40:37",
+        "verse_text": "أَسْبَابَ السَّمَاوَاتِ فَأَطَّلِعَ إِلَىٰ إِلَـٰهِ مُوسَىٰ وَإِنِّي لَأَظُنُّهُ كَاذِبًا ۚ وَكَذَٰلِكَ زُيِّنَ لِفِرْعَوْنَ سُوءُ عَمَلِهِ وَصُدَّ عَنِ السَّبِيلِ ۚ وَمَا كَيْدُ فِرْعَوْنَ إِلَّا فِي تَبَابٍ",
+        "surface_arabic": "إِلَـٰهِ مُوسَىٰ",
+        "start_offset": 43,
+        "end_offset": 59,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه مُوسَىٰ",
+        "semantic_exclusion_decision_id": "SEMEX-V1-013",
+        "semantic_exclusion_category": "TOO_SPECIFIC_CONTEXTUAL",
+        "semantic_exclusion_rationale": "Pharaoh-context expression 'God of Moses'; too speaker-/context-specific for the descriptor inventory."
+      },
+      {
+        "occurrence_id": "7:122:d01",
+        "packet_id": "allah-names-v1-s007-c03-a101-150",
+        "verse_key": "7:122",
+        "verse_text": "رَبِّ مُوسَىٰ وَهَارُونَ",
+        "surface_arabic": "رَبِّ مُوسَىٰ وَهَارُونَ",
+        "start_offset": 0,
+        "end_offset": 24,
+        "manual_review": false,
+        "lexical_identity_arabic": "رَبّ مُوسَىٰ وَهَارُون",
+        "semantic_exclusion_decision_id": "SEMEX-V1-014",
+        "semantic_exclusion_category": "TOO_SPECIFIC_CONTEXTUAL",
+        "semantic_exclusion_rationale": "Believers' expression 'Lord of Moses and Aaron'; valid in context but too specific for the retained descriptor inventory."
+      },
+      {
+        "occurrence_id": "26:48:d01",
+        "packet_id": "allah-names-v1-s026-c01-a001-050",
+        "verse_key": "26:48",
+        "verse_text": "رَبِّ مُوسَىٰ وَهَارُونَ",
+        "surface_arabic": "رَبِّ مُوسَىٰ وَهَارُونَ",
+        "start_offset": 0,
+        "end_offset": 24,
+        "manual_review": false,
+        "lexical_identity_arabic": "رَبّ مُوسَىٰ وَهَارُون",
+        "semantic_exclusion_decision_id": "SEMEX-V1-014",
+        "semantic_exclusion_category": "TOO_SPECIFIC_CONTEXTUAL",
+        "semantic_exclusion_rationale": "Believers' expression 'Lord of Moses and Aaron'; valid in context but too specific for the retained descriptor inventory."
+      },
+      {
+        "occurrence_id": "20:70:d01",
+        "packet_id": "allah-names-v1-s020-c02-a051-100",
+        "verse_key": "20:70",
+        "verse_text": "فَأُلْقِيَ السَّحَرَةُ سُجَّدًا قَالُوا آمَنَّا بِرَبِّ هَارُونَ وَمُوسَىٰ",
+        "surface_arabic": "رَبِّ هَارُونَ وَمُوسَىٰ",
+        "start_offset": 50,
+        "end_offset": 74,
+        "manual_review": false,
+        "lexical_identity_arabic": "رَبّ هَارُون وَمُوسَىٰ",
+        "semantic_exclusion_decision_id": "SEMEX-V1-015",
+        "semantic_exclusion_category": "TOO_SPECIFIC_CONTEXTUAL",
+        "semantic_exclusion_rationale": "Context-specific contrast identifying the one true God worshipped by Aaron and Moses; too specific for the retained descriptor inventory."
+      },
+      {
+        "occurrence_id": "2:30:d02",
+        "packet_id": "allah-names-v1-s002-c01-a001-050",
+        "verse_key": "2:30",
+        "verse_text": "وَإِذْ قَالَ رَبُّكَ لِلْمَلَائِكَةِ إِنِّي جَاعِلٌ فِي الْأَرْضِ خَلِيفَةً ۖ قَالُوا أَتَجْعَلُ فِيهَا مَنْ يُفْسِدُ فِيهَا وَيَسْفِكُ الدِّمَاءَ وَنَحْنُ نُسَبِّحُ بِحَمْدِكَ وَنُقَدِّسُ لَكَ ۖ قَالَ إِنِّي أَعْلَمُ مَا لَا تَعْلَمُونَ",
+        "surface_arabic": "جَاعِلٌ",
+        "start_offset": 44,
+        "end_offset": 51,
+        "manual_review": false,
+        "lexical_identity_arabic": "جَاعِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-016",
+        "semantic_exclusion_category": "TOO_GENERAL",
+        "semantic_exclusion_rationale": "Too general as a standalone identity ('maker/one who makes'); excluded from the curated descriptor set."
+      },
+      {
+        "occurrence_id": "3:55:d05",
+        "packet_id": "allah-names-v1-s003-c02-a051-100",
+        "verse_key": "3:55",
+        "verse_text": "إِذْ قَالَ اللَّهُ يَا عِيسَىٰ إِنِّي مُتَوَفِّيكَ وَرَافِعُكَ إِلَيَّ وَمُطَهِّرُكَ مِنَ الَّذِينَ كَفَرُوا وَجَاعِلُ الَّذِينَ اتَّبَعُوكَ فَوْقَ الَّذِينَ كَفَرُوا إِلَىٰ يَوْمِ الْقِيَامَةِ ۖ ثُمَّ إِلَيَّ مَرْجِعُكُمْ فَأَحْكُمُ بَيْنَكُمْ فِيمَا كُنْتُمْ فِيهِ تَخْتَلِفُونَ",
+        "surface_arabic": "جَاعِلُ",
+        "start_offset": 111,
+        "end_offset": 118,
+        "manual_review": false,
+        "lexical_identity_arabic": "جَاعِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-016",
+        "semantic_exclusion_category": "TOO_GENERAL",
+        "semantic_exclusion_rationale": "Too general as a standalone identity ('maker/one who makes'); excluded from the curated descriptor set."
+      },
+      {
+        "occurrence_id": "28:7:d02",
+        "packet_id": "allah-names-v1-s028-c01-a001-050",
+        "verse_key": "28:7",
+        "verse_text": "وَأَوْحَيْنَا إِلَىٰ أُمِّ مُوسَىٰ أَنْ أَرْضِعِيهِ ۖ فَإِذَا خِفْتِ عَلَيْهِ فَأَلْقِيهِ فِي الْيَمِّ وَلَا تَخَافِي وَلَا تَحْزَنِي ۖ إِنَّا رَادُّوهُ إِلَيْكِ وَجَاعِلُوهُ مِنَ الْمُرْسَلِينَ",
+        "surface_arabic": "جَاعِلُوهُ",
+        "start_offset": 164,
+        "end_offset": 174,
+        "manual_review": false,
+        "lexical_identity_arabic": "جَاعِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-016",
+        "semantic_exclusion_category": "TOO_GENERAL",
+        "semantic_exclusion_rationale": "Too general as a standalone identity ('maker/one who makes'); excluded from the curated descriptor set."
+      },
+      {
+        "occurrence_id": "21:17:d01",
+        "packet_id": "allah-names-v1-s021-c01-a001-050",
+        "verse_key": "21:17",
+        "verse_text": "لَوْ أَرَدْنَا أَنْ نَتَّخِذَ لَهْوًا لَاتَّخَذْنَاهُ مِنْ لَدُنَّا إِنْ كُنَّا فَاعِلِينَ",
+        "surface_arabic": "فَاعِلِينَ",
+        "start_offset": 80,
+        "end_offset": 90,
+        "manual_review": false,
+        "lexical_identity_arabic": "فَاعِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-017",
+        "semantic_exclusion_category": "TOO_GENERAL",
+        "semantic_exclusion_rationale": "Too general as a standalone identity ('doer'); excluded from the curated descriptor set."
+      },
+      {
+        "occurrence_id": "21:79:d01",
+        "packet_id": "allah-names-v1-s021-c02-a051-100",
+        "verse_key": "21:79",
+        "verse_text": "فَفَهَّمْنَاهَا سُلَيْمَانَ ۚ وَكُلًّا آتَيْنَا حُكْمًا وَعِلْمًا ۚ وَسَخَّرْنَا مَعَ دَاوُودَ الْجِبَالَ يُسَبِّحْنَ وَالطَّيْرَ ۚ وَكُنَّا فَاعِلِينَ",
+        "surface_arabic": "فَاعِلِينَ",
+        "start_offset": 141,
+        "end_offset": 151,
+        "manual_review": false,
+        "lexical_identity_arabic": "فَاعِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-017",
+        "semantic_exclusion_category": "TOO_GENERAL",
+        "semantic_exclusion_rationale": "Too general as a standalone identity ('doer'); excluded from the curated descriptor set."
+      },
+      {
+        "occurrence_id": "21:104:d01",
+        "packet_id": "allah-names-v1-s021-c03-a101-112",
+        "verse_key": "21:104",
+        "verse_text": "يَوْمَ نَطْوِي السَّمَاءَ كَطَيِّ السِّجِلِّ لِلْكُتُبِ ۚ كَمَا بَدَأْنَا أَوَّلَ خَلْقٍ نُعِيدُهُ ۚ وَعْدًا عَلَيْنَا ۚ إِنَّا كُنَّا فَاعِلِينَ",
+        "surface_arabic": "فَاعِلِينَ",
+        "start_offset": 135,
+        "end_offset": 145,
+        "manual_review": false,
+        "lexical_identity_arabic": "فَاعِل",
+        "semantic_exclusion_decision_id": "SEMEX-V1-017",
+        "semantic_exclusion_category": "TOO_GENERAL",
+        "semantic_exclusion_rationale": "Too general as a standalone identity ('doer'); excluded from the curated descriptor set."
+      },
+      {
+        "occurrence_id": "11:107:d03",
+        "packet_id": "allah-names-v1-s011-c03-a101-123",
+        "verse_key": "11:107",
+        "verse_text": "خَالِدِينَ فِيهَا مَا دَامَتِ السَّمَاوَاتُ وَالْأَرْضُ إِلَّا مَا شَاءَ رَبُّكَ ۚ إِنَّ رَبَّكَ فَعَّالٌ لِمَا يُرِيدُ",
+        "surface_arabic": "فَعَّالٌ",
+        "start_offset": 97,
+        "end_offset": 105,
+        "manual_review": false,
+        "lexical_identity_arabic": "فَعَّال",
+        "semantic_exclusion_decision_id": "SEMEX-V1-018",
+        "semantic_exclusion_category": "TOO_GENERAL",
+        "semantic_exclusion_rationale": "Too general as a standalone identity ('effecter/doer'); excluded from the curated descriptor set."
+      },
+      {
+        "occurrence_id": "85:16:d01",
+        "packet_id": "allah-names-v1-s085-c01-a001-022",
+        "verse_key": "85:16",
+        "verse_text": "فَعَّالٌ لِمَا يُرِيدُ",
+        "surface_arabic": "فَعَّالٌ",
+        "start_offset": 0,
+        "end_offset": 8,
+        "manual_review": false,
+        "lexical_identity_arabic": "فَعَّال",
+        "semantic_exclusion_decision_id": "SEMEX-V1-018",
+        "semantic_exclusion_category": "TOO_GENERAL",
+        "semantic_exclusion_rationale": "Too general as a standalone identity ('effecter/doer'); excluded from the curated descriptor set."
+      },
+      {
+        "occurrence_id": "38:82:d01",
+        "packet_id": "allah-names-v1-s038-c02-a051-088",
+        "verse_key": "38:82",
+        "verse_text": "قَالَ فَبِعِزَّتِكَ لَأُغْوِيَنَّهُمْ أَجْمَعِينَ",
+        "surface_arabic": "عِزَّتِكَ",
+        "start_offset": 10,
+        "end_offset": 19,
+        "manual_review": false,
+        "lexical_identity_arabic": "عِزَّة",
+        "semantic_exclusion_decision_id": "SEMEX-V1-019",
+        "semantic_exclusion_category": "OTHER_SCOPE",
+        "semantic_exclusion_rationale": "Abstract noun 'might/honor', not an explicit standalone descriptor; the related descriptor ʿAzīz already covers the concept."
+      },
+      {
+        "occurrence_id": "63:8:d02",
+        "packet_id": "allah-names-v1-s063-c01-a001-011",
+        "verse_key": "63:8",
+        "verse_text": "يَقُولُونَ لَئِنْ رَجَعْنَا إِلَى الْمَدِينَةِ لَيُخْرِجَنَّ الْأَعَزُّ مِنْهَا الْأَذَلَّ ۚ وَلِلَّهِ الْعِزَّةُ وَلِرَسُولِهِ وَلِلْمُؤْمِنِينَ وَلَـٰكِنَّ الْمُنَافِقِينَ لَا يَعْلَمُونَ",
+        "surface_arabic": "الْعِزَّةُ",
+        "start_offset": 103,
+        "end_offset": 113,
+        "manual_review": false,
+        "lexical_identity_arabic": "عِزَّة",
+        "semantic_exclusion_decision_id": "SEMEX-V1-019",
+        "semantic_exclusion_category": "OTHER_SCOPE",
+        "semantic_exclusion_rationale": "Abstract noun 'might/honor', not an explicit standalone descriptor; the related descriptor ʿAzīz already covers the concept."
+      },
+      {
+        "occurrence_id": "6:54:d02",
+        "packet_id": "allah-names-v1-s006-c02-a051-100",
+        "verse_key": "6:54",
+        "verse_text": "وَإِذَا جَاءَكَ الَّذِينَ يُؤْمِنُونَ بِآيَاتِنَا فَقُلْ سَلَامٌ عَلَيْكُمْ ۖ كَتَبَ رَبُّكُمْ عَلَىٰ نَفْسِهِ الرَّحْمَةَ ۖ أَنَّهُ مَنْ عَمِلَ مِنْكُمْ سُوءًا بِجَهَالَةٍ ثُمَّ تَابَ مِنْ بَعْدِهِ وَأَصْلَحَ فَأَنَّهُ غَفُورٌ رَحِيمٌ",
+        "surface_arabic": "نَفْسِهِ",
+        "start_offset": 102,
+        "end_offset": 110,
+        "manual_review": false,
+        "lexical_identity_arabic": "نَفْس",
+        "semantic_exclusion_decision_id": "SEMEX-V1-020",
+        "semantic_exclusion_category": "OTHER_SCOPE",
+        "semantic_exclusion_rationale": "Functions as self-reference ('Himself/Myself') rather than as an independent descriptor."
+      },
+      {
+        "occurrence_id": "20:41:d01",
+        "packet_id": "allah-names-v1-s020-c01-a001-050",
+        "verse_key": "20:41",
+        "verse_text": "وَاصْطَنَعْتُكَ لِنَفْسِي",
+        "surface_arabic": "نَفْسِي",
+        "start_offset": 18,
+        "end_offset": 25,
+        "manual_review": false,
+        "lexical_identity_arabic": "نَفْس",
+        "semantic_exclusion_decision_id": "SEMEX-V1-020",
+        "semantic_exclusion_category": "OTHER_SCOPE",
+        "semantic_exclusion_rationale": "Functions as self-reference ('Himself/Myself') rather than as an independent descriptor."
+      },
+      {
+        "occurrence_id": "58:7:d02",
+        "packet_id": "allah-names-v1-s058-c01-a001-022",
+        "verse_key": "58:7",
+        "verse_text": "أَلَمْ تَرَ أَنَّ اللَّهَ يَعْلَمُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۖ مَا يَكُونُ مِنْ نَجْوَىٰ ثَلَاثَةٍ إِلَّا هُوَ رَابِعُهُمْ وَلَا خَمْسَةٍ إِلَّا هُوَ سَادِسُهُمْ وَلَا أَدْنَىٰ مِنْ ذَٰلِكَ وَلَا أَكْثَرَ إِلَّا هُوَ مَعَهُمْ أَيْنَ مَا كَانُوا ۖ ثُمَّ يُنَبِّئُهُمْ بِمَا عَمِلُوا يَوْمَ الْقِيَامَةِ ۚ إِنَّ اللَّهَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+        "surface_arabic": "رَابِعُهُمْ",
+        "start_offset": 127,
+        "end_offset": 138,
+        "manual_review": false,
+        "lexical_identity_arabic": "رَابِع",
+        "semantic_exclusion_decision_id": "SEMEX-V1-021",
+        "semantic_exclusion_category": "ORDINAL_RELATIONAL",
+        "semantic_exclusion_rationale": "Relational ordinal in a passage about God's presence with a group; not a rank or standalone divine descriptor."
+      },
+      {
+        "occurrence_id": "58:7:d03",
+        "packet_id": "allah-names-v1-s058-c01-a001-022",
+        "verse_key": "58:7",
+        "verse_text": "أَلَمْ تَرَ أَنَّ اللَّهَ يَعْلَمُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۖ مَا يَكُونُ مِنْ نَجْوَىٰ ثَلَاثَةٍ إِلَّا هُوَ رَابِعُهُمْ وَلَا خَمْسَةٍ إِلَّا هُوَ سَادِسُهُمْ وَلَا أَدْنَىٰ مِنْ ذَٰلِكَ وَلَا أَكْثَرَ إِلَّا هُوَ مَعَهُمْ أَيْنَ مَا كَانُوا ۖ ثُمَّ يُنَبِّئُهُمْ بِمَا عَمِلُوا يَوْمَ الْقِيَامَةِ ۚ إِنَّ اللَّهَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+        "surface_arabic": "سَادِسُهُمْ",
+        "start_offset": 166,
+        "end_offset": 177,
+        "manual_review": false,
+        "lexical_identity_arabic": "سَادِس",
+        "semantic_exclusion_decision_id": "SEMEX-V1-022",
+        "semantic_exclusion_category": "ORDINAL_RELATIONAL",
+        "semantic_exclusion_rationale": "Relational ordinal in a passage about God's presence with a group; not a rank or standalone divine descriptor."
+      },
+      {
+        "occurrence_id": "14:47:d02",
+        "packet_id": "allah-names-v1-s014-c01-a001-050",
+        "verse_key": "14:47",
+        "verse_text": "فَلَا تَحْسَبَنَّ اللَّهَ مُخْلِفَ وَعْدِهِ رُسُلَهُ ۗ إِنَّ اللَّهَ عَزِيزٌ ذُو انْتِقَامٍ",
+        "surface_arabic": "مُخْلِفَ",
+        "start_offset": 26,
+        "end_offset": 34,
+        "manual_review": false,
+        "lexical_identity_arabic": "مُخْلِف",
+        "semantic_exclusion_decision_id": "SEMEX-V2-006",
+        "semantic_exclusion_category": "NEGATED_PREDICATE",
+        "semantic_exclusion_rationale": "NEGATED_PREDICATE",
+        "semantic_exclusion_scope": "identity"
+      },
+      {
+        "occurrence_id": "16:60:d02",
+        "packet_id": "allah-names-v1-s016-c02-a051-100",
+        "verse_key": "16:60",
+        "verse_text": "لِلَّذِينَ لَا يُؤْمِنُونَ بِالْآخِرَةِ مَثَلُ السَّوْءِ ۖ وَلِلَّهِ الْمَثَلُ الْأَعْلَىٰ ۚ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+        "surface_arabic": "الْمَثَلُ الْأَعْلَىٰ",
+        "start_offset": 69,
+        "end_offset": 90,
+        "manual_review": false,
+        "lexical_identity_arabic": "مَثَل الْأَعْلَىٰ",
+        "semantic_exclusion_decision_id": "SEMEX-V2-005",
+        "semantic_exclusion_category": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR",
+        "semantic_exclusion_rationale": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR",
+        "semantic_exclusion_scope": "identity"
+      },
+      {
+        "occurrence_id": "17:46:d02",
+        "packet_id": "allah-names-v1-s017-c01-a001-050",
+        "verse_key": "17:46",
+        "verse_text": "وَجَعَلْنَا عَلَىٰ قُلُوبِهِمْ أَكِنَّةً أَنْ يَفْقَهُوهُ وَفِي آذَانِهِمْ وَقْرًا ۚ وَإِذَا ذَكَرْتَ رَبَّكَ فِي الْقُرْآنِ وَحْدَهُ وَلَّوْا عَلَىٰ أَدْبَارِهِمْ نُفُورًا",
+        "surface_arabic": "وَحْدَهُ",
+        "start_offset": 125,
+        "end_offset": 133,
+        "manual_review": false,
+        "lexical_identity_arabic": "وَحْد",
+        "semantic_exclusion_decision_id": "SEMEX-V2-002",
+        "semantic_exclusion_category": "ADVERBIAL_EXCLUSIVITY_NOT_DESCRIPTOR",
+        "semantic_exclusion_rationale": "ADVERBIAL_EXCLUSIVITY_NOT_DESCRIPTOR",
+        "semantic_exclusion_scope": "identity"
+      },
+      {
+        "occurrence_id": "28:59:d02",
+        "packet_id": "allah-names-v1-s028-c02-a051-088",
+        "verse_key": "28:59",
+        "verse_text": "وَمَا كَانَ رَبُّكَ مُهْلِكَ الْقُرَىٰ حَتَّىٰ يَبْعَثَ فِي أُمِّهَا رَسُولًا يَتْلُو عَلَيْهِمْ آيَاتِنَا ۚ وَمَا كُنَّا مُهْلِكِي الْقُرَىٰ إِلَّا وَأَهْلُهَا ظَالِمُونَ",
+        "surface_arabic": "مُهْلِكَ الْقُرَىٰ",
+        "start_offset": 20,
+        "end_offset": 38,
+        "manual_review": false,
+        "lexical_identity_arabic": "مُهْلِك الْقُرَىٰ",
+        "semantic_exclusion_decision_id": "SEMEX-V2-001",
+        "semantic_exclusion_category": "NEGATED_OR_CONDITIONED_PREDICATE",
+        "semantic_exclusion_rationale": "NEGATED_OR_CONDITIONED_PREDICATE",
+        "semantic_exclusion_scope": "identity"
+      },
+      {
+        "occurrence_id": "28:59:d03",
+        "packet_id": "allah-names-v1-s028-c02-a051-088",
+        "verse_key": "28:59",
+        "verse_text": "وَمَا كَانَ رَبُّكَ مُهْلِكَ الْقُرَىٰ حَتَّىٰ يَبْعَثَ فِي أُمِّهَا رَسُولًا يَتْلُو عَلَيْهِمْ آيَاتِنَا ۚ وَمَا كُنَّا مُهْلِكِي الْقُرَىٰ إِلَّا وَأَهْلُهَا ظَالِمُونَ",
+        "surface_arabic": "مُهْلِكِي الْقُرَىٰ",
+        "start_offset": 122,
+        "end_offset": 141,
+        "manual_review": false,
+        "lexical_identity_arabic": "مُهْلِك الْقُرَىٰ",
+        "semantic_exclusion_decision_id": "SEMEX-V2-001",
+        "semantic_exclusion_category": "NEGATED_OR_CONDITIONED_PREDICATE",
+        "semantic_exclusion_rationale": "NEGATED_OR_CONDITIONED_PREDICATE",
+        "semantic_exclusion_scope": "identity"
+      },
+      {
+        "occurrence_id": "40:84:d02",
+        "packet_id": "allah-names-v1-s040-c02-a051-085",
+        "verse_key": "40:84",
+        "verse_text": "فَلَمَّا رَأَوْا بَأْسَنَا قَالُوا آمَنَّا بِاللَّهِ وَحْدَهُ وَكَفَرْنَا بِمَا كُنَّا بِهِ مُشْرِكِينَ",
+        "surface_arabic": "وَحْدَهُ",
+        "start_offset": 53,
+        "end_offset": 61,
+        "manual_review": false,
+        "lexical_identity_arabic": "وَحْد",
+        "semantic_exclusion_decision_id": "SEMEX-V2-002",
+        "semantic_exclusion_category": "ADVERBIAL_EXCLUSIVITY_NOT_DESCRIPTOR",
+        "semantic_exclusion_rationale": "ADVERBIAL_EXCLUSIVITY_NOT_DESCRIPTOR",
+        "semantic_exclusion_scope": "identity"
+      },
+      {
+        "occurrence_id": "45:27:d02",
+        "packet_id": "allah-names-v1-s045-c01-a001-037",
+        "verse_key": "45:27",
+        "verse_text": "وَلِلَّهِ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ ۚ وَيَوْمَ تَقُومُ السَّاعَةُ يَوْمَئِذٍ يَخْسَرُ الْمُبْطِلُونَ",
+        "surface_arabic": "مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ",
+        "start_offset": 10,
+        "end_offset": 42,
+        "manual_review": false,
+        "lexical_identity_arabic": "مُلْك السَّمَاوَات وَالْأَرْض",
+        "semantic_exclusion_decision_id": "SEMEX-V2-008",
+        "semantic_exclusion_category": "POSSESSED_DOMAIN_NOT_REFERENTIAL_DESCRIPTOR",
+        "semantic_exclusion_rationale": "POSSESSED_DOMAIN_NOT_REFERENTIAL_DESCRIPTOR",
+        "semantic_exclusion_scope": "identity"
+      },
+      {
+        "occurrence_id": "45:37:d01",
+        "packet_id": "allah-names-v1-s045-c01-a001-037",
+        "verse_key": "45:37",
+        "verse_text": "وَلَهُ الْكِبْرِيَاءُ فِي السَّمَاوَاتِ وَالْأَرْضِ ۖ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+        "surface_arabic": "الْكِبْرِيَاءُ",
+        "start_offset": 7,
+        "end_offset": 21,
+        "manual_review": false,
+        "lexical_identity_arabic": "كِبْرِيَاء",
+        "semantic_exclusion_decision_id": "SEMEX-V2-004",
+        "semantic_exclusion_category": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR",
+        "semantic_exclusion_rationale": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR",
+        "semantic_exclusion_scope": "identity"
+      },
+      {
+        "occurrence_id": "60:4:d03",
+        "packet_id": "allah-names-v1-s060-c01-a001-013",
+        "verse_key": "60:4",
+        "verse_text": "قَدْ كَانَتْ لَكُمْ أُسْوَةٌ حَسَنَةٌ فِي إِبْرَاهِيمَ وَالَّذِينَ مَعَهُ إِذْ قَالُوا لِقَوْمِهِمْ إِنَّا بُرَآءُ مِنْكُمْ وَمِمَّا تَعْبُدُونَ مِنْ دُونِ اللَّهِ كَفَرْنَا بِكُمْ وَبَدَا بَيْنَنَا وَبَيْنَكُمُ الْعَدَاوَةُ وَالْبَغْضَاءُ أَبَدًا حَتَّىٰ تُؤْمِنُوا بِاللَّهِ وَحْدَهُ إِلَّا قَوْلَ إِبْرَاهِيمَ لِأَبِيهِ لَأَسْتَغْفِرَنَّ لَكَ وَمَا أَمْلِكُ لَكَ مِنَ اللَّهِ مِنْ شَيْءٍ ۖ رَبَّنَا عَلَيْكَ تَوَكَّلْنَا وَإِلَيْكَ أَنَبْنَا وَإِلَيْكَ الْمَصِيرُ",
+        "surface_arabic": "وَحْدَهُ",
+        "start_offset": 277,
+        "end_offset": 285,
+        "manual_review": false,
+        "lexical_identity_arabic": "وَحْد",
+        "semantic_exclusion_decision_id": "SEMEX-V2-002",
+        "semantic_exclusion_category": "ADVERBIAL_EXCLUSIVITY_NOT_DESCRIPTOR",
+        "semantic_exclusion_rationale": "ADVERBIAL_EXCLUSIVITY_NOT_DESCRIPTOR",
+        "semantic_exclusion_scope": "identity"
+      },
+      {
+        "occurrence_id": "6:131:d02",
+        "packet_id": "allah-names-v1-s006-c03-a101-150",
+        "verse_key": "6:131",
+        "verse_text": "ذَٰلِكَ أَنْ لَمْ يَكُنْ رَبُّكَ مُهْلِكَ الْقُرَىٰ بِظُلْمٍ وَأَهْلُهَا غَافِلُونَ",
+        "surface_arabic": "مُهْلِكَ الْقُرَىٰ",
+        "start_offset": 33,
+        "end_offset": 51,
+        "manual_review": false,
+        "lexical_identity_arabic": "مُهْلِك الْقُرَىٰ",
+        "semantic_exclusion_decision_id": "SEMEX-V2-001",
+        "semantic_exclusion_category": "NEGATED_OR_CONDITIONED_PREDICATE",
+        "semantic_exclusion_rationale": "NEGATED_OR_CONDITIONED_PREDICATE",
+        "semantic_exclusion_scope": "identity"
+      },
+      {
+        "occurrence_id": "72:3:d01",
+        "packet_id": "allah-names-v1-s072-c01-a001-028",
+        "verse_key": "72:3",
+        "verse_text": "وَأَنَّهُ تَعَالَىٰ جَدُّ رَبِّنَا مَا اتَّخَذَ صَاحِبَةً وَلَا وَلَدًا",
+        "surface_arabic": "جَدُّ رَبِّنَا",
+        "start_offset": 20,
+        "end_offset": 34,
+        "manual_review": false,
+        "lexical_identity_arabic": "جَدّ رَبّ",
+        "semantic_exclusion_decision_id": "SEMEX-V2-003",
+        "semantic_exclusion_category": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR",
+        "semantic_exclusion_rationale": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR",
+        "semantic_exclusion_scope": "identity"
+      },
+      {
+        "occurrence_id": "8:53:d02",
+        "packet_id": "allah-names-v1-s008-c02-a051-075",
+        "verse_key": "8:53",
+        "verse_text": "ذَٰلِكَ بِأَنَّ اللَّهَ لَمْ يَكُ مُغَيِّرًا نِعْمَةً أَنْعَمَهَا عَلَىٰ قَوْمٍ حَتَّىٰ يُغَيِّرُوا مَا بِأَنْفُسِهِمْ ۙ وَأَنَّ اللَّهَ سَمِيعٌ عَلِيمٌ",
+        "surface_arabic": "مُغَيِّرًا",
+        "start_offset": 34,
+        "end_offset": 44,
+        "manual_review": false,
+        "lexical_identity_arabic": "مُغَيِّر",
+        "semantic_exclusion_decision_id": "SEMEX-V2-007",
+        "semantic_exclusion_category": "NEGATED_OR_CONDITIONED_PREDICATE",
+        "semantic_exclusion_rationale": "NEGATED_OR_CONDITIONED_PREDICATE",
+        "semantic_exclusion_scope": "identity"
+      },
+      {
+        "occurrence_id": "2:255:d02",
+        "packet_id": "allah-names-v1-s002-c06-a251-286",
+        "verse_key": "2:255",
+        "verse_text": "اللَّهُ لَا إِلَـٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 12,
+        "end_offset": 20,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "6:102:d03",
+        "packet_id": "allah-names-v1-s006-c03-a101-150",
+        "verse_key": "6:102",
+        "verse_text": "ذَٰلِكُمُ اللَّهُ رَبُّكُمْ ۖ لَا إِلَـٰهَ إِلَّا هُوَ ۖ خَالِقُ كُلِّ شَيْءٍ فَاعْبُدُوهُ ۚ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ وَكِيلٌ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 34,
+        "end_offset": 42,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "6:106:d02",
+        "packet_id": "allah-names-v1-s006-c03-a101-150",
+        "verse_key": "6:106",
+        "verse_text": "اتَّبِعْ مَا أُوحِيَ إِلَيْكَ مِنْ رَبِّكَ ۖ لَا إِلَـٰهَ إِلَّا هُوَ ۖ وَأَعْرِضْ عَنِ الْمُشْرِكِينَ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 49,
+        "end_offset": 57,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "7:158:d03",
+        "packet_id": "allah-names-v1-s007-c04-a151-200",
+        "verse_key": "7:158",
+        "verse_text": "قُلْ يَا أَيُّهَا النَّاسُ إِنِّي رَسُولُ اللَّهِ إِلَيْكُمْ جَمِيعًا الَّذِي لَهُ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ ۖ لَا إِلَـٰهَ إِلَّا هُوَ يُحْيِي وَيُمِيتُ ۖ فَآمِنُوا بِاللَّهِ وَرَسُولِهِ النَّبِيِّ الْأُمِّيِّ الَّذِي يُؤْمِنُ بِاللَّهِ وَكَلِمَاتِهِ وَاتَّبِعُوهُ لَعَلَّكُمْ تَهْتَدُونَ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 122,
+        "end_offset": 130,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "9:31:d03",
+        "packet_id": "allah-names-v1-s009-c01-a001-050",
+        "verse_key": "9:31",
+        "verse_text": "اتَّخَذُوا أَحْبَارَهُمْ وَرُهْبَانَهُمْ أَرْبَابًا مِنْ دُونِ اللَّهِ وَالْمَسِيحَ ابْنَ مَرْيَمَ وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا إِلَـٰهًا وَاحِدًا ۖ لَا إِلَـٰهَ إِلَّا هُوَ ۚ سُبْحَانَهُ عَمَّا يُشْرِكُونَ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 159,
+        "end_offset": 167,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "9:129:d03",
+        "packet_id": "allah-names-v1-s009-c03-a101-129",
+        "verse_key": "9:129",
+        "verse_text": "فَإِنْ تَوَلَّوْا فَقُلْ حَسْبِيَ اللَّهُ لَا إِلَـٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 46,
+        "end_offset": 54,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "11:14:d02",
+        "packet_id": "allah-names-v1-s011-c01-a001-050",
+        "verse_key": "11:14",
+        "verse_text": "فَإِلَّمْ يَسْتَجِيبُوا لَكُمْ فَاعْلَمُوا أَنَّمَا أُنْزِلَ بِعِلْمِ اللَّهِ وَأَنْ لَا إِلَـٰهَ إِلَّا هُوَ ۖ فَهَلْ أَنْتُمْ مُسْلِمُونَ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 89,
+        "end_offset": 97,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "11:50:d02",
+        "packet_id": "allah-names-v1-s011-c01-a001-050",
+        "verse_key": "11:50",
+        "verse_text": "وَإِلَىٰ عَادٍ أَخَاهُمْ هُودًا ۚ قَالَ يَا قَوْمِ اعْبُدُوا اللَّهَ مَا لَكُمْ مِنْ إِلَـٰهٍ غَيْرُهُ ۖ إِنْ أَنْتُمْ إِلَّا مُفْتَرُونَ",
+        "surface_arabic": "إِلَـٰهٍ",
+        "start_offset": 85,
+        "end_offset": 93,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "21:87:d01",
+        "packet_id": "allah-names-v1-s021-c02-a051-100",
+        "verse_key": "21:87",
+        "verse_text": "وَذَا النُّونِ إِذْ ذَهَبَ مُغَاضِبًا فَظَنَّ أَنْ لَنْ نَقْدِرَ عَلَيْهِ فَنَادَىٰ فِي الظُّلُمَاتِ أَنْ لَا إِلَـٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 110,
+        "end_offset": 118,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "28:70:d02",
+        "packet_id": "allah-names-v1-s028-c02-a051-088",
+        "verse_key": "28:70",
+        "verse_text": "وَهُوَ اللَّهُ لَا إِلَـٰهَ إِلَّا هُوَ ۖ لَهُ الْحَمْدُ فِي الْأُولَىٰ وَالْآخِرَةِ ۖ وَلَهُ الْحُكْمُ وَإِلَيْهِ تُرْجَعُونَ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 19,
+        "end_offset": 27,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "28:88:d02",
+        "packet_id": "allah-names-v1-s028-c02-a051-088",
+        "verse_key": "28:88",
+        "verse_text": "وَلَا تَدْعُ مَعَ اللَّهِ إِلَـٰهًا آخَرَ ۘ لَا إِلَـٰهَ إِلَّا هُوَ ۚ كُلُّ شَيْءٍ هَالِكٌ إِلَّا وَجْهَهُ ۚ لَهُ الْحُكْمُ وَإِلَيْهِ تُرْجَعُونَ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 48,
+        "end_offset": 56,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "35:3:d04",
+        "packet_id": "allah-names-v1-s035-c01-a001-045",
+        "verse_key": "35:3",
+        "verse_text": "يَا أَيُّهَا النَّاسُ اذْكُرُوا نِعْمَتَ اللَّهِ عَلَيْكُمْ ۚ هَلْ مِنْ خَالِقٍ غَيْرُ اللَّهِ يَرْزُقُكُمْ مِنَ السَّمَاءِ وَالْأَرْضِ ۚ لَا إِلَـٰهَ إِلَّا هُوَ ۖ فَأَنَّىٰ تُؤْفَكُونَ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 142,
+        "end_offset": 150,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "40:62:d04",
+        "packet_id": "allah-names-v1-s040-c02-a051-085",
+        "verse_key": "40:62",
+        "verse_text": "ذَٰلِكُمُ اللَّهُ رَبُّكُمْ خَالِقُ كُلِّ شَيْءٍ لَا إِلَـٰهَ إِلَّا هُوَ ۖ فَأَنَّىٰ تُؤْفَكُونَ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 53,
+        "end_offset": 61,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "40:65:d02",
+        "packet_id": "allah-names-v1-s040-c02-a051-085",
+        "verse_key": "40:65",
+        "verse_text": "هُوَ الْحَيُّ لَا إِلَـٰهَ إِلَّا هُوَ فَادْعُوهُ مُخْلِصِينَ لَهُ الدِّينَ ۗ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 18,
+        "end_offset": 26,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "44:8:d01",
+        "packet_id": "allah-names-v1-s044-c01-a001-050",
+        "verse_key": "44:8",
+        "verse_text": "لَا إِلَـٰهَ إِلَّا هُوَ يُحْيِي وَيُمِيتُ ۖ رَبُّكُمْ وَرَبُّ آبَائِكُمُ الْأَوَّلِينَ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 4,
+        "end_offset": 12,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "59:22:d02",
+        "packet_id": "allah-names-v1-s059-c01-a001-024",
+        "verse_key": "59:22",
+        "verse_text": "هُوَ اللَّهُ الَّذِي لَا إِلَـٰهَ إِلَّا هُوَ ۖ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ ۖ هُوَ الرَّحْمَـٰنُ الرَّحِيمُ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 25,
+        "end_offset": 33,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "59:23:d02",
+        "packet_id": "allah-names-v1-s059-c01-a001-024",
+        "verse_key": "59:23",
+        "verse_text": "هُوَ اللَّهُ الَّذِي لَا إِلَـٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 25,
+        "end_offset": 33,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      },
+      {
+        "occurrence_id": "64:13:d02",
+        "packet_id": "allah-names-v1-s064-c01-a001-018",
+        "verse_key": "64:13",
+        "verse_text": "اللَّهُ لَا إِلَـٰهَ إِلَّا هُوَ ۚ وَعَلَى اللَّهِ فَلْيَتَوَكَّلِ الْمُؤْمِنُونَ",
+        "surface_arabic": "إِلَـٰهَ",
+        "start_offset": 12,
+        "end_offset": 20,
+        "manual_review": false,
+        "lexical_identity_arabic": "إِلَـٰه",
+        "semantic_exclusion_decision_id": "SEMOCC-V2-001",
+        "semantic_exclusion_category": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_rationale": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "semantic_exclusion_scope": "occurrence"
+      }
+    ]
+  },
+  "manual_review_decisions": {
+    "version": "manual-review-decisions-v1-reconciled",
+    "date": "2026-09-22",
+    "source_semantic_version": "semantic_exclusions_v1",
+    "source_counts": {
+      "lexical_identities": 233,
+      "numbered_occurrences": 5067,
+      "exact_surfaces": 415
+    },
+    "status": "RECONCILED_READY_FOR_BUILD",
+    "identity_exclusions_accepted": [
+      {
+        "lexical_identity_arabic": "مُهْلِك الْقُرَىٰ",
+        "occurrence_ids": [
+          "6:131:d02",
+          "28:59:d02",
+          "28:59:d03"
+        ],
+        "reason_code": "NEGATED_OR_CONDITIONED_PREDICATE"
+      },
+      {
+        "lexical_identity_arabic": "وَحْد",
+        "occurrence_ids": [
+          "17:46:d02",
+          "40:84:d02",
+          "60:4:d03"
+        ],
+        "reason_code": "ADVERBIAL_EXCLUSIVITY_NOT_DESCRIPTOR"
+      },
+      {
+        "lexical_identity_arabic": "جَدّ رَبّ",
+        "occurrence_ids": [
+          "72:3:d01"
+        ],
+        "reason_code": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR"
+      },
+      {
+        "lexical_identity_arabic": "كِبْرِيَاء",
+        "occurrence_ids": [
+          "45:37:d01"
+        ],
+        "reason_code": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR"
+      },
+      {
+        "lexical_identity_arabic": "مَثَل الْأَعْلَىٰ",
+        "occurrence_ids": [
+          "16:60:d02"
+        ],
+        "reason_code": "POSSESSED_ABSTRACT_QUALITY_NOT_REFERENTIAL_DESCRIPTOR"
+      },
+      {
+        "lexical_identity_arabic": "مُخْلِف",
+        "occurrence_ids": [
+          "14:47:d02"
+        ],
+        "reason_code": "NEGATED_PREDICATE"
+      },
+      {
+        "lexical_identity_arabic": "مُغَيِّر",
+        "occurrence_ids": [
+          "8:53:d02"
+        ],
+        "reason_code": "NEGATED_OR_CONDITIONED_PREDICATE"
+      },
+      {
+        "lexical_identity_arabic": "مُلْك السَّمَاوَات وَالْأَرْض",
+        "occurrence_ids": [
+          "45:27:d02"
+        ],
+        "reason_code": "POSSESSED_DOMAIN_NOT_REFERENTIAL_DESCRIPTOR"
+      }
+    ],
+    "occurrence_exclusions_accepted": [
+      {
+        "lexical_identity_arabic": "إِلَـٰه",
+        "reason_code": "GENERIC_DEITY_UNDER_NEGATION_NOT_DIRECT_DIVINE_REFERENT",
+        "occurrence_ids": [
+          "2:255:d02",
+          "6:102:d03",
+          "6:106:d02",
+          "7:158:d03",
+          "9:31:d03",
+          "9:129:d03",
+          "11:14:d02",
+          "11:50:d02",
+          "21:87:d01",
+          "28:70:d02",
+          "28:88:d02",
+          "35:3:d04",
+          "40:62:d04",
+          "40:65:d02",
+          "44:8:d01",
+          "59:22:d02",
+          "59:23:d02",
+          "64:13:d02"
+        ],
+        "retain_identity": true,
+        "source_occurrence_count": 38,
+        "retained_occurrence_count_after_change": 20
+      }
+    ],
+    "phrase_boundary_replacements_accepted": [
+      {
+        "old_lexical_identity_arabic": "عَدُوّ",
+        "new_lexical_identity_arabic": "عَدُوّ لِلْكَافِرِينَ",
+        "occurrence_id": "2:98:d03",
+        "verse_key": "2:98",
+        "old_surface_arabic": "عَدُوٌّ",
+        "new_surface_arabic": "عَدُوٌّ لِلْكَافِرِينَ",
+        "display_gloss": "Enemy to the disbelievers",
+        "reason_code": "PHRASE_BOUNDARY_EXPANSION"
+      },
+      {
+        "old_lexical_identity_arabic": "أَوْفَىٰ",
+        "new_lexical_identity_arabic": "أَوْفَىٰ بِعَهْدِهِ",
+        "occurrence_id": "9:111:d03",
+        "verse_key": "9:111",
+        "old_surface_arabic": "أَوْفَىٰ",
+        "new_surface_arabic": "أَوْفَىٰ بِعَهْدِهِ",
+        "reason_code": "PHRASE_BOUNDARY_EXPANSION"
+      }
+    ],
+    "reviewed_and_retained": [
+      {
+        "lexical_identity_arabic": "مُهْلِك",
+        "occurrence_ids": [
+          "7:164:d02",
+          "17:58:d01"
+        ],
+        "reason_code": "EXPLICIT_DIVINE_PARTICIPLE",
+        "rationale": "17:58 directly predicates نحن مهلكوها; 7:164 reports الله مهلكهم. Retained under the project's explicit-eventive-participle rule."
+      },
+      {
+        "lexical_identity_arabic": "آخِذ",
+        "occurrence_ids": [
+          "11:56:d04"
+        ]
+      },
+      {
+        "lexical_identity_arabic": "بَرِيء",
+        "occurrence_ids": [
+          "9:3:d03"
+        ]
+      },
+      {
+        "lexical_identity_arabic": "زَارِع",
+        "occurrence_ids": [
+          "56:64:d01"
+        ]
+      },
+      {
+        "lexical_identity_arabic": "كَفِيل",
+        "occurrence_ids": [
+          "16:91:d03"
+        ]
+      },
+      {
+        "lexical_identity_arabic": "مَاهِد",
+        "occurrence_ids": [
+          "51:48:d01"
+        ]
+      },
+      {
+        "lexical_identity_arabic": "مُبْرِم",
+        "occurrence_ids": [
+          "43:79:d01"
+        ]
+      },
+      {
+        "lexical_identity_arabic": "مُتَوَفِّي",
+        "occurrence_ids": [
+          "3:55:d02"
+        ]
+      },
+      {
+        "lexical_identity_arabic": "مُنْشِئ",
+        "occurrence_ids": [
+          "56:72:d01"
+        ]
+      }
+    ],
+    "addition_decisions": [
+      {
+        "existing_identity": "فَاطِر السَّمَاوَات وَالْأَرْض",
+        "proposed_standalone_identity": "فَاطِر",
+        "decision": "REJECT_DUPLICATE_IDENTITY",
+        "implementation_note": "Expose Fāṭir later through constituent linkage; do not create a second semantic identity."
+      },
+      {
+        "existing_identity": "خَيْر الْحَاكِمِين",
+        "proposed_standalone_identity": "حَاكِم",
+        "decision": "REJECT_NO_INDEPENDENT_DIVINE_IDENTITY",
+        "implementation_note": "Do not add. Existing حَكَم at 6:114 is already present and retained."
+      },
+      {
+        "existing_identity": "بَدِيع السَّمَاوَات وَالْأَرْض",
+        "proposed_standalone_identity": "بَدِيع",
+        "decision": "REJECT_DUPLICATE_IDENTITY",
+        "implementation_note": "Expose Badīʿ later through constituent linkage; do not create a second semantic identity."
+      },
+      {
+        "existing_identity": "ذُو الْعَرْش",
+        "proposed_identity": "ذُو الْعَرْش الْمَجِيد",
+        "decision": "REJECT_MERGED_IDENTITY",
+        "implementation_note": "Retain ذُو الْعَرْش and مَجِيد as separate identities; مَجِيد already includes 85:15."
+      }
+    ],
+    "translation_updates_accepted": [
+      {
+        "lexical_identity_arabic": "أَهْل الْمَغْفِرَة",
+        "new_display_gloss": "Worthy / fit to forgive"
+      },
+      {
+        "lexical_identity_arabic": "خَادِع",
+        "new_display_gloss": "One who outwits"
+      },
+      {
+        "lexical_identity_arabic": "خَيْر الْمُنْزِلِين",
+        "new_display_gloss": "Best of those who grant a place to settle"
+      }
+    ],
+    "verification_notes": {
+      "حَكَم": {
+        "status": "ALREADY_PRESENT",
+        "occurrence_id": "6:114:d02"
+      },
+      "مَجِيد": {
+        "status": "ALREADY_INCLUDES_85_15",
+        "occurrence_ids": [
+          "11:73:d04",
+          "85:15:d02"
+        ]
+      }
+    },
+    "expected_semantic_v2_counts_before_surface_reconciliation": {
+      "lexical_identities": 225,
+      "numbered_occurrences": 5037,
+      "calculation": "233 - 8 identities; 5067 - 12 identity-level occurrences - 18 Ilah occurrences"
+    }
+  }
+}

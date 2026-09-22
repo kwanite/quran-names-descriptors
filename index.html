@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A Quran-only, text-first corpus of names and explicit descriptors used for Allah in the Quran, built without using the traditional 99 Names as a seed.">
+  <title>Names & Descriptors of Allah in the Quran — Quran-only corpus</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div id="loading" class="loading">
+    <strong>Loading publication corpus…</strong>
+    <div class="small">225 reviewed lexical identities · publication v1</div>
+  </div>
+
+  <div id="app" class="app" hidden>
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-head">
+        <div class="eyebrow">Quran-only · text-first corpus</div>
+        <h1>Names &amp; Descriptors of Allah in the Quran</h1>
+        <div class="small">225 reviewed identities · 5,373 combined occurrences</div>
+        <button id="closeSidebar" class="btn mobile-only sidebar-close" type="button">Close</button>
+      </div>
+
+      <div class="sidebar-controls">
+        <label class="control-label" for="search">Search</label>
+        <input id="search" class="search" type="search"
+          placeholder="Try rahman, rahim, alim, Arabic, or an English meaning…" autocomplete="off">
+
+        <label class="control-label" for="typeFilter">Type</label>
+        <select id="typeFilter" class="select">
+          <option value="all">All descriptors</option>
+          <option value="one">One-word only</option>
+          <option value="multi">Multiword only</option>
+        </select>
+      </div>
+
+      <div class="list-meta">
+        <span>Publication v1</span>
+        <span id="listCount">225</span>
+      </div>
+
+      <nav id="descriptorList" class="descriptor-list" aria-label="Descriptors"></nav>
+
+    </aside>
+
+    <main class="main">
+      <div class="mobile-bar">
+        <button id="openSidebar" class="btn mobile-only" type="button">Browse descriptors</button>
+        <div class="mobile-brand">Names &amp; Descriptors in the Quran</div>
+      </div>
+
+      <div id="detail" class="detail">
+        <div class="empty-state">Select a descriptor to inspect its Quran evidence.</div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./assets/app.js" defer></script>
+</body>
+</html>

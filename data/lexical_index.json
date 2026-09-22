@@ -1,0 +1,3363 @@
+{
+  "version": "publication-v1",
+  "source_licenses": {
+    "project_owned_material": {
+      "license": "GPL-3.0-only",
+      "scope": "Project-authored code, documentation, compilation/arrangement, and original human/AI-assisted synthesis to the extent rights are held by the project."
+    },
+    "tanzil_quran_text": {
+      "license": "CC-BY-3.0",
+      "copyright": "Copyright (C) 2007-2021 Tanzil Project",
+      "terms_url": "https://tanzil.net/docs/Text_License",
+      "requirements": [
+        "Quran text must remain verbatim; changing it is not allowed.",
+        "Clearly attribute Tanzil Project and link to tanzil.net.",
+        "Reproduce the Tanzil notice appropriately in files derived from or containing a substantial portion of the Quran text."
+      ]
+    },
+    "quranic_arabic_corpus": {
+      "source": "Quranic Arabic Corpus version 0.4 morphology/annotations",
+      "download_page_license": "GNU GPL",
+      "terms_url": "https://corpus.quran.com/download/",
+      "faq_url": "https://corpus.quran.com/faq.jsp",
+      "caveat": "QAC public pages are not fully internally consistent: the download page states GNU GPL while the FAQ describes research/non-commercial use. This release does not represent QAC-derived fields as cleared for unrestricted commercial reuse."
+    },
+    "quran_foundation": {
+      "included_in_publication_data": false,
+      "note": "Raw Quran Foundation/Quran.com API content is not included in publication data. Project-derived transliterations/glosses are separate project metadata."
+    }
+  },
+  "identity_order": [
+    "اللَّه",
+    "رَبّ",
+    "عَلِيم",
+    "رَحِيم",
+    "حَكِيم",
+    "غَفُور",
+    "عَزِيز",
+    "رَحْمَـٰن",
+    "أَعْلَم",
+    "قَدِير",
+    "خَبِير",
+    "سَمِيع",
+    "بَصِير",
+    "رَبّ الْعَالَمِين",
+    "إِلَـٰه",
+    "شَهِيد",
+    "غَنِيّ",
+    "حَمِيد",
+    "وَاحِد",
+    "شَدِيد الْعِقَاب",
+    "وَكِيل",
+    "قَادِر",
+    "مَوْلَىٰ",
+    "تَوَّاب",
+    "حَلِيم",
+    "وَلِيّ",
+    "رَءُوف",
+    "عَالِم الْغَيْب وَالشَّهَادَة",
+    "حَقّ",
+    "قَوِيّ",
+    "سَرِيع الْحِسَاب",
+    "عَلِيّ",
+    "مُحِيط",
+    "وَاسِع",
+    "إِلَـٰه وَاحِد",
+    "ذُو الْفَضْل الْعَظِيم",
+    "لَطِيف",
+    "حَسْب",
+    "ذُو فَضْل",
+    "رَبّ السَّمَاوَات وَالْأَرْض وَمَا بَيْنَهُمَا",
+    "عَظِيم",
+    "فَاطِر السَّمَاوَات وَالْأَرْض",
+    "قَهَّار",
+    "كَبِير",
+    "حَيّ",
+    "خَالِق",
+    "خَيْر الرَّازِقِين",
+    "رَبّ السَّمَاوَات وَالْأَرْض",
+    "عَفُوّ",
+    "غَفَّار",
+    "أَحَقّ",
+    "أَرْحَم الرَّاحِمِين",
+    "خَالِق كُلّ شَيْء",
+    "خَيْر",
+    "ذُو انْتِقَام",
+    "شَكُور",
+    "عَلَّام الْغُيُوب",
+    "مَلِك",
+    "مُعَذِّب",
+    "مُقْتَدِر",
+    "نَصِير",
+    "بَارِئ",
+    "حَسِيب",
+    "حَفِيظ",
+    "خَيْر الْحَاكِمِين",
+    "ذُو الْعَرْش",
+    "رَبّ آبَاء الْأَوَّلِين",
+    "رَبّ الْعَرْش الْعَظِيم",
+    "رَقِيب",
+    "قَرِيب",
+    "قَيُّوم",
+    "مُرْسِل",
+    "مُنْتَقِم",
+    "وَهَّاب",
+    "أَحْسَن الْخَالِقِين",
+    "أَحْكَم الْحَاكِمِين",
+    "أَعْلَىٰ",
+    "أَقْرَب",
+    "بَدِيع السَّمَاوَات وَالْأَرْض",
+    "حَافِظ",
+    "خَلَّاق",
+    "خَيْر الرَّاحِمِين",
+    "خَيْر الْمَاكِرِين",
+    "ذُو الرَّحْمَة",
+    "ذُو الْجَلَال وَالْإِكْرَام",
+    "ذُو مَغْفِرَة",
+    "رَبّ الْعَرْش",
+    "سَرِيع الْعِقَاب",
+    "سَمِيع الدُّعَاء",
+    "شَاكِر",
+    "شَاهِد",
+    "عَالِم",
+    "عَالِم الْغَيْب",
+    "قَائِم",
+    "قَاهِر",
+    "قُدُّوس",
+    "كَاشِف",
+    "كَرِيم",
+    "مَجِيد",
+    "مَنْ فِي السَّمَاء",
+    "مُبْتَلِي",
+    "مُجِيب",
+    "مُحْيِي الْمَوْتَىٰ",
+    "مُخْرِج",
+    "مُسْتَعَان",
+    "مُهْلِك",
+    "هَادِي",
+    "وَارِث",
+    "وَدُود",
+    "آخِذ",
+    "آخِر",
+    "أَبْقَىٰ",
+    "أَحَد",
+    "أَسْرَع الْحَاسِبِين",
+    "أَسْرَع مَكْر",
+    "أَشَدّ",
+    "أَشَدّ بَأْس",
+    "أَشَدّ تَنْكِيل",
+    "أَكْرَم",
+    "أَهْل التَّقْوَىٰ",
+    "أَهْل الْمَغْفِرَة",
+    "أَوَّل",
+    "أَوْفَىٰ بِعَهْدِهِ",
+    "أَوْلَىٰ",
+    "إِلَـٰه آبَاء",
+    "إِلَـٰه النَّاس",
+    "الَّذِي بِيَدِهِ الْمُلْك",
+    "الَّذِي لَهُ مُلْك السَّمَاوَات وَالْأَرْض",
+    "بَاطِن",
+    "بَالِغ أَمْر",
+    "بَرِيء",
+    "بَرّ",
+    "جَاعِل الْمَلَائِكَة رُسُل",
+    "جَامِع النَّاس",
+    "جَامِع الْمُنَافِقِين وَالْكَافِرِين",
+    "جَبَّار",
+    "حَاسِب",
+    "حَفِيّ",
+    "حَقّ مُبِين",
+    "حَكَم",
+    "خَادِع",
+    "خَيْر النَّاصِرِين",
+    "خَيْر الْغَافِرِين",
+    "خَيْر الْفَاتِحِين",
+    "خَيْر الْفَاصِلِين",
+    "خَيْر الْمُنْزِلِين",
+    "خَيْر الْوَارِثِين",
+    "خَيْر حَافِظ",
+    "ذُو الطَّوْل",
+    "ذُو الْقُوَّة",
+    "ذُو الْمَعَارِج",
+    "ذُو رَحْمَة وَاسِعَة",
+    "ذُو عِقَاب أَلِيم",
+    "رَادّ",
+    "رَافِع",
+    "رَبّ السَّمَاء وَالْأَرْض",
+    "رَبّ السَّمَاوَات",
+    "رَبّ السَّمَاوَات السَّبْع",
+    "رَبّ الشِّعْرَىٰ",
+    "رَبّ النَّاس",
+    "رَبّ الْأَرْض",
+    "رَبّ الْعَرْش الْكَرِيم",
+    "رَبّ الْعِزَّة",
+    "رَبّ الْفَلَق",
+    "رَبّ الْمَشَارِق",
+    "رَبّ الْمَشَارِق وَالْمَغَارِب",
+    "رَبّ الْمَشْرِق وَالْمَغْرِب",
+    "رَبّ الْمَشْرِق وَالْمَغْرِب وَمَا بَيْنَهُمَا",
+    "رَبّ الْمَشْرِقَيْن",
+    "رَبّ الْمَغْرِبَيْن",
+    "رَبّ كُلّ شَيْء",
+    "رَبّ هَـٰذَا الْبَيْت",
+    "رَبّ هَـٰذِهِ الْبَلْدَة",
+    "رَزَّاق",
+    "رَفِيع الدَّرَجَات",
+    "زَارِع",
+    "سَلَام",
+    "شَدِيد الْعَذَاب",
+    "شَدِيد الْمِحَال",
+    "صَادِق",
+    "صَمَد",
+    "ظَاهِر",
+    "عَالِم غَيْب السَّمَاوَات وَالْأَرْض",
+    "عَدُوّ لِلْكَافِرِينَ",
+    "غَافِر الذَّنْب",
+    "غَالِب",
+    "فَالِق الْإِصْبَاح",
+    "فَالِق الْحَبّ وَالنَّوَىٰ",
+    "فَتَّاح",
+    "قَابِل التَّوْب",
+    "كَاتِب",
+    "كَاشِف الْعَذَاب",
+    "كَافِي",
+    "كَفِيل",
+    "مَالِك الْمُلْك",
+    "مَالِك يَوْم الدِّين",
+    "مَاهِد",
+    "مَتِين",
+    "مَلِك النَّاس",
+    "مَلِيك",
+    "مُؤْمِن",
+    "مُبْدِي",
+    "مُبْرِم",
+    "مُتَعَالِي",
+    "مُتَكَبِّر",
+    "مُتَوَفِّي",
+    "مُتِمّ نُور",
+    "مُخْرِج الْمَيِّت مِنَ الْحَيّ",
+    "مُخْزِي الْكَافِرِين",
+    "مُسْتَمِع",
+    "مُصَوِّر",
+    "مُطَهِّر",
+    "مُقِيت",
+    "مُمِدّ",
+    "مُنَزِّل",
+    "مُنْذِر",
+    "مُنْزِل",
+    "مُنْشِئ",
+    "مُهَيْمِن",
+    "مُوسِع",
+    "مُوهِن كَيْد الْكَافِرِين",
+    "نُور السَّمَاوَات وَالْأَرْض",
+    "وَاسِع الْمَغْفِرَة",
+    "وَلِيّ الْمُؤْمِنِين",
+    "وَلِيّ الْمُتَّقِين"
+  ],
+  "by_identity": {
+    "اللَّه": {
+      "lexical_identity_arabic": "اللَّه",
+      "preferred_quran_surface": "اللَّهِ",
+      "numbered_occurrence_count": 2704,
+      "basmala_occurrence_count": 112,
+      "combined_occurrence_count": 2816,
+      "exact_numbered_surface_count": 6,
+      "numbered_member_surfaces": [
+        "اللَّهِ",
+        "لِلَّهِ",
+        "اللَّهُ",
+        "اللَّهَ",
+        "اللَّهُمَّ",
+        "آللَّهُ"
+      ],
+      "transliteration": "Allāh",
+      "english_gloss": "Allah"
+    },
+    "رَبّ": {
+      "lexical_identity_arabic": "رَبّ",
+      "preferred_quran_surface": "رَبِّكَ",
+      "numbered_occurrence_count": 871,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 871,
+      "exact_numbered_surface_count": 33,
+      "numbered_member_surfaces": [
+        "رَبِّهِمْ",
+        "رَبَّكُمُ",
+        "رَبُّكَ",
+        "رَبِّهِ",
+        "رَبِّكُمْ",
+        "رَبَّكَ",
+        "رَبُّهُ",
+        "رَبِّ",
+        "رَبَّنَا",
+        "رَبُّنَا",
+        "رَبُّكُمْ",
+        "رَبِّكَ",
+        "رَبِّيَ",
+        "رَبَّهُ",
+        "رَبِّنَا",
+        "رَبُّهَا",
+        "رَبِّكِ",
+        "رَبِّي",
+        "رَبُّهُمْ",
+        "رَبَّهُمْ",
+        "رَبَّكُمْ",
+        "رَبًّا",
+        "رَبُّكُمَا",
+        "رَبُّهُمَا",
+        "رَبَّهُمَا",
+        "رَبُّكُمُ",
+        "رَبِّهِمُ",
+        "رَبِّهَا",
+        "رَبُّكِ",
+        "لِرَبِّهِمْ",
+        "رَبٌّ",
+        "رَبٍّ",
+        "رَبِّكُمَا"
+      ],
+      "transliteration": "Rabb",
+      "english_gloss": "Lord"
+    },
+    "عَلِيم": {
+      "lexical_identity_arabic": "عَلِيم",
+      "preferred_quran_surface": "عَلِيمٌ",
+      "numbered_occurrence_count": 153,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 153,
+      "exact_numbered_surface_count": 5,
+      "numbered_member_surfaces": [
+        "عَلِيمٌ",
+        "الْعَلِيمُ",
+        "عَلِيمًا",
+        "الْعَلِيمِ",
+        "عَلِيمٍ"
+      ],
+      "transliteration": "ʿAlīm",
+      "english_gloss": "All-Knowing / knowing"
+    },
+    "رَحِيم": {
+      "lexical_identity_arabic": "رَحِيم",
+      "preferred_quran_surface": "رَحِيمٌ",
+      "numbered_occurrence_count": 114,
+      "basmala_occurrence_count": 112,
+      "combined_occurrence_count": 226,
+      "exact_numbered_surface_count": 5,
+      "numbered_member_surfaces": [
+        "الرَّحِيمِ",
+        "الرَّحِيمُ",
+        "رَحِيمٌ",
+        "رَحِيمًا",
+        "رَحِيمٍ"
+      ],
+      "transliteration": "Raḥīm",
+      "english_gloss": "Merciful"
+    },
+    "حَكِيم": {
+      "lexical_identity_arabic": "حَكِيم",
+      "preferred_quran_surface": "حَكِيمٌ",
+      "numbered_occurrence_count": 91,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 91,
+      "exact_numbered_surface_count": 5,
+      "numbered_member_surfaces": [
+        "الْحَكِيمُ",
+        "حَكِيمٌ",
+        "الْحَكِيمِ",
+        "حَكِيمًا",
+        "حَكِيمٍ"
+      ],
+      "transliteration": "Ḥakīm",
+      "english_gloss": "Wise"
+    },
+    "غَفُور": {
+      "lexical_identity_arabic": "غَفُور",
+      "preferred_quran_surface": "غَفُورٌ",
+      "numbered_occurrence_count": 91,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 91,
+      "exact_numbered_surface_count": 4,
+      "numbered_member_surfaces": [
+        "غَفُورٌ",
+        "غَفُورًا",
+        "الْغَفُورُ",
+        "غَفُورٍ"
+      ],
+      "transliteration": "Ghafūr",
+      "english_gloss": "All-Forgiving / forgiving"
+    },
+    "عَزِيز": {
+      "lexical_identity_arabic": "عَزِيز",
+      "preferred_quran_surface": "الْعَزِيزُ",
+      "numbered_occurrence_count": 88,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 88,
+      "exact_numbered_surface_count": 5,
+      "numbered_member_surfaces": [
+        "الْعَزِيزُ",
+        "عَزِيزٌ",
+        "الْعَزِيزِ",
+        "عَزِيزًا",
+        "عَزِيزٍ"
+      ],
+      "transliteration": "ʿAzīz",
+      "english_gloss": "Mighty / Exalted in might"
+    },
+    "رَحْمَـٰن": {
+      "lexical_identity_arabic": "رَحْمَـٰن",
+      "preferred_quran_surface": "الرَّحْمَـٰنِ",
+      "numbered_occurrence_count": 57,
+      "basmala_occurrence_count": 112,
+      "combined_occurrence_count": 169,
+      "exact_numbered_surface_count": 4,
+      "numbered_member_surfaces": [
+        "الرَّحْمَـٰنِ",
+        "الرَّحْمَـٰنُ",
+        "الرَّحْمَـٰنَ",
+        "لِلرَّحْمَـٰنِ"
+      ],
+      "transliteration": "Raḥmān",
+      "english_gloss": "Most Merciful / All-Merciful"
+    },
+    "أَعْلَم": {
+      "lexical_identity_arabic": "أَعْلَم",
+      "preferred_quran_surface": "أَعْلَمُ",
+      "numbered_occurrence_count": 47,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 47,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "أَعْلَمُ",
+        "أَعْلَمَ"
+      ],
+      "transliteration": "Aʿlam",
+      "english_gloss": "Most knowing / knows best"
+    },
+    "قَدِير": {
+      "lexical_identity_arabic": "قَدِير",
+      "preferred_quran_surface": "قَدِيرٌ",
+      "numbered_occurrence_count": 45,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 45,
+      "exact_numbered_surface_count": 3,
+      "numbered_member_surfaces": [
+        "قَدِيرٌ",
+        "قَدِيرًا",
+        "الْقَدِيرُ"
+      ],
+      "transliteration": "Qadīr",
+      "english_gloss": "All-Powerful / fully capable"
+    },
+    "خَبِير": {
+      "lexical_identity_arabic": "خَبِير",
+      "preferred_quran_surface": "خَبِيرٌ",
+      "numbered_occurrence_count": 44,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 44,
+      "exact_numbered_surface_count": 4,
+      "numbered_member_surfaces": [
+        "خَبِيرٌ",
+        "خَبِيرًا",
+        "الْخَبِيرُ",
+        "خَبِيرٍ"
+      ],
+      "transliteration": "Khabīr",
+      "english_gloss": "All-Aware"
+    },
+    "سَمِيع": {
+      "lexical_identity_arabic": "سَمِيع",
+      "preferred_quran_surface": "سَمِيعٌ",
+      "numbered_occurrence_count": 43,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 43,
+      "exact_numbered_surface_count": 3,
+      "numbered_member_surfaces": [
+        "السَّمِيعُ",
+        "سَمِيعٌ",
+        "سَمِيعًا"
+      ],
+      "transliteration": "Samīʿ",
+      "english_gloss": "All-Hearing"
+    },
+    "بَصِير": {
+      "lexical_identity_arabic": "بَصِير",
+      "preferred_quran_surface": "بَصِيرٌ",
+      "numbered_occurrence_count": 42,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 42,
+      "exact_numbered_surface_count": 3,
+      "numbered_member_surfaces": [
+        "بَصِيرٌ",
+        "بَصِيرًا",
+        "الْبَصِيرُ"
+      ],
+      "transliteration": "Baṣīr",
+      "english_gloss": "All-Seeing"
+    },
+    "رَبّ الْعَالَمِين": {
+      "lexical_identity_arabic": "رَبّ الْعَالَمِين",
+      "preferred_quran_surface": "رَبِّ الْعَالَمِينَ",
+      "numbered_occurrence_count": 42,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 42,
+      "exact_numbered_surface_count": 3,
+      "numbered_member_surfaces": [
+        "رَبِّ الْعَالَمِينَ",
+        "رَبَّ الْعَالَمِينَ",
+        "رَبُّ الْعَالَمِينَ"
+      ],
+      "transliteration": "Rabb al-ʿālamīn",
+      "english_gloss": "Lord of the worlds"
+    },
+    "إِلَـٰه": {
+      "lexical_identity_arabic": "إِلَـٰه",
+      "preferred_quran_surface": "إِلَـٰهٌ",
+      "numbered_occurrence_count": 20,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 20,
+      "exact_numbered_surface_count": 6,
+      "numbered_member_surfaces": [
+        "إِلَـٰهَكَ",
+        "إِلَـٰهُكُمْ",
+        "إِلَـٰهٌ",
+        "إِلَـٰهُكُمُ",
+        "إِلَـٰهُنَا",
+        "إِلَـٰهَكُمْ"
+      ],
+      "transliteration": "Ilāh",
+      "english_gloss": "God / deity"
+    },
+    "شَهِيد": {
+      "lexical_identity_arabic": "شَهِيد",
+      "preferred_quran_surface": "شَهِيدًا",
+      "numbered_occurrence_count": 19,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 19,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "شَهِيدٌ",
+        "شَهِيدًا"
+      ],
+      "transliteration": "Shahīd",
+      "english_gloss": "Witness"
+    },
+    "غَنِيّ": {
+      "lexical_identity_arabic": "غَنِيّ",
+      "preferred_quran_surface": "غَنِيٌّ",
+      "numbered_occurrence_count": 18,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 18,
+      "exact_numbered_surface_count": 3,
+      "numbered_member_surfaces": [
+        "غَنِيٌّ",
+        "غَنِيًّا",
+        "الْغَنِيُّ"
+      ],
+      "transliteration": "Ghaniyy",
+      "english_gloss": "Self-Sufficient / free of need"
+    },
+    "حَمِيد": {
+      "lexical_identity_arabic": "حَمِيد",
+      "preferred_quran_surface": "الْحَمِيدُ",
+      "numbered_occurrence_count": 17,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 17,
+      "exact_numbered_surface_count": 5,
+      "numbered_member_surfaces": [
+        "حَمِيدٌ",
+        "حَمِيدًا",
+        "الْحَمِيدِ",
+        "الْحَمِيدُ",
+        "حَمِيدٍ"
+      ],
+      "transliteration": "Ḥamīd",
+      "english_gloss": "Praiseworthy"
+    },
+    "وَاحِد": {
+      "lexical_identity_arabic": "وَاحِد",
+      "preferred_quran_surface": "وَاحِدٌ",
+      "numbered_occurrence_count": 15,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 15,
+      "exact_numbered_surface_count": 4,
+      "numbered_member_surfaces": [
+        "وَاحِدٌ",
+        "الْوَاحِدُ",
+        "الْوَاحِدِ",
+        "لَوَاحِدٌ"
+      ],
+      "transliteration": "Wāḥid",
+      "english_gloss": "One"
+    },
+    "شَدِيد الْعِقَاب": {
+      "lexical_identity_arabic": "شَدِيد الْعِقَاب",
+      "preferred_quran_surface": "شَدِيدُ الْعِقَابِ",
+      "numbered_occurrence_count": 14,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 14,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "شَدِيدُ الْعِقَابِ",
+        "شَدِيدِ الْعِقَابِ"
+      ],
+      "transliteration": "Shadīd al-ʿiqāb",
+      "english_gloss": "Severe in punishment"
+    },
+    "وَكِيل": {
+      "lexical_identity_arabic": "وَكِيل",
+      "preferred_quran_surface": "وَكِيلًا",
+      "numbered_occurrence_count": 13,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 13,
+      "exact_numbered_surface_count": 3,
+      "numbered_member_surfaces": [
+        "الْوَكِيلُ",
+        "وَكِيلًا",
+        "وَكِيلٌ"
+      ],
+      "transliteration": "Wakīl",
+      "english_gloss": "Trustee / disposer of affairs"
+    },
+    "قَادِر": {
+      "lexical_identity_arabic": "قَادِر",
+      "preferred_quran_surface": "قَادِرٌ",
+      "numbered_occurrence_count": 12,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 12,
+      "exact_numbered_surface_count": 6,
+      "numbered_member_surfaces": [
+        "قَادِرٌ",
+        "الْقَادِرُ",
+        "قَادِرُونَ",
+        "قَادِرٍ",
+        "قَادِرِينَ",
+        "الْقَادِرُونَ"
+      ],
+      "transliteration": "Qādir",
+      "english_gloss": "Capable / powerful"
+    },
+    "مَوْلَىٰ": {
+      "lexical_identity_arabic": "مَوْلَىٰ",
+      "preferred_quran_surface": "مَوْلَاكُمْ",
+      "numbered_occurrence_count": 12,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 12,
+      "exact_numbered_surface_count": 6,
+      "numbered_member_surfaces": [
+        "مَوْلَانَا",
+        "مَوْلَاكُمْ",
+        "مَوْلَاهُمُ",
+        "الْمَوْلَىٰ",
+        "مَوْلَى",
+        "مَوْلَاهُ"
+      ],
+      "transliteration": "Mawlā",
+      "english_gloss": "Protector / master"
+    },
+    "تَوَّاب": {
+      "lexical_identity_arabic": "تَوَّاب",
+      "preferred_quran_surface": "التَّوَّابُ",
+      "numbered_occurrence_count": 11,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 11,
+      "exact_numbered_surface_count": 3,
+      "numbered_member_surfaces": [
+        "التَّوَّابُ",
+        "تَوَّابًا",
+        "تَوَّابٌ"
+      ],
+      "transliteration": "Tawwāb",
+      "english_gloss": "Accepter of repentance / ever-relenting"
+    },
+    "حَلِيم": {
+      "lexical_identity_arabic": "حَلِيم",
+      "preferred_quran_surface": "حَلِيمٌ",
+      "numbered_occurrence_count": 11,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 11,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "حَلِيمٌ",
+        "حَلِيمًا"
+      ],
+      "transliteration": "Ḥalīm",
+      "english_gloss": "Forbearing"
+    },
+    "وَلِيّ": {
+      "lexical_identity_arabic": "وَلِيّ",
+      "preferred_quran_surface": "وَلِيُّنَا",
+      "numbered_occurrence_count": 11,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 11,
+      "exact_numbered_surface_count": 9,
+      "numbered_member_surfaces": [
+        "وَلِيُّ",
+        "وَلِيُّهُمَا",
+        "وَلِيًّا",
+        "وَلِيُّكُمُ",
+        "وَلِيُّهُمْ",
+        "وَلِيُّنَا",
+        "وَلِيِّيَ",
+        "وَلِيِّي",
+        "الْوَلِيُّ"
+      ],
+      "transliteration": "Waliyy",
+      "english_gloss": "Protector / ally"
+    },
+    "رَءُوف": {
+      "lexical_identity_arabic": "رَءُوف",
+      "preferred_quran_surface": "رَءُوفٌ",
+      "numbered_occurrence_count": 10,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 10,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَءُوفٌ"
+      ],
+      "transliteration": "Raʾūf",
+      "english_gloss": "Compassionate / kind"
+    },
+    "عَالِم الْغَيْب وَالشَّهَادَة": {
+      "lexical_identity_arabic": "عَالِم الْغَيْب وَالشَّهَادَة",
+      "preferred_quran_surface": "عَالِمُ الْغَيْبِ وَالشَّهَادَةِ",
+      "numbered_occurrence_count": 10,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 10,
+      "exact_numbered_surface_count": 3,
+      "numbered_member_surfaces": [
+        "عَالِمُ الْغَيْبِ وَالشَّهَادَةِ",
+        "عَالِمِ الْغَيْبِ وَالشَّهَادَةِ",
+        "عَالِمَ الْغَيْبِ وَالشَّهَادَةِ"
+      ],
+      "transliteration": "ʿĀlim al-ghayb wa-al-shahāda",
+      "english_gloss": "Knower of the unseen and the witnessed"
+    },
+    "حَقّ": {
+      "lexical_identity_arabic": "حَقّ",
+      "preferred_quran_surface": "الْحَقُّ",
+      "numbered_occurrence_count": 9,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 9,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "الْحَقِّ",
+        "الْحَقُّ"
+      ],
+      "transliteration": "Ḥaqq",
+      "english_gloss": "True / the Truth"
+    },
+    "قَوِيّ": {
+      "lexical_identity_arabic": "قَوِيّ",
+      "preferred_quran_surface": "قَوِيٌّ",
+      "numbered_occurrence_count": 9,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 9,
+      "exact_numbered_surface_count": 3,
+      "numbered_member_surfaces": [
+        "قَوِيٌّ",
+        "الْقَوِيُّ",
+        "قَوِيًّا"
+      ],
+      "transliteration": "Qawiyy",
+      "english_gloss": "Strong"
+    },
+    "سَرِيع الْحِسَاب": {
+      "lexical_identity_arabic": "سَرِيع الْحِسَاب",
+      "preferred_quran_surface": "سَرِيعُ الْحِسَابِ",
+      "numbered_occurrence_count": 8,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 8,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "سَرِيعُ الْحِسَابِ"
+      ],
+      "transliteration": "Sarīʿ al-ḥisāb",
+      "english_gloss": "Swift in reckoning"
+    },
+    "عَلِيّ": {
+      "lexical_identity_arabic": "عَلِيّ",
+      "preferred_quran_surface": "الْعَلِيُّ",
+      "numbered_occurrence_count": 8,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 8,
+      "exact_numbered_surface_count": 4,
+      "numbered_member_surfaces": [
+        "الْعَلِيُّ",
+        "عَلِيًّا",
+        "الْعَلِيِّ",
+        "عَلِيٌّ"
+      ],
+      "transliteration": "ʿAliyy",
+      "english_gloss": "High / Exalted"
+    },
+    "مُحِيط": {
+      "lexical_identity_arabic": "مُحِيط",
+      "preferred_quran_surface": "مُحِيطٌ",
+      "numbered_occurrence_count": 8,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 8,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "مُحِيطٌ",
+        "مُحِيطًا"
+      ],
+      "transliteration": "Muḥīṭ",
+      "english_gloss": "Encompassing"
+    },
+    "وَاسِع": {
+      "lexical_identity_arabic": "وَاسِع",
+      "preferred_quran_surface": "وَاسِعٌ",
+      "numbered_occurrence_count": 8,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 8,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "وَاسِعٌ",
+        "وَاسِعًا"
+      ],
+      "transliteration": "Wāsiʿ",
+      "english_gloss": "Vast / all-encompassing"
+    },
+    "إِلَـٰه وَاحِد": {
+      "lexical_identity_arabic": "إِلَـٰه وَاحِد",
+      "preferred_quran_surface": "إِلَـٰهٌ وَاحِدٌ",
+      "numbered_occurrence_count": 7,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 7,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "إِلَـٰهًا وَاحِدًا",
+        "إِلَـٰهٌ وَاحِدٌ"
+      ],
+      "transliteration": "Ilāh wāḥid",
+      "english_gloss": "One God"
+    },
+    "ذُو الْفَضْل الْعَظِيم": {
+      "lexical_identity_arabic": "ذُو الْفَضْل الْعَظِيم",
+      "preferred_quran_surface": "ذُو الْفَضْلِ الْعَظِيمِ",
+      "numbered_occurrence_count": 7,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 7,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "ذُو الْفَضْلِ الْعَظِيمِ",
+        "ذُو فَضْلٍ عَظِيمٍ"
+      ],
+      "transliteration": "Dhū al-faḍl al-ʿaẓīm",
+      "english_gloss": "Possessor of great bounty"
+    },
+    "لَطِيف": {
+      "lexical_identity_arabic": "لَطِيف",
+      "preferred_quran_surface": "لَطِيفٌ",
+      "numbered_occurrence_count": 7,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 7,
+      "exact_numbered_surface_count": 3,
+      "numbered_member_surfaces": [
+        "اللَّطِيفُ",
+        "لَطِيفٌ",
+        "لَطِيفًا"
+      ],
+      "transliteration": "Laṭīf",
+      "english_gloss": "Subtle / Gentle"
+    },
+    "حَسْب": {
+      "lexical_identity_arabic": "حَسْب",
+      "preferred_quran_surface": "حَسْبُنَا",
+      "numbered_occurrence_count": 6,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 6,
+      "exact_numbered_surface_count": 5,
+      "numbered_member_surfaces": [
+        "حَسْبُنَا",
+        "حَسْبَكَ",
+        "حَسْبُكَ",
+        "حَسْبِيَ",
+        "حَسْبُهُ"
+      ],
+      "transliteration": "Ḥasb",
+      "english_gloss": "Sufficient"
+    },
+    "ذُو فَضْل": {
+      "lexical_identity_arabic": "ذُو فَضْل",
+      "preferred_quran_surface": "ذُو فَضْلٍ",
+      "numbered_occurrence_count": 6,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 6,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "ذُو فَضْلٍ"
+      ],
+      "transliteration": "Dhū faḍl",
+      "english_gloss": "Possessor of bounty"
+    },
+    "رَبّ السَّمَاوَات وَالْأَرْض وَمَا بَيْنَهُمَا": {
+      "lexical_identity_arabic": "رَبّ السَّمَاوَات وَالْأَرْض وَمَا بَيْنَهُمَا",
+      "preferred_quran_surface": "رَبُّ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا",
+      "numbered_occurrence_count": 6,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 6,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "رَبُّ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا",
+        "رَبِّ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا"
+      ],
+      "transliteration": "Rabb al-samāwāt wa-al-arḍ wa-mā baynahumā",
+      "english_gloss": "Lord of the heavens and the earth and what is between them"
+    },
+    "عَظِيم": {
+      "lexical_identity_arabic": "عَظِيم",
+      "preferred_quran_surface": "الْعَظِيمِ",
+      "numbered_occurrence_count": 6,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 6,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "الْعَظِيمُ",
+        "الْعَظِيمِ"
+      ],
+      "transliteration": "ʿAẓīm",
+      "english_gloss": "Great / Magnificent"
+    },
+    "فَاطِر السَّمَاوَات وَالْأَرْض": {
+      "lexical_identity_arabic": "فَاطِر السَّمَاوَات وَالْأَرْض",
+      "preferred_quran_surface": "فَاطِرِ السَّمَاوَاتِ وَالْأَرْضِ",
+      "numbered_occurrence_count": 6,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 6,
+      "exact_numbered_surface_count": 3,
+      "numbered_member_surfaces": [
+        "فَاطِرِ السَّمَاوَاتِ وَالْأَرْضِ",
+        "فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ",
+        "فَاطِرُ السَّمَاوَاتِ وَالْأَرْضِ"
+      ],
+      "transliteration": "Fāṭir al-samāwāt wa-al-arḍ",
+      "english_gloss": "Originator of the heavens and the earth"
+    },
+    "قَهَّار": {
+      "lexical_identity_arabic": "قَهَّار",
+      "preferred_quran_surface": "الْقَهَّارُ",
+      "numbered_occurrence_count": 6,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 6,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "الْقَهَّارُ",
+        "الْقَهَّارِ"
+      ],
+      "transliteration": "Qahhār",
+      "english_gloss": "All-Subduing / irresistible"
+    },
+    "كَبِير": {
+      "lexical_identity_arabic": "كَبِير",
+      "preferred_quran_surface": "الْكَبِيرُ",
+      "numbered_occurrence_count": 6,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 6,
+      "exact_numbered_surface_count": 3,
+      "numbered_member_surfaces": [
+        "كَبِيرًا",
+        "الْكَبِيرُ",
+        "الْكَبِيرِ"
+      ],
+      "transliteration": "Kabīr",
+      "english_gloss": "Great / Most Great"
+    },
+    "حَيّ": {
+      "lexical_identity_arabic": "حَيّ",
+      "preferred_quran_surface": "الْحَيُّ",
+      "numbered_occurrence_count": 5,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 5,
+      "exact_numbered_surface_count": 3,
+      "numbered_member_surfaces": [
+        "الْحَيُّ",
+        "لِلْحَيِّ",
+        "الْحَيِّ"
+      ],
+      "transliteration": "Ḥayy",
+      "english_gloss": "Living / Ever-Living"
+    },
+    "خَالِق": {
+      "lexical_identity_arabic": "خَالِق",
+      "preferred_quran_surface": "خَالِقٌ",
+      "numbered_occurrence_count": 5,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 5,
+      "exact_numbered_surface_count": 4,
+      "numbered_member_surfaces": [
+        "خَالِقٌ",
+        "خَالِقٍ",
+        "الْخَالِقُونَ",
+        "الْخَالِقُ"
+      ],
+      "transliteration": "Khāliq",
+      "english_gloss": "Creator"
+    },
+    "خَيْر الرَّازِقِين": {
+      "lexical_identity_arabic": "خَيْر الرَّازِقِين",
+      "preferred_quran_surface": "خَيْرُ الرَّازِقِينَ",
+      "numbered_occurrence_count": 5,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 5,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "خَيْرُ الرَّازِقِينَ"
+      ],
+      "transliteration": "Khayr al-rāziqīn",
+      "english_gloss": "Best of providers"
+    },
+    "رَبّ السَّمَاوَات وَالْأَرْض": {
+      "lexical_identity_arabic": "رَبّ السَّمَاوَات وَالْأَرْض",
+      "preferred_quran_surface": "رَبُّ السَّمَاوَاتِ وَالْأَرْضِ",
+      "numbered_occurrence_count": 5,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 5,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "رَبُّ السَّمَاوَاتِ وَالْأَرْضِ",
+        "رَبِّ السَّمَاوَاتِ وَالْأَرْضِ"
+      ],
+      "transliteration": "Rabb al-samāwāt wa-al-arḍ",
+      "english_gloss": "Lord of the heavens and the earth"
+    },
+    "عَفُوّ": {
+      "lexical_identity_arabic": "عَفُوّ",
+      "preferred_quran_surface": "عَفُوًّا",
+      "numbered_occurrence_count": 5,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 5,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "عَفُوًّا",
+        "عَفُوٌّ"
+      ],
+      "transliteration": "ʿAfuww",
+      "english_gloss": "Pardoning"
+    },
+    "غَفَّار": {
+      "lexical_identity_arabic": "غَفَّار",
+      "preferred_quran_surface": "الْغَفَّارُ",
+      "numbered_occurrence_count": 5,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 5,
+      "exact_numbered_surface_count": 4,
+      "numbered_member_surfaces": [
+        "غَفَّارٌ",
+        "الْغَفَّارُ",
+        "الْغَفَّارِ",
+        "غَفَّارًا"
+      ],
+      "transliteration": "Ghaffār",
+      "english_gloss": "Ever-Forgiving"
+    },
+    "أَحَقّ": {
+      "lexical_identity_arabic": "أَحَقّ",
+      "preferred_quran_surface": "أَحَقُّ",
+      "numbered_occurrence_count": 4,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 4,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "أَحَقُّ"
+      ],
+      "transliteration": "Aḥaqq",
+      "english_gloss": "More worthy / more entitled"
+    },
+    "أَرْحَم الرَّاحِمِين": {
+      "lexical_identity_arabic": "أَرْحَم الرَّاحِمِين",
+      "preferred_quran_surface": "أَرْحَمُ الرَّاحِمِينَ",
+      "numbered_occurrence_count": 4,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 4,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "أَرْحَمُ الرَّاحِمِينَ"
+      ],
+      "transliteration": "Arḥam al-rāḥimīn",
+      "english_gloss": "Most merciful of the merciful"
+    },
+    "خَالِق كُلّ شَيْء": {
+      "lexical_identity_arabic": "خَالِق كُلّ شَيْء",
+      "preferred_quran_surface": "خَالِقُ كُلِّ شَيْءٍ",
+      "numbered_occurrence_count": 4,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 4,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "خَالِقُ كُلِّ شَيْءٍ"
+      ],
+      "transliteration": "Khāliq kull shayʾ",
+      "english_gloss": "Creator of all things"
+    },
+    "خَيْر": {
+      "lexical_identity_arabic": "خَيْر",
+      "preferred_quran_surface": "خَيْرٌ",
+      "numbered_occurrence_count": 4,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 4,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "خَيْرٌ"
+      ],
+      "transliteration": "Khayr",
+      "english_gloss": "Better / best"
+    },
+    "ذُو انْتِقَام": {
+      "lexical_identity_arabic": "ذُو انْتِقَام",
+      "preferred_quran_surface": "ذُو انْتِقَامٍ",
+      "numbered_occurrence_count": 4,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 4,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "ذُو انْتِقَامٍ",
+        "ذِي انْتِقَامٍ"
+      ],
+      "transliteration": "Dhū intiqām",
+      "english_gloss": "Possessor of retribution"
+    },
+    "شَكُور": {
+      "lexical_identity_arabic": "شَكُور",
+      "preferred_quran_surface": "شَكُورٌ",
+      "numbered_occurrence_count": 4,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 4,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "شَكُورٌ"
+      ],
+      "transliteration": "Shakūr",
+      "english_gloss": "Appreciative / richly rewarding"
+    },
+    "عَلَّام الْغُيُوب": {
+      "lexical_identity_arabic": "عَلَّام الْغُيُوب",
+      "preferred_quran_surface": "عَلَّامُ الْغُيُوبِ",
+      "numbered_occurrence_count": 4,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 4,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "عَلَّامُ الْغُيُوبِ"
+      ],
+      "transliteration": "ʿAllām al-ghuyūb",
+      "english_gloss": "Knower of all unseen things"
+    },
+    "مَلِك": {
+      "lexical_identity_arabic": "مَلِك",
+      "preferred_quran_surface": "الْمَلِكُ",
+      "numbered_occurrence_count": 4,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 4,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "الْمَلِكُ",
+        "الْمَلِكِ"
+      ],
+      "transliteration": "Malik",
+      "english_gloss": "King / Sovereign"
+    },
+    "مُعَذِّب": {
+      "lexical_identity_arabic": "مُعَذِّب",
+      "preferred_quran_surface": "مُعَذِّبُهُمْ",
+      "numbered_occurrence_count": 4,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 4,
+      "exact_numbered_surface_count": 4,
+      "numbered_member_surfaces": [
+        "مُعَذِّبُهُمْ",
+        "مُعَذِّبَهُمْ",
+        "مُعَذِّبِينَ",
+        "مُعَذِّبُوهَا"
+      ],
+      "transliteration": "Muʿadhdhib",
+      "english_gloss": "Punisher / one who punishes"
+    },
+    "مُقْتَدِر": {
+      "lexical_identity_arabic": "مُقْتَدِر",
+      "preferred_quran_surface": "مُقْتَدِرٍ",
+      "numbered_occurrence_count": 4,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 4,
+      "exact_numbered_surface_count": 3,
+      "numbered_member_surfaces": [
+        "مُقْتَدِرًا",
+        "مُقْتَدِرُونَ",
+        "مُقْتَدِرٍ"
+      ],
+      "transliteration": "Muqtadir",
+      "english_gloss": "Fully powerful / omnipotent"
+    },
+    "نَصِير": {
+      "lexical_identity_arabic": "نَصِير",
+      "preferred_quran_surface": "نَصِيرًا",
+      "numbered_occurrence_count": 4,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 4,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "نَصِيرًا",
+        "النَّصِيرُ"
+      ],
+      "transliteration": "Naṣīr",
+      "english_gloss": "Helper"
+    },
+    "بَارِئ": {
+      "lexical_identity_arabic": "بَارِئ",
+      "preferred_quran_surface": "بَارِئِكُمْ",
+      "numbered_occurrence_count": 3,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 3,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "بَارِئِكُمْ",
+        "الْبَارِئُ"
+      ],
+      "transliteration": "Bāriʾ",
+      "english_gloss": "Originator / maker"
+    },
+    "حَسِيب": {
+      "lexical_identity_arabic": "حَسِيب",
+      "preferred_quran_surface": "حَسِيبًا",
+      "numbered_occurrence_count": 3,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 3,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "حَسِيبًا"
+      ],
+      "transliteration": "Ḥasīb",
+      "english_gloss": "Reckoner / sufficient"
+    },
+    "حَفِيظ": {
+      "lexical_identity_arabic": "حَفِيظ",
+      "preferred_quran_surface": "حَفِيظٌ",
+      "numbered_occurrence_count": 3,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 3,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "حَفِيظٌ"
+      ],
+      "transliteration": "Ḥafīẓ",
+      "english_gloss": "Guardian / preserver"
+    },
+    "خَيْر الْحَاكِمِين": {
+      "lexical_identity_arabic": "خَيْر الْحَاكِمِين",
+      "preferred_quran_surface": "خَيْرُ الْحَاكِمِينَ",
+      "numbered_occurrence_count": 3,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 3,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "خَيْرُ الْحَاكِمِينَ"
+      ],
+      "transliteration": "Khayr al-ḥākimīn",
+      "english_gloss": "Best of judges"
+    },
+    "ذُو الْعَرْش": {
+      "lexical_identity_arabic": "ذُو الْعَرْش",
+      "preferred_quran_surface": "ذُو الْعَرْشِ",
+      "numbered_occurrence_count": 3,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 3,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "ذِي الْعَرْشِ",
+        "ذُو الْعَرْشِ"
+      ],
+      "transliteration": "Dhū al-ʿarsh",
+      "english_gloss": "Possessor of the Throne"
+    },
+    "رَبّ آبَاء الْأَوَّلِين": {
+      "lexical_identity_arabic": "رَبّ آبَاء الْأَوَّلِين",
+      "preferred_quran_surface": "رَبُّ آبَائِكُمُ الْأَوَّلِينَ",
+      "numbered_occurrence_count": 3,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 3,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "رَبُّ آبَائِكُمُ الْأَوَّلِينَ",
+        "رَبَّ آبَائِكُمُ الْأَوَّلِينَ"
+      ],
+      "transliteration": "Rabb ābāʾ al-awwalīn",
+      "english_gloss": "Lord of the forefathers of old"
+    },
+    "رَبّ الْعَرْش الْعَظِيم": {
+      "lexical_identity_arabic": "رَبّ الْعَرْش الْعَظِيم",
+      "preferred_quran_surface": "رَبُّ الْعَرْشِ الْعَظِيمِ",
+      "numbered_occurrence_count": 3,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 3,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبُّ الْعَرْشِ الْعَظِيمِ"
+      ],
+      "transliteration": "Rabb al-ʿarsh al-ʿaẓīm",
+      "english_gloss": "Lord of the Mighty Throne"
+    },
+    "رَقِيب": {
+      "lexical_identity_arabic": "رَقِيب",
+      "preferred_quran_surface": "رَقِيبًا",
+      "numbered_occurrence_count": 3,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 3,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "رَقِيبًا",
+        "الرَّقِيبَ"
+      ],
+      "transliteration": "Raqīb",
+      "english_gloss": "Watcher / observer"
+    },
+    "قَرِيب": {
+      "lexical_identity_arabic": "قَرِيب",
+      "preferred_quran_surface": "قَرِيبٌ",
+      "numbered_occurrence_count": 3,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 3,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "قَرِيبٌ"
+      ],
+      "transliteration": "Qarīb",
+      "english_gloss": "Near"
+    },
+    "قَيُّوم": {
+      "lexical_identity_arabic": "قَيُّوم",
+      "preferred_quran_surface": "الْقَيُّومُ",
+      "numbered_occurrence_count": 3,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 3,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "الْقَيُّومُ",
+        "الْقَيُّومِ"
+      ],
+      "transliteration": "Qayyūm",
+      "english_gloss": "Self-Subsisting / Sustainer"
+    },
+    "مُرْسِل": {
+      "lexical_identity_arabic": "مُرْسِل",
+      "preferred_quran_surface": "مُرْسِلِينَ",
+      "numbered_occurrence_count": 3,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 3,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "مُرْسِلِينَ",
+        "مُرْسِلُو"
+      ],
+      "transliteration": "Mursil",
+      "english_gloss": "Sender"
+    },
+    "مُنْتَقِم": {
+      "lexical_identity_arabic": "مُنْتَقِم",
+      "preferred_quran_surface": "مُنْتَقِمُونَ",
+      "numbered_occurrence_count": 3,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 3,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُنْتَقِمُونَ"
+      ],
+      "transliteration": "Muntaqim",
+      "english_gloss": "Avenger / retributor"
+    },
+    "وَهَّاب": {
+      "lexical_identity_arabic": "وَهَّاب",
+      "preferred_quran_surface": "الْوَهَّابُ",
+      "numbered_occurrence_count": 3,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 3,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "الْوَهَّابُ",
+        "الْوَهَّابِ"
+      ],
+      "transliteration": "Wahhāb",
+      "english_gloss": "Bestower / ever-giving"
+    },
+    "أَحْسَن الْخَالِقِين": {
+      "lexical_identity_arabic": "أَحْسَن الْخَالِقِين",
+      "preferred_quran_surface": "أَحْسَنُ الْخَالِقِينَ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "أَحْسَنُ الْخَالِقِينَ",
+        "أَحْسَنَ الْخَالِقِينَ"
+      ],
+      "transliteration": "Aḥsan al-khāliqīn",
+      "english_gloss": "Best of creators"
+    },
+    "أَحْكَم الْحَاكِمِين": {
+      "lexical_identity_arabic": "أَحْكَم الْحَاكِمِين",
+      "preferred_quran_surface": "أَحْكَمُ الْحَاكِمِينَ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "أَحْكَمُ الْحَاكِمِينَ",
+        "أَحْكَمِ الْحَاكِمِينَ"
+      ],
+      "transliteration": "Aḥkam al-ḥākimīn",
+      "english_gloss": "Wisest / best of judges"
+    },
+    "أَعْلَىٰ": {
+      "lexical_identity_arabic": "أَعْلَىٰ",
+      "preferred_quran_surface": "الْأَعْلَى",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "الْأَعْلَى",
+        "الْأَعْلَىٰ"
+      ],
+      "transliteration": "Aʿlā",
+      "english_gloss": "Highest / Most High"
+    },
+    "أَقْرَب": {
+      "lexical_identity_arabic": "أَقْرَب",
+      "preferred_quran_surface": "أَقْرَبُ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "أَقْرَبُ"
+      ],
+      "transliteration": "Aqrab",
+      "english_gloss": "Nearer / nearest"
+    },
+    "بَدِيع السَّمَاوَات وَالْأَرْض": {
+      "lexical_identity_arabic": "بَدِيع السَّمَاوَات وَالْأَرْض",
+      "preferred_quran_surface": "بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ"
+      ],
+      "transliteration": "Badīʿ al-samāwāt wa-al-arḍ",
+      "english_gloss": "Incomparable Originator of the heavens and the earth"
+    },
+    "حَافِظ": {
+      "lexical_identity_arabic": "حَافِظ",
+      "preferred_quran_surface": "حَافِظُونَ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "حَافِظُونَ",
+        "حَافِظِينَ"
+      ],
+      "transliteration": "Ḥāfiẓ",
+      "english_gloss": "Guardian / keeper"
+    },
+    "خَلَّاق": {
+      "lexical_identity_arabic": "خَلَّاق",
+      "preferred_quran_surface": "الْخَلَّاقُ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْخَلَّاقُ"
+      ],
+      "transliteration": "Khallāq",
+      "english_gloss": "Supreme / prolific Creator"
+    },
+    "خَيْر الرَّاحِمِين": {
+      "lexical_identity_arabic": "خَيْر الرَّاحِمِين",
+      "preferred_quran_surface": "خَيْرُ الرَّاحِمِينَ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "خَيْرُ الرَّاحِمِينَ"
+      ],
+      "transliteration": "Khayr al-rāḥimīn",
+      "english_gloss": "Best of the merciful"
+    },
+    "خَيْر الْمَاكِرِين": {
+      "lexical_identity_arabic": "خَيْر الْمَاكِرِين",
+      "preferred_quran_surface": "خَيْرُ الْمَاكِرِينَ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "خَيْرُ الْمَاكِرِينَ"
+      ],
+      "transliteration": "Khayr al-mākirīn",
+      "english_gloss": "Best of devisers / planners"
+    },
+    "ذُو الرَّحْمَة": {
+      "lexical_identity_arabic": "ذُو الرَّحْمَة",
+      "preferred_quran_surface": "ذُو الرَّحْمَةِ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "ذُو الرَّحْمَةِ"
+      ],
+      "transliteration": "Dhū al-raḥma",
+      "english_gloss": "Possessor of mercy"
+    },
+    "ذُو الْجَلَال وَالْإِكْرَام": {
+      "lexical_identity_arabic": "ذُو الْجَلَال وَالْإِكْرَام",
+      "preferred_quran_surface": "ذُو الْجَلَالِ وَالْإِكْرَامِ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "ذُو الْجَلَالِ وَالْإِكْرَامِ",
+        "ذِي الْجَلَالِ وَالْإِكْرَامِ"
+      ],
+      "transliteration": "Dhū al-jalāl wa-al-ikrām",
+      "english_gloss": "Possessor of majesty and honor"
+    },
+    "ذُو مَغْفِرَة": {
+      "lexical_identity_arabic": "ذُو مَغْفِرَة",
+      "preferred_quran_surface": "ذُو مَغْفِرَةٍ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "ذُو مَغْفِرَةٍ"
+      ],
+      "transliteration": "Dhū maghfira",
+      "english_gloss": "Possessor of forgiveness"
+    },
+    "رَبّ الْعَرْش": {
+      "lexical_identity_arabic": "رَبّ الْعَرْش",
+      "preferred_quran_surface": "رَبِّ الْعَرْشِ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبِّ الْعَرْشِ"
+      ],
+      "transliteration": "Rabb al-ʿarsh",
+      "english_gloss": "Lord of the Throne"
+    },
+    "سَرِيع الْعِقَاب": {
+      "lexical_identity_arabic": "سَرِيع الْعِقَاب",
+      "preferred_quran_surface": "سَرِيعُ الْعِقَابِ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "سَرِيعُ الْعِقَابِ"
+      ],
+      "transliteration": "Sarīʿ al-ʿiqāb",
+      "english_gloss": "Swift in punishment"
+    },
+    "سَمِيع الدُّعَاء": {
+      "lexical_identity_arabic": "سَمِيع الدُّعَاء",
+      "preferred_quran_surface": "سَمِيعُ الدُّعَاءِ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "سَمِيعُ الدُّعَاءِ"
+      ],
+      "transliteration": "Samīʿ al-duʿāʾ",
+      "english_gloss": "Hearer of prayer"
+    },
+    "شَاكِر": {
+      "lexical_identity_arabic": "شَاكِر",
+      "preferred_quran_surface": "شَاكِرٌ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "شَاكِرٌ",
+        "شَاكِرًا"
+      ],
+      "transliteration": "Shākir",
+      "english_gloss": "Appreciative / rewarding"
+    },
+    "شَاهِد": {
+      "lexical_identity_arabic": "شَاهِد",
+      "preferred_quran_surface": "شُهُودًا",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "شُهُودًا",
+        "شَاهِدِينَ"
+      ],
+      "transliteration": "Shāhid",
+      "english_gloss": "Witness"
+    },
+    "عَالِم": {
+      "lexical_identity_arabic": "عَالِم",
+      "preferred_quran_surface": "عَالِمِينَ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "عَالِمِينَ"
+      ],
+      "transliteration": "ʿĀlim",
+      "english_gloss": "Knower / knowing"
+    },
+    "عَالِم الْغَيْب": {
+      "lexical_identity_arabic": "عَالِم الْغَيْب",
+      "preferred_quran_surface": "عَالِمِ الْغَيْبِ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "عَالِمِ الْغَيْبِ",
+        "عَالِمُ الْغَيْبِ"
+      ],
+      "transliteration": "ʿĀlim al-ghayb",
+      "english_gloss": "Knower of the unseen"
+    },
+    "قَائِم": {
+      "lexical_identity_arabic": "قَائِم",
+      "preferred_quran_surface": "قَائِمًا",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "قَائِمًا",
+        "قَائِمٌ"
+      ],
+      "transliteration": "Qāʾim",
+      "english_gloss": "Standing / maintaining"
+    },
+    "قَاهِر": {
+      "lexical_identity_arabic": "قَاهِر",
+      "preferred_quran_surface": "الْقَاهِرُ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْقَاهِرُ"
+      ],
+      "transliteration": "Qāhir",
+      "english_gloss": "Subduer / dominant"
+    },
+    "قُدُّوس": {
+      "lexical_identity_arabic": "قُدُّوس",
+      "preferred_quran_surface": "الْقُدُّوسُ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "الْقُدُّوسُ",
+        "الْقُدُّوسِ"
+      ],
+      "transliteration": "Quddūs",
+      "english_gloss": "Most Holy / Sacred"
+    },
+    "كَاشِف": {
+      "lexical_identity_arabic": "كَاشِف",
+      "preferred_quran_surface": "كَاشِفَ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "كَاشِفَ",
+        "كَاشِفَةٌ"
+      ],
+      "transliteration": "Kāshif",
+      "english_gloss": "Remover / reliever"
+    },
+    "كَرِيم": {
+      "lexical_identity_arabic": "كَرِيم",
+      "preferred_quran_surface": "كَرِيمٌ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "كَرِيمٌ",
+        "الْكَرِيمِ"
+      ],
+      "transliteration": "Karīm",
+      "english_gloss": "Generous / Noble"
+    },
+    "مَجِيد": {
+      "lexical_identity_arabic": "مَجِيد",
+      "preferred_quran_surface": "مَجِيدٌ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "مَجِيدٌ",
+        "الْمَجِيدُ"
+      ],
+      "transliteration": "Majīd",
+      "english_gloss": "Glorious"
+    },
+    "مَنْ فِي السَّمَاء": {
+      "lexical_identity_arabic": "مَنْ فِي السَّمَاء",
+      "preferred_quran_surface": "مَنْ فِي السَّمَاءِ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مَنْ فِي السَّمَاءِ"
+      ],
+      "transliteration": "Man fī al-samāʾ",
+      "english_gloss": "The One in heaven / the sky"
+    },
+    "مُبْتَلِي": {
+      "lexical_identity_arabic": "مُبْتَلِي",
+      "preferred_quran_surface": "مُبْتَلِيكُمْ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "مُبْتَلِيكُمْ",
+        "مُبْتَلِينَ"
+      ],
+      "transliteration": "Mubtalī",
+      "english_gloss": "Tester / one who tries"
+    },
+    "مُجِيب": {
+      "lexical_identity_arabic": "مُجِيب",
+      "preferred_quran_surface": "مُجِيبٌ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "مُجِيبٌ",
+        "الْمُجِيبُونَ"
+      ],
+      "transliteration": "Mujīb",
+      "english_gloss": "Responsive / answerer"
+    },
+    "مُحْيِي الْمَوْتَىٰ": {
+      "lexical_identity_arabic": "مُحْيِي الْمَوْتَىٰ",
+      "preferred_quran_surface": "مُحْيِي الْمَوْتَىٰ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُحْيِي الْمَوْتَىٰ"
+      ],
+      "transliteration": "Muḥyī al-mawtā",
+      "english_gloss": "Giver of life to the dead"
+    },
+    "مُخْرِج": {
+      "lexical_identity_arabic": "مُخْرِج",
+      "preferred_quran_surface": "مُخْرِجٌ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُخْرِجٌ"
+      ],
+      "transliteration": "Mukhrij",
+      "english_gloss": "Bringer-forth"
+    },
+    "مُسْتَعَان": {
+      "lexical_identity_arabic": "مُسْتَعَان",
+      "preferred_quran_surface": "الْمُسْتَعَانُ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْمُسْتَعَانُ"
+      ],
+      "transliteration": "Mustaʿān",
+      "english_gloss": "One whose help is sought"
+    },
+    "مُهْلِك": {
+      "lexical_identity_arabic": "مُهْلِك",
+      "preferred_quran_surface": "مُهْلِكُهُمْ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "مُهْلِكُهُمْ",
+        "مُهْلِكُوهَا"
+      ],
+      "transliteration": "Muhlik",
+      "english_gloss": "Destroyer"
+    },
+    "هَادِي": {
+      "lexical_identity_arabic": "هَادِي",
+      "preferred_quran_surface": "هَادِ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "هَادِ",
+        "هَادِيًا"
+      ],
+      "transliteration": "Hādī",
+      "english_gloss": "Guide"
+    },
+    "وَارِث": {
+      "lexical_identity_arabic": "وَارِث",
+      "preferred_quran_surface": "الْوَارِثُونَ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "الْوَارِثُونَ",
+        "الْوَارِثِينَ"
+      ],
+      "transliteration": "Wārith",
+      "english_gloss": "Inheritor / heir"
+    },
+    "وَدُود": {
+      "lexical_identity_arabic": "وَدُود",
+      "preferred_quran_surface": "وَدُودٌ",
+      "numbered_occurrence_count": 2,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 2,
+      "exact_numbered_surface_count": 2,
+      "numbered_member_surfaces": [
+        "وَدُودٌ",
+        "الْوَدُودُ"
+      ],
+      "transliteration": "Wadūd",
+      "english_gloss": "Loving / affectionate"
+    },
+    "آخِذ": {
+      "lexical_identity_arabic": "آخِذ",
+      "preferred_quran_surface": "آخِذٌ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "آخِذٌ"
+      ],
+      "transliteration": "Ākhidh",
+      "english_gloss": "Seizer / taker"
+    },
+    "آخِر": {
+      "lexical_identity_arabic": "آخِر",
+      "preferred_quran_surface": "الْآخِرُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْآخِرُ"
+      ],
+      "transliteration": "Ākhir",
+      "english_gloss": "Last"
+    },
+    "أَبْقَىٰ": {
+      "lexical_identity_arabic": "أَبْقَىٰ",
+      "preferred_quran_surface": "أَبْقَىٰ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "أَبْقَىٰ"
+      ],
+      "transliteration": "Abqā",
+      "english_gloss": "More enduring / most lasting"
+    },
+    "أَحَد": {
+      "lexical_identity_arabic": "أَحَد",
+      "preferred_quran_surface": "أَحَدٌ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "أَحَدٌ"
+      ],
+      "transliteration": "Aḥad",
+      "english_gloss": "One / Unique"
+    },
+    "أَسْرَع الْحَاسِبِين": {
+      "lexical_identity_arabic": "أَسْرَع الْحَاسِبِين",
+      "preferred_quran_surface": "أَسْرَعُ الْحَاسِبِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "أَسْرَعُ الْحَاسِبِينَ"
+      ],
+      "transliteration": "Asraʿ al-ḥāsibīn",
+      "english_gloss": "Swiftest of reckoners"
+    },
+    "أَسْرَع مَكْر": {
+      "lexical_identity_arabic": "أَسْرَع مَكْر",
+      "preferred_quran_surface": "أَسْرَعُ مَكْرًا",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "أَسْرَعُ مَكْرًا"
+      ],
+      "transliteration": "Asraʿ makr",
+      "english_gloss": "Swifter in devising"
+    },
+    "أَشَدّ": {
+      "lexical_identity_arabic": "أَشَدّ",
+      "preferred_quran_surface": "أَشَدُّ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "أَشَدُّ"
+      ],
+      "transliteration": "Ashadd",
+      "english_gloss": "Stronger / more severe"
+    },
+    "أَشَدّ بَأْس": {
+      "lexical_identity_arabic": "أَشَدّ بَأْس",
+      "preferred_quran_surface": "أَشَدُّ بَأْسًا",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "أَشَدُّ بَأْسًا"
+      ],
+      "transliteration": "Ashadd baʾs",
+      "english_gloss": "Strongest / most severe in might"
+    },
+    "أَشَدّ تَنْكِيل": {
+      "lexical_identity_arabic": "أَشَدّ تَنْكِيل",
+      "preferred_quran_surface": "أَشَدُّ تَنْكِيلًا",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "أَشَدُّ تَنْكِيلًا"
+      ],
+      "transliteration": "Ashadd tankīl",
+      "english_gloss": "Most severe in punishment"
+    },
+    "أَكْرَم": {
+      "lexical_identity_arabic": "أَكْرَم",
+      "preferred_quran_surface": "الْأَكْرَمُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْأَكْرَمُ"
+      ],
+      "transliteration": "Akram",
+      "english_gloss": "Most generous / noblest"
+    },
+    "أَهْل التَّقْوَىٰ": {
+      "lexical_identity_arabic": "أَهْل التَّقْوَىٰ",
+      "preferred_quran_surface": "أَهْلُ التَّقْوَىٰ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "أَهْلُ التَّقْوَىٰ"
+      ],
+      "transliteration": "Ahl al-taqwā",
+      "english_gloss": "Worthy of reverence / fear"
+    },
+    "أَهْل الْمَغْفِرَة": {
+      "lexical_identity_arabic": "أَهْل الْمَغْفِرَة",
+      "preferred_quran_surface": "أَهْلُ الْمَغْفِرَةِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "أَهْلُ الْمَغْفِرَةِ"
+      ],
+      "transliteration": "Ahl al-maghfira",
+      "english_gloss": "Worthy / fit to forgive"
+    },
+    "أَوَّل": {
+      "lexical_identity_arabic": "أَوَّل",
+      "preferred_quran_surface": "الْأَوَّلُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْأَوَّلُ"
+      ],
+      "transliteration": "Awwal",
+      "english_gloss": "First"
+    },
+    "أَوْفَىٰ بِعَهْدِهِ": {
+      "lexical_identity_arabic": "أَوْفَىٰ بِعَهْدِهِ",
+      "preferred_quran_surface": "أَوْفَىٰ بِعَهْدِهِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "أَوْفَىٰ بِعَهْدِهِ"
+      ],
+      "transliteration": "Awfā bi-ʿahdihi",
+      "english_gloss": "Most faithful in fulfilling"
+    },
+    "أَوْلَىٰ": {
+      "lexical_identity_arabic": "أَوْلَىٰ",
+      "preferred_quran_surface": "أَوْلَىٰ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "أَوْلَىٰ"
+      ],
+      "transliteration": "Awlā",
+      "english_gloss": "More entitled / nearer"
+    },
+    "إِلَـٰه آبَاء": {
+      "lexical_identity_arabic": "إِلَـٰه آبَاء",
+      "preferred_quran_surface": "إِلَـٰهَ آبَائِكَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "إِلَـٰهَ آبَائِكَ"
+      ],
+      "transliteration": "Ilāh ābāʾ",
+      "english_gloss": "God of the forefathers"
+    },
+    "إِلَـٰه النَّاس": {
+      "lexical_identity_arabic": "إِلَـٰه النَّاس",
+      "preferred_quran_surface": "إِلَـٰهِ النَّاسِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "إِلَـٰهِ النَّاسِ"
+      ],
+      "transliteration": "Ilāh al-nās",
+      "english_gloss": "God of mankind"
+    },
+    "الَّذِي بِيَدِهِ الْمُلْك": {
+      "lexical_identity_arabic": "الَّذِي بِيَدِهِ الْمُلْك",
+      "preferred_quran_surface": "الَّذِي بِيَدِهِ الْمُلْكُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الَّذِي بِيَدِهِ الْمُلْكُ"
+      ],
+      "transliteration": "Alladhī biyadihi al-mulk",
+      "english_gloss": "The One in whose hand is dominion"
+    },
+    "الَّذِي لَهُ مُلْك السَّمَاوَات وَالْأَرْض": {
+      "lexical_identity_arabic": "الَّذِي لَهُ مُلْك السَّمَاوَات وَالْأَرْض",
+      "preferred_quran_surface": "الَّذِي لَهُ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الَّذِي لَهُ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ"
+      ],
+      "transliteration": "Alladhī lahu mulk al-samāwāt wa-al-arḍ",
+      "english_gloss": "The One to whom belongs the dominion of the heavens and the earth"
+    },
+    "بَاطِن": {
+      "lexical_identity_arabic": "بَاطِن",
+      "preferred_quran_surface": "الْبَاطِنُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْبَاطِنُ"
+      ],
+      "transliteration": "Bāṭin",
+      "english_gloss": "Hidden / inward"
+    },
+    "بَالِغ أَمْر": {
+      "lexical_identity_arabic": "بَالِغ أَمْر",
+      "preferred_quran_surface": "بَالِغُ أَمْرِهِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "بَالِغُ أَمْرِهِ"
+      ],
+      "transliteration": "Bāligh amr",
+      "english_gloss": "Accomplisher of His purpose"
+    },
+    "بَرِيء": {
+      "lexical_identity_arabic": "بَرِيء",
+      "preferred_quran_surface": "بَرِيءٌ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "بَرِيءٌ"
+      ],
+      "transliteration": "Barīʾ",
+      "english_gloss": "Free / disassociated"
+    },
+    "بَرّ": {
+      "lexical_identity_arabic": "بَرّ",
+      "preferred_quran_surface": "الْبَرُّ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْبَرُّ"
+      ],
+      "transliteration": "Barr",
+      "english_gloss": "Beneficent / kind"
+    },
+    "جَاعِل الْمَلَائِكَة رُسُل": {
+      "lexical_identity_arabic": "جَاعِل الْمَلَائِكَة رُسُل",
+      "preferred_quran_surface": "جَاعِلِ الْمَلَائِكَةِ رُسُلًا",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "جَاعِلِ الْمَلَائِكَةِ رُسُلًا"
+      ],
+      "transliteration": "Jāʿil al-malāʾika rusul",
+      "english_gloss": "Maker of the angels as messengers"
+    },
+    "جَامِع النَّاس": {
+      "lexical_identity_arabic": "جَامِع النَّاس",
+      "preferred_quran_surface": "جَامِعُ النَّاسِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "جَامِعُ النَّاسِ"
+      ],
+      "transliteration": "Jāmiʿ al-nās",
+      "english_gloss": "Gatherer of people"
+    },
+    "جَامِع الْمُنَافِقِين وَالْكَافِرِين": {
+      "lexical_identity_arabic": "جَامِع الْمُنَافِقِين وَالْكَافِرِين",
+      "preferred_quran_surface": "جَامِعُ الْمُنَافِقِينَ وَالْكَافِرِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "جَامِعُ الْمُنَافِقِينَ وَالْكَافِرِينَ"
+      ],
+      "transliteration": "Jāmiʿ al-munāfiqīn wa-al-kāfirīn",
+      "english_gloss": "Gatherer of the hypocrites and disbelievers"
+    },
+    "جَبَّار": {
+      "lexical_identity_arabic": "جَبَّار",
+      "preferred_quran_surface": "الْجَبَّارُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْجَبَّارُ"
+      ],
+      "transliteration": "Jabbār",
+      "english_gloss": "Compeller / Supreme"
+    },
+    "حَاسِب": {
+      "lexical_identity_arabic": "حَاسِب",
+      "preferred_quran_surface": "حَاسِبِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "حَاسِبِينَ"
+      ],
+      "transliteration": "Ḥāsib",
+      "english_gloss": "Reckoner"
+    },
+    "حَفِيّ": {
+      "lexical_identity_arabic": "حَفِيّ",
+      "preferred_quran_surface": "حَفِيًّا",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "حَفِيًّا"
+      ],
+      "transliteration": "Ḥafiyy",
+      "english_gloss": "Gracious / solicitous"
+    },
+    "حَقّ مُبِين": {
+      "lexical_identity_arabic": "حَقّ مُبِين",
+      "preferred_quran_surface": "الْحَقُّ الْمُبِينُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْحَقُّ الْمُبِينُ"
+      ],
+      "transliteration": "Ḥaqq mubīn",
+      "english_gloss": "Manifest Truth"
+    },
+    "حَكَم": {
+      "lexical_identity_arabic": "حَكَم",
+      "preferred_quran_surface": "حَكَمًا",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "حَكَمًا"
+      ],
+      "transliteration": "Ḥakam",
+      "english_gloss": "Judge / arbiter"
+    },
+    "خَادِع": {
+      "lexical_identity_arabic": "خَادِع",
+      "preferred_quran_surface": "خَادِعُهُمْ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "خَادِعُهُمْ"
+      ],
+      "transliteration": "Khādiʿ",
+      "english_gloss": "One who outwits"
+    },
+    "خَيْر النَّاصِرِين": {
+      "lexical_identity_arabic": "خَيْر النَّاصِرِين",
+      "preferred_quran_surface": "خَيْرُ النَّاصِرِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "خَيْرُ النَّاصِرِينَ"
+      ],
+      "transliteration": "Khayr al-nāṣirīn",
+      "english_gloss": "Best of helpers"
+    },
+    "خَيْر الْغَافِرِين": {
+      "lexical_identity_arabic": "خَيْر الْغَافِرِين",
+      "preferred_quran_surface": "خَيْرُ الْغَافِرِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "خَيْرُ الْغَافِرِينَ"
+      ],
+      "transliteration": "Khayr al-ghāfirīn",
+      "english_gloss": "Best of forgivers"
+    },
+    "خَيْر الْفَاتِحِين": {
+      "lexical_identity_arabic": "خَيْر الْفَاتِحِين",
+      "preferred_quran_surface": "خَيْرُ الْفَاتِحِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "خَيْرُ الْفَاتِحِينَ"
+      ],
+      "transliteration": "Khayr al-fātiḥīn",
+      "english_gloss": "Best of judges / deciders"
+    },
+    "خَيْر الْفَاصِلِين": {
+      "lexical_identity_arabic": "خَيْر الْفَاصِلِين",
+      "preferred_quran_surface": "خَيْرُ الْفَاصِلِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "خَيْرُ الْفَاصِلِينَ"
+      ],
+      "transliteration": "Khayr al-fāṣilīn",
+      "english_gloss": "Best of deciders"
+    },
+    "خَيْر الْمُنْزِلِين": {
+      "lexical_identity_arabic": "خَيْر الْمُنْزِلِين",
+      "preferred_quran_surface": "خَيْرُ الْمُنْزِلِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "خَيْرُ الْمُنْزِلِينَ"
+      ],
+      "transliteration": "Khayr al-munzilīn",
+      "english_gloss": "Best of those who grant a place to settle"
+    },
+    "خَيْر الْوَارِثِين": {
+      "lexical_identity_arabic": "خَيْر الْوَارِثِين",
+      "preferred_quran_surface": "خَيْرُ الْوَارِثِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "خَيْرُ الْوَارِثِينَ"
+      ],
+      "transliteration": "Khayr al-wārithīn",
+      "english_gloss": "Best of inheritors"
+    },
+    "خَيْر حَافِظ": {
+      "lexical_identity_arabic": "خَيْر حَافِظ",
+      "preferred_quran_surface": "خَيْرٌ حَافِظًا",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "خَيْرٌ حَافِظًا"
+      ],
+      "transliteration": "Khayr ḥāfiẓ",
+      "english_gloss": "Best guardian"
+    },
+    "ذُو الطَّوْل": {
+      "lexical_identity_arabic": "ذُو الطَّوْل",
+      "preferred_quran_surface": "ذِي الطَّوْلِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "ذِي الطَّوْلِ"
+      ],
+      "transliteration": "Dhū al-ṭawl",
+      "english_gloss": "Possessor of bounty / abundance"
+    },
+    "ذُو الْقُوَّة": {
+      "lexical_identity_arabic": "ذُو الْقُوَّة",
+      "preferred_quran_surface": "ذُو الْقُوَّةِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "ذُو الْقُوَّةِ"
+      ],
+      "transliteration": "Dhū al-quwwa",
+      "english_gloss": "Possessor of strength"
+    },
+    "ذُو الْمَعَارِج": {
+      "lexical_identity_arabic": "ذُو الْمَعَارِج",
+      "preferred_quran_surface": "ذِي الْمَعَارِجِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "ذِي الْمَعَارِجِ"
+      ],
+      "transliteration": "Dhū al-maʿārij",
+      "english_gloss": "Possessor of the ways of ascent"
+    },
+    "ذُو رَحْمَة وَاسِعَة": {
+      "lexical_identity_arabic": "ذُو رَحْمَة وَاسِعَة",
+      "preferred_quran_surface": "ذُو رَحْمَةٍ وَاسِعَةٍ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "ذُو رَحْمَةٍ وَاسِعَةٍ"
+      ],
+      "transliteration": "Dhū raḥma wāsiʿa",
+      "english_gloss": "Possessor of vast mercy"
+    },
+    "ذُو عِقَاب أَلِيم": {
+      "lexical_identity_arabic": "ذُو عِقَاب أَلِيم",
+      "preferred_quran_surface": "ذُو عِقَابٍ أَلِيمٍ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "ذُو عِقَابٍ أَلِيمٍ"
+      ],
+      "transliteration": "Dhū ʿiqāb alīm",
+      "english_gloss": "Possessor of painful punishment"
+    },
+    "رَادّ": {
+      "lexical_identity_arabic": "رَادّ",
+      "preferred_quran_surface": "رَادُّوهُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَادُّوهُ"
+      ],
+      "transliteration": "Rādd",
+      "english_gloss": "One who returns / restorer"
+    },
+    "رَافِع": {
+      "lexical_identity_arabic": "رَافِع",
+      "preferred_quran_surface": "رَافِعُكَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَافِعُكَ"
+      ],
+      "transliteration": "Rāfiʿ",
+      "english_gloss": "Raiser"
+    },
+    "رَبّ السَّمَاء وَالْأَرْض": {
+      "lexical_identity_arabic": "رَبّ السَّمَاء وَالْأَرْض",
+      "preferred_quran_surface": "رَبِّ السَّمَاءِ وَالْأَرْضِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبِّ السَّمَاءِ وَالْأَرْضِ"
+      ],
+      "transliteration": "Rabb al-samāʾ wa-al-arḍ",
+      "english_gloss": "Lord of the heaven and the earth"
+    },
+    "رَبّ السَّمَاوَات": {
+      "lexical_identity_arabic": "رَبّ السَّمَاوَات",
+      "preferred_quran_surface": "رَبِّ السَّمَاوَاتِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبِّ السَّمَاوَاتِ"
+      ],
+      "transliteration": "Rabb al-samāwāt",
+      "english_gloss": "Lord of the heavens"
+    },
+    "رَبّ السَّمَاوَات السَّبْع": {
+      "lexical_identity_arabic": "رَبّ السَّمَاوَات السَّبْع",
+      "preferred_quran_surface": "رَبُّ السَّمَاوَاتِ السَّبْعِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبُّ السَّمَاوَاتِ السَّبْعِ"
+      ],
+      "transliteration": "Rabb al-samāwāt al-sabʿ",
+      "english_gloss": "Lord of the seven heavens"
+    },
+    "رَبّ الشِّعْرَىٰ": {
+      "lexical_identity_arabic": "رَبّ الشِّعْرَىٰ",
+      "preferred_quran_surface": "رَبُّ الشِّعْرَىٰ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبُّ الشِّعْرَىٰ"
+      ],
+      "transliteration": "Rabb al-shiʿrā",
+      "english_gloss": "Lord of Sirius"
+    },
+    "رَبّ النَّاس": {
+      "lexical_identity_arabic": "رَبّ النَّاس",
+      "preferred_quran_surface": "رَبِّ النَّاسِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبِّ النَّاسِ"
+      ],
+      "transliteration": "Rabb al-nās",
+      "english_gloss": "Lord of mankind"
+    },
+    "رَبّ الْأَرْض": {
+      "lexical_identity_arabic": "رَبّ الْأَرْض",
+      "preferred_quran_surface": "رَبِّ الْأَرْضِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبِّ الْأَرْضِ"
+      ],
+      "transliteration": "Rabb al-arḍ",
+      "english_gloss": "Lord of the earth"
+    },
+    "رَبّ الْعَرْش الْكَرِيم": {
+      "lexical_identity_arabic": "رَبّ الْعَرْش الْكَرِيم",
+      "preferred_quran_surface": "رَبُّ الْعَرْشِ الْكَرِيمِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبُّ الْعَرْشِ الْكَرِيمِ"
+      ],
+      "transliteration": "Rabb al-ʿarsh al-karīm",
+      "english_gloss": "Lord of the Noble Throne"
+    },
+    "رَبّ الْعِزَّة": {
+      "lexical_identity_arabic": "رَبّ الْعِزَّة",
+      "preferred_quran_surface": "رَبِّ الْعِزَّةِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبِّ الْعِزَّةِ"
+      ],
+      "transliteration": "Rabb al-ʿizza",
+      "english_gloss": "Lord of might"
+    },
+    "رَبّ الْفَلَق": {
+      "lexical_identity_arabic": "رَبّ الْفَلَق",
+      "preferred_quran_surface": "رَبِّ الْفَلَقِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبِّ الْفَلَقِ"
+      ],
+      "transliteration": "Rabb al-falaq",
+      "english_gloss": "Lord of daybreak"
+    },
+    "رَبّ الْمَشَارِق": {
+      "lexical_identity_arabic": "رَبّ الْمَشَارِق",
+      "preferred_quran_surface": "رَبُّ الْمَشَارِقِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبُّ الْمَشَارِقِ"
+      ],
+      "transliteration": "Rabb al-mashāriq",
+      "english_gloss": "Lord of the easts / sunrises"
+    },
+    "رَبّ الْمَشَارِق وَالْمَغَارِب": {
+      "lexical_identity_arabic": "رَبّ الْمَشَارِق وَالْمَغَارِب",
+      "preferred_quran_surface": "رَبِّ الْمَشَارِقِ وَالْمَغَارِبِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبِّ الْمَشَارِقِ وَالْمَغَارِبِ"
+      ],
+      "transliteration": "Rabb al-mashāriq wa-al-maghārib",
+      "english_gloss": "Lord of the easts and the wests"
+    },
+    "رَبّ الْمَشْرِق وَالْمَغْرِب": {
+      "lexical_identity_arabic": "رَبّ الْمَشْرِق وَالْمَغْرِب",
+      "preferred_quran_surface": "رَبُّ الْمَشْرِقِ وَالْمَغْرِبِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبُّ الْمَشْرِقِ وَالْمَغْرِبِ"
+      ],
+      "transliteration": "Rabb al-mashriq wa-al-maghrib",
+      "english_gloss": "Lord of the east and the west"
+    },
+    "رَبّ الْمَشْرِق وَالْمَغْرِب وَمَا بَيْنَهُمَا": {
+      "lexical_identity_arabic": "رَبّ الْمَشْرِق وَالْمَغْرِب وَمَا بَيْنَهُمَا",
+      "preferred_quran_surface": "رَبُّ الْمَشْرِقِ وَالْمَغْرِبِ وَمَا بَيْنَهُمَا",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبُّ الْمَشْرِقِ وَالْمَغْرِبِ وَمَا بَيْنَهُمَا"
+      ],
+      "transliteration": "Rabb al-mashriq wa-al-maghrib wa-mā baynahumā",
+      "english_gloss": "Lord of the east and west and what is between them"
+    },
+    "رَبّ الْمَشْرِقَيْن": {
+      "lexical_identity_arabic": "رَبّ الْمَشْرِقَيْن",
+      "preferred_quran_surface": "رَبُّ الْمَشْرِقَيْنِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبُّ الْمَشْرِقَيْنِ"
+      ],
+      "transliteration": "Rabb al-mashriqayn",
+      "english_gloss": "Lord of the two easts"
+    },
+    "رَبّ الْمَغْرِبَيْن": {
+      "lexical_identity_arabic": "رَبّ الْمَغْرِبَيْن",
+      "preferred_quran_surface": "رَبُّ الْمَغْرِبَيْنِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبُّ الْمَغْرِبَيْنِ"
+      ],
+      "transliteration": "Rabb al-maghribayn",
+      "english_gloss": "Lord of the two wests"
+    },
+    "رَبّ كُلّ شَيْء": {
+      "lexical_identity_arabic": "رَبّ كُلّ شَيْء",
+      "preferred_quran_surface": "رَبُّ كُلِّ شَيْءٍ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبُّ كُلِّ شَيْءٍ"
+      ],
+      "transliteration": "Rabb kull shayʾ",
+      "english_gloss": "Lord of all things"
+    },
+    "رَبّ هَـٰذَا الْبَيْت": {
+      "lexical_identity_arabic": "رَبّ هَـٰذَا الْبَيْت",
+      "preferred_quran_surface": "رَبَّ هَـٰذَا الْبَيْتِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبَّ هَـٰذَا الْبَيْتِ"
+      ],
+      "transliteration": "Rabb hādhā al-bayt",
+      "english_gloss": "Lord of this House"
+    },
+    "رَبّ هَـٰذِهِ الْبَلْدَة": {
+      "lexical_identity_arabic": "رَبّ هَـٰذِهِ الْبَلْدَة",
+      "preferred_quran_surface": "رَبَّ هَـٰذِهِ الْبَلْدَةِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَبَّ هَـٰذِهِ الْبَلْدَةِ"
+      ],
+      "transliteration": "Rabb hādhihi al-balda",
+      "english_gloss": "Lord of this city"
+    },
+    "رَزَّاق": {
+      "lexical_identity_arabic": "رَزَّاق",
+      "preferred_quran_surface": "الرَّزَّاقُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الرَّزَّاقُ"
+      ],
+      "transliteration": "Razzāq",
+      "english_gloss": "Provider / ever-providing"
+    },
+    "رَفِيع الدَّرَجَات": {
+      "lexical_identity_arabic": "رَفِيع الدَّرَجَات",
+      "preferred_quran_surface": "رَفِيعُ الدَّرَجَاتِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "رَفِيعُ الدَّرَجَاتِ"
+      ],
+      "transliteration": "Rafīʿ al-darajāt",
+      "english_gloss": "Exalted in ranks / raiser of degrees"
+    },
+    "زَارِع": {
+      "lexical_identity_arabic": "زَارِع",
+      "preferred_quran_surface": "الزَّارِعُونَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الزَّارِعُونَ"
+      ],
+      "transliteration": "Zāriʿ",
+      "english_gloss": "Sower / cultivator"
+    },
+    "سَلَام": {
+      "lexical_identity_arabic": "سَلَام",
+      "preferred_quran_surface": "السَّلَامُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "السَّلَامُ"
+      ],
+      "transliteration": "Salām",
+      "english_gloss": "Peace / Source of peace"
+    },
+    "شَدِيد الْعَذَاب": {
+      "lexical_identity_arabic": "شَدِيد الْعَذَاب",
+      "preferred_quran_surface": "شَدِيدُ الْعَذَابِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "شَدِيدُ الْعَذَابِ"
+      ],
+      "transliteration": "Shadīd al-ʿadhāb",
+      "english_gloss": "Severe in punishment"
+    },
+    "شَدِيد الْمِحَال": {
+      "lexical_identity_arabic": "شَدِيد الْمِحَال",
+      "preferred_quran_surface": "شَدِيدُ الْمِحَالِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "شَدِيدُ الْمِحَالِ"
+      ],
+      "transliteration": "Shadīd al-miḥāl",
+      "english_gloss": "Mighty in power / stratagem"
+    },
+    "صَادِق": {
+      "lexical_identity_arabic": "صَادِق",
+      "preferred_quran_surface": "صَادِقُونَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "صَادِقُونَ"
+      ],
+      "transliteration": "Ṣādiq",
+      "english_gloss": "Truthful"
+    },
+    "صَمَد": {
+      "lexical_identity_arabic": "صَمَد",
+      "preferred_quran_surface": "الصَّمَدُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الصَّمَدُ"
+      ],
+      "transliteration": "Ṣamad",
+      "english_gloss": "Eternal Refuge / Self-Sufficient"
+    },
+    "ظَاهِر": {
+      "lexical_identity_arabic": "ظَاهِر",
+      "preferred_quran_surface": "الظَّاهِرُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الظَّاهِرُ"
+      ],
+      "transliteration": "Ẓāhir",
+      "english_gloss": "Manifest / outward"
+    },
+    "عَالِم غَيْب السَّمَاوَات وَالْأَرْض": {
+      "lexical_identity_arabic": "عَالِم غَيْب السَّمَاوَات وَالْأَرْض",
+      "preferred_quran_surface": "عَالِمُ غَيْبِ السَّمَاوَاتِ وَالْأَرْضِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "عَالِمُ غَيْبِ السَّمَاوَاتِ وَالْأَرْضِ"
+      ],
+      "transliteration": "ʿĀlim ghayb al-samāwāt wa-al-arḍ",
+      "english_gloss": "Knower of the unseen of the heavens and the earth"
+    },
+    "عَدُوّ لِلْكَافِرِينَ": {
+      "lexical_identity_arabic": "عَدُوّ لِلْكَافِرِينَ",
+      "preferred_quran_surface": "عَدُوٌّ لِلْكَافِرِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "عَدُوٌّ لِلْكَافِرِينَ"
+      ],
+      "transliteration": "ʿAduww lil-kāfirīn",
+      "english_gloss": "Enemy to the disbelievers"
+    },
+    "غَافِر الذَّنْب": {
+      "lexical_identity_arabic": "غَافِر الذَّنْب",
+      "preferred_quran_surface": "غَافِرِ الذَّنْبِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "غَافِرِ الذَّنْبِ"
+      ],
+      "transliteration": "Ghāfir al-dhanb",
+      "english_gloss": "Forgiver of sin"
+    },
+    "غَالِب": {
+      "lexical_identity_arabic": "غَالِب",
+      "preferred_quran_surface": "غَالِبٌ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "غَالِبٌ"
+      ],
+      "transliteration": "Ghālib",
+      "english_gloss": "Prevailing / dominant"
+    },
+    "فَالِق الْإِصْبَاح": {
+      "lexical_identity_arabic": "فَالِق الْإِصْبَاح",
+      "preferred_quran_surface": "فَالِقُ الْإِصْبَاحِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "فَالِقُ الْإِصْبَاحِ"
+      ],
+      "transliteration": "Fāliq al-iṣbāḥ",
+      "english_gloss": "Cleaver of daybreak"
+    },
+    "فَالِق الْحَبّ وَالنَّوَىٰ": {
+      "lexical_identity_arabic": "فَالِق الْحَبّ وَالنَّوَىٰ",
+      "preferred_quran_surface": "فَالِقُ الْحَبِّ وَالنَّوَىٰ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "فَالِقُ الْحَبِّ وَالنَّوَىٰ"
+      ],
+      "transliteration": "Fāliq al-ḥabb wa-al-nawā",
+      "english_gloss": "Splitter of grain and date-stone"
+    },
+    "فَتَّاح": {
+      "lexical_identity_arabic": "فَتَّاح",
+      "preferred_quran_surface": "الْفَتَّاحُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْفَتَّاحُ"
+      ],
+      "transliteration": "Fattāḥ",
+      "english_gloss": "Opener / supreme judge"
+    },
+    "قَابِل التَّوْب": {
+      "lexical_identity_arabic": "قَابِل التَّوْب",
+      "preferred_quran_surface": "قَابِلِ التَّوْبِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "قَابِلِ التَّوْبِ"
+      ],
+      "transliteration": "Qābil al-tawb",
+      "english_gloss": "Accepter of repentance"
+    },
+    "كَاتِب": {
+      "lexical_identity_arabic": "كَاتِب",
+      "preferred_quran_surface": "كَاتِبُونَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "كَاتِبُونَ"
+      ],
+      "transliteration": "Kātib",
+      "english_gloss": "Writer / recorder"
+    },
+    "كَاشِف الْعَذَاب": {
+      "lexical_identity_arabic": "كَاشِف الْعَذَاب",
+      "preferred_quran_surface": "كَاشِفُو الْعَذَابِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "كَاشِفُو الْعَذَابِ"
+      ],
+      "transliteration": "Kāshif al-ʿadhāb",
+      "english_gloss": "Remover of punishment"
+    },
+    "كَافِي": {
+      "lexical_identity_arabic": "كَافِي",
+      "preferred_quran_surface": "كَافٍ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "كَافٍ"
+      ],
+      "transliteration": "Kāfī",
+      "english_gloss": "Sufficient"
+    },
+    "كَفِيل": {
+      "lexical_identity_arabic": "كَفِيل",
+      "preferred_quran_surface": "كَفِيلًا",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "كَفِيلًا"
+      ],
+      "transliteration": "Kafīl",
+      "english_gloss": "Guarantor"
+    },
+    "مَالِك الْمُلْك": {
+      "lexical_identity_arabic": "مَالِك الْمُلْك",
+      "preferred_quran_surface": "مَالِكَ الْمُلْكِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مَالِكَ الْمُلْكِ"
+      ],
+      "transliteration": "Mālik al-mulk",
+      "english_gloss": "Owner / Master of dominion"
+    },
+    "مَالِك يَوْم الدِّين": {
+      "lexical_identity_arabic": "مَالِك يَوْم الدِّين",
+      "preferred_quran_surface": "مَالِكِ يَوْمِ الدِّينِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مَالِكِ يَوْمِ الدِّينِ"
+      ],
+      "transliteration": "Mālik yawm al-dīn",
+      "english_gloss": "Master / Owner of the Day of Judgment"
+    },
+    "مَاهِد": {
+      "lexical_identity_arabic": "مَاهِد",
+      "preferred_quran_surface": "الْمَاهِدُونَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْمَاهِدُونَ"
+      ],
+      "transliteration": "Māhid",
+      "english_gloss": "Spreader / preparer"
+    },
+    "مَتِين": {
+      "lexical_identity_arabic": "مَتِين",
+      "preferred_quran_surface": "الْمَتِينُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْمَتِينُ"
+      ],
+      "transliteration": "Matīn",
+      "english_gloss": "Firm / Strong"
+    },
+    "مَلِك النَّاس": {
+      "lexical_identity_arabic": "مَلِك النَّاس",
+      "preferred_quran_surface": "مَلِكِ النَّاسِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مَلِكِ النَّاسِ"
+      ],
+      "transliteration": "Malik al-nās",
+      "english_gloss": "King of mankind"
+    },
+    "مَلِيك": {
+      "lexical_identity_arabic": "مَلِيك",
+      "preferred_quran_surface": "مَلِيكٍ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مَلِيكٍ"
+      ],
+      "transliteration": "Malīk",
+      "english_gloss": "Sovereign / King"
+    },
+    "مُؤْمِن": {
+      "lexical_identity_arabic": "مُؤْمِن",
+      "preferred_quran_surface": "الْمُؤْمِنُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْمُؤْمِنُ"
+      ],
+      "transliteration": "Muʾmin",
+      "english_gloss": "Giver of security / confirmer"
+    },
+    "مُبْدِي": {
+      "lexical_identity_arabic": "مُبْدِي",
+      "preferred_quran_surface": "مُبْدِيهِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُبْدِيهِ"
+      ],
+      "transliteration": "Mubdī",
+      "english_gloss": "Originator / beginner"
+    },
+    "مُبْرِم": {
+      "lexical_identity_arabic": "مُبْرِم",
+      "preferred_quran_surface": "مُبْرِمُونَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُبْرِمُونَ"
+      ],
+      "transliteration": "Mubrim",
+      "english_gloss": "Determiner / one who resolves"
+    },
+    "مُتَعَالِي": {
+      "lexical_identity_arabic": "مُتَعَالِي",
+      "preferred_quran_surface": "الْمُتَعَالِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْمُتَعَالِ"
+      ],
+      "transliteration": "Mutaʿālī",
+      "english_gloss": "Exalted / transcendent"
+    },
+    "مُتَكَبِّر": {
+      "lexical_identity_arabic": "مُتَكَبِّر",
+      "preferred_quran_surface": "الْمُتَكَبِّرُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْمُتَكَبِّرُ"
+      ],
+      "transliteration": "Mutakabbir",
+      "english_gloss": "Supremely Great / majestic"
+    },
+    "مُتَوَفِّي": {
+      "lexical_identity_arabic": "مُتَوَفِّي",
+      "preferred_quran_surface": "مُتَوَفِّيكَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُتَوَفِّيكَ"
+      ],
+      "transliteration": "Mutawaffī",
+      "english_gloss": "Taker of souls"
+    },
+    "مُتِمّ نُور": {
+      "lexical_identity_arabic": "مُتِمّ نُور",
+      "preferred_quran_surface": "مُتِمُّ نُورِهِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُتِمُّ نُورِهِ"
+      ],
+      "transliteration": "Mutimm nūr",
+      "english_gloss": "Perfecter of the light"
+    },
+    "مُخْرِج الْمَيِّت مِنَ الْحَيّ": {
+      "lexical_identity_arabic": "مُخْرِج الْمَيِّت مِنَ الْحَيّ",
+      "preferred_quran_surface": "مُخْرِجُ الْمَيِّتِ مِنَ الْحَيِّ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُخْرِجُ الْمَيِّتِ مِنَ الْحَيِّ"
+      ],
+      "transliteration": "Mukhrij al-mayyit mina al-ḥayy",
+      "english_gloss": "Bringer of the dead from the living"
+    },
+    "مُخْزِي الْكَافِرِين": {
+      "lexical_identity_arabic": "مُخْزِي الْكَافِرِين",
+      "preferred_quran_surface": "مُخْزِي الْكَافِرِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُخْزِي الْكَافِرِينَ"
+      ],
+      "transliteration": "Mukhzī al-kāfirīn",
+      "english_gloss": "Disgracer of the disbelievers"
+    },
+    "مُسْتَمِع": {
+      "lexical_identity_arabic": "مُسْتَمِع",
+      "preferred_quran_surface": "مُسْتَمِعُونَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُسْتَمِعُونَ"
+      ],
+      "transliteration": "Mustamiʿ",
+      "english_gloss": "Listener"
+    },
+    "مُصَوِّر": {
+      "lexical_identity_arabic": "مُصَوِّر",
+      "preferred_quran_surface": "الْمُصَوِّرُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْمُصَوِّرُ"
+      ],
+      "transliteration": "Muṣawwir",
+      "english_gloss": "Shaper / Form-Giver"
+    },
+    "مُطَهِّر": {
+      "lexical_identity_arabic": "مُطَهِّر",
+      "preferred_quran_surface": "مُطَهِّرُكَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُطَهِّرُكَ"
+      ],
+      "transliteration": "Muṭahhir",
+      "english_gloss": "Purifier"
+    },
+    "مُقِيت": {
+      "lexical_identity_arabic": "مُقِيت",
+      "preferred_quran_surface": "مُقِيتًا",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُقِيتًا"
+      ],
+      "transliteration": "Muqīt",
+      "english_gloss": "Sustainer / keeper"
+    },
+    "مُمِدّ": {
+      "lexical_identity_arabic": "مُمِدّ",
+      "preferred_quran_surface": "مُمِدُّكُمْ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُمِدُّكُمْ"
+      ],
+      "transliteration": "Mumidd",
+      "english_gloss": "One who reinforces / supplies"
+    },
+    "مُنَزِّل": {
+      "lexical_identity_arabic": "مُنَزِّل",
+      "preferred_quran_surface": "مُنَزِّلُهَا",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُنَزِّلُهَا"
+      ],
+      "transliteration": "Munazzil",
+      "english_gloss": "Sender down"
+    },
+    "مُنْذِر": {
+      "lexical_identity_arabic": "مُنْذِر",
+      "preferred_quran_surface": "مُنْذِرِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُنْذِرِينَ"
+      ],
+      "transliteration": "Mundhir",
+      "english_gloss": "Warner"
+    },
+    "مُنْزِل": {
+      "lexical_identity_arabic": "مُنْزِل",
+      "preferred_quran_surface": "الْمُنْزِلُونَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْمُنْزِلُونَ"
+      ],
+      "transliteration": "Munzil",
+      "english_gloss": "One who sends down"
+    },
+    "مُنْشِئ": {
+      "lexical_identity_arabic": "مُنْشِئ",
+      "preferred_quran_surface": "الْمُنْشِئُونَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْمُنْشِئُونَ"
+      ],
+      "transliteration": "Munshiʾ",
+      "english_gloss": "Originator / producer"
+    },
+    "مُهَيْمِن": {
+      "lexical_identity_arabic": "مُهَيْمِن",
+      "preferred_quran_surface": "الْمُهَيْمِنُ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "الْمُهَيْمِنُ"
+      ],
+      "transliteration": "Muhaymin",
+      "english_gloss": "Guardian / Overseer"
+    },
+    "مُوسِع": {
+      "lexical_identity_arabic": "مُوسِع",
+      "preferred_quran_surface": "مُوسِعُونَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُوسِعُونَ"
+      ],
+      "transliteration": "Mūsiʿ",
+      "english_gloss": "Expander / one of vast means"
+    },
+    "مُوهِن كَيْد الْكَافِرِين": {
+      "lexical_identity_arabic": "مُوهِن كَيْد الْكَافِرِين",
+      "preferred_quran_surface": "مُوهِنُ كَيْدِ الْكَافِرِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "مُوهِنُ كَيْدِ الْكَافِرِينَ"
+      ],
+      "transliteration": "Mūhin kayd al-kāfirīn",
+      "english_gloss": "Weakener of the disbelievers’ plot"
+    },
+    "نُور السَّمَاوَات وَالْأَرْض": {
+      "lexical_identity_arabic": "نُور السَّمَاوَات وَالْأَرْض",
+      "preferred_quran_surface": "نُورُ السَّمَاوَاتِ وَالْأَرْضِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "نُورُ السَّمَاوَاتِ وَالْأَرْضِ"
+      ],
+      "transliteration": "Nūr al-samāwāt wa-al-arḍ",
+      "english_gloss": "Light of the heavens and the earth"
+    },
+    "وَاسِع الْمَغْفِرَة": {
+      "lexical_identity_arabic": "وَاسِع الْمَغْفِرَة",
+      "preferred_quran_surface": "وَاسِعُ الْمَغْفِرَةِ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "وَاسِعُ الْمَغْفِرَةِ"
+      ],
+      "transliteration": "Wāsiʿ al-maghfira",
+      "english_gloss": "Vast in forgiveness"
+    },
+    "وَلِيّ الْمُؤْمِنِين": {
+      "lexical_identity_arabic": "وَلِيّ الْمُؤْمِنِين",
+      "preferred_quran_surface": "وَلِيُّ الْمُؤْمِنِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "وَلِيُّ الْمُؤْمِنِينَ"
+      ],
+      "transliteration": "Waliyy al-muʾminīn",
+      "english_gloss": "Protector of the believers"
+    },
+    "وَلِيّ الْمُتَّقِين": {
+      "lexical_identity_arabic": "وَلِيّ الْمُتَّقِين",
+      "preferred_quran_surface": "وَلِيُّ الْمُتَّقِينَ",
+      "numbered_occurrence_count": 1,
+      "basmala_occurrence_count": 0,
+      "combined_occurrence_count": 1,
+      "exact_numbered_surface_count": 1,
+      "numbered_member_surfaces": [
+        "وَلِيُّ الْمُتَّقِينَ"
+      ],
+      "transliteration": "Waliyy al-muttaqīn",
+      "english_gloss": "Protector of the God-conscious"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "release": "publication-v1",
+  "pages_viewer": true,
+  "viewer_data_source": "data/ publication-final JSON only",
+  "quran_foundation_raw_content_included": false,
+  "english_verse_translation_payloads_included": false,
+  "project_derived_descriptor_glosses_included": true,
+  "project_derived_transliterations_included": true,
+  "license": "GPL-3.0-only for project-owned material; third-party layers retain upstream terms"
+}
