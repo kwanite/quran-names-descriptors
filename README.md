@@ -4,6 +4,8 @@
 
 **Interactive viewer:** https://kwanite.github.io/quran-names-descriptors/
 
+**Method:** [docs/METHOD.md](docs/METHOD.md)
+
 This project asks a different question:
 
 > **What names and explicit descriptive expressions does the Quran itself use for Allah when the Quran is examined without beginning from a pre-existing list of divine names?**
@@ -49,6 +51,8 @@ The viewer is static and reads only publication-final files in `data/`. It does 
 
 See `data/validation_report.json` and `data/manifest.json` for machine-readable release assertions and checksums.
 
+For the research design, extraction rules, semantic review, root-linking method, basmala handling, and publication validation, see **[docs/METHOD.md](docs/METHOD.md)**.
+
 ## Data model
 
 The project deliberately separates:
@@ -64,7 +68,8 @@ Multiword descriptors remain semantic wholes even when their constituent Quran w
 - `index.html`, `assets/` — static GitHub Pages viewer
 - `data/` — publication-final corpus and validation artifacts
 - `scripts/` — publication/reproducibility scripts
-- `docs/` — method, provenance, licensing, and release documentation
+- `docs/METHOD.md` — research method and pipeline
+- `docs/` — provenance, licensing, and release documentation
 - `LICENSE` — GPL-3.0-only text for project-owned material
 - `LICENSE_SCOPE.md` — explains the boundary between project-owned and third-party material
 - `THIRD_PARTY_NOTICES.md` — upstream source/license notices
@@ -76,4 +81,3 @@ Project-owned copyrightable material is offered under **GPL-3.0-only** to the ex
 ## Public-release boundary
 
 The release includes the full reviewed descriptor corpus, Quran-attested Arabic surfaces and verse context, project-derived transliterations/glosses, exclusion history, and root-link data. It intentionally excludes raw Quran Foundation/Quran.com API content and local full-verse English translation payloads unless separate redistribution rights are established.
-
