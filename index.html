@@ -14,24 +14,26 @@
   </div>
 
   <div id="app" class="app" hidden>
-    <aside id="sidebar" class="sidebar">
+    <aside id="sidebar" class="sidebar" aria-label="Descriptor browser">
       <div class="sidebar-head">
         <div class="eyebrow">Quran-only · text-first corpus</div>
-        <h1>Names &amp; Descriptors of Allah in the Quran</h1>
+        <h1>Names &amp; Descriptors of Allah</h1>
         <div class="small">225 reviewed identities · 5,373 combined occurrences</div>
-        <button id="closeSidebar" class="btn mobile-only sidebar-close" type="button">Close</button>
+        <button id="closeSidebar" class="icon-btn sidebar-close" type="button" aria-label="Close descriptor browser" title="Close browser">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
       </div>
 
       <div class="sidebar-controls">
         <label class="control-label" for="search">Search</label>
         <input id="search" class="search" type="search"
-          placeholder="Try rahman, rahim, alim, Arabic, or an English meaning…" autocomplete="off">
+          placeholder="Search Arabic, English, or transliteration…" autocomplete="off">
 
         <label class="control-label" for="typeFilter">Type</label>
         <select id="typeFilter" class="select">
           <option value="all">All descriptors</option>
-          <option value="one">One-word only</option>
-          <option value="multi">Multiword only</option>
+          <option value="one">Single words</option>
+          <option value="multi">Phrases</option>
         </select>
       </div>
 
@@ -44,10 +46,15 @@
 
     </aside>
 
+    <button id="sidebarBackdrop" class="sidebar-backdrop" type="button" aria-label="Close descriptor browser" tabindex="-1"></button>
+
     <main class="main">
-      <div class="mobile-bar">
-        <button id="openSidebar" class="btn mobile-only" type="button">Browse descriptors</button>
-        <div class="mobile-brand">Names &amp; Descriptors in the Quran</div>
+      <div class="viewer-bar">
+        <button id="openSidebar" class="btn sidebar-open-btn" type="button" aria-controls="sidebar" aria-expanded="true" aria-hidden="true" hidden title="Open descriptor browser">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <span>Browse</span>
+        </button>
+        <div class="mobile-brand">Names &amp; Descriptors of Allah</div>
       </div>
 
       <div id="detail" class="detail">

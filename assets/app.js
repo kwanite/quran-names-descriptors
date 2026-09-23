@@ -11,6 +11,8 @@
 
   const $ = (id) => document.getElementById(id);
 
+  const ICON_EXTERNAL = `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M19 13v6H5V5h6"/></svg>`;
+
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({
     "&": "&amp;",
     "<": "&lt;",
@@ -190,7 +192,6 @@
     document.querySelectorAll(".descriptor-item").forEach(btn => {
       btn.addEventListener("click", () => {
         select(btn.dataset.id);
-        closeSidebar();
       });
     });
   }
@@ -243,11 +244,11 @@
             <div class="descriptor-root-meta">
               ${pos ? `<div><strong>Form:</strong> ${esc(pos)}</div>` : ""}
               ${Number.isFinite(Number(count))
-                ? `<div><strong>Occurrences of this form in the root dictionary:</strong> ${Number(count).toLocaleString()}</div>`
+                ? `<div><strong>Occurrences of this form:</strong> ${Number(count).toLocaleString()}</div>`
                 : ""}
             </div>
             ${url
-              ? `<a class="btn primary root-dictionary-link" target="_blank" rel="noopener noreferrer" href="${esc(url)}">Open full root dictionary ↗</a>`
+              ? `<a class="btn primary root-dictionary-link" target="_blank" rel="noopener noreferrer" href="${esc(url)}">View root ${ICON_EXTERNAL}</a>`
               : ""}
           </div>
         `;
@@ -257,7 +258,7 @@
         <section class="section">
           <div class="section-head">
             <h2>Root dictionary</h2>
-            <div class="section-sub">Exact one-word Quran Roots linkage</div>
+            <div class="section-sub">Root information for this descriptor</div>
           </div>
           <div class="section-body">
             <div class="descriptor-root-grid">${cards}</div>
@@ -312,11 +313,11 @@
           </div>
           <div class="descriptor-root-meta">
             ${r.descriptions.length
-              ? `<div><strong>Forms represented in this phrase:</strong> ${r.descriptions.map(esc).join(" · ")}</div>`
+              ? `<div><strong>Form:</strong> ${r.descriptions.map(esc).join(" · ")}</div>`
               : ""}
           </div>
           ${url
-            ? `<a class="btn primary root-dictionary-link" target="_blank" rel="noopener noreferrer" href="${esc(url)}">Open this root in the Quran Roots Dictionary ↗</a>`
+            ? `<a class="btn primary root-dictionary-link" target="_blank" rel="noopener noreferrer" href="${esc(url)}">View root ${ICON_EXTERNAL}</a>`
             : ""}
         </div>
       `;
@@ -326,7 +327,7 @@
       <section class="section">
         <div class="section-head">
           <h2>Roots in this phrase</h2>
-          <div class="section-sub">Constituent roots; the phrase remains one descriptor</div>
+          <div class="section-sub">One descriptor, linked to its constituent roots</div>
         </div>
         <div class="section-body">
           <div class="descriptor-root-grid">${cards}</div>
@@ -344,7 +345,7 @@
       ? ""
       : `<a class="btn primary" target="_blank" rel="noopener noreferrer"
             href="https://prayforthetruth.com/quran/${esc(String(o.verse_key || "").replace(":", "/"))}">
-           Read verse with English translation ↗
+           Read verse ${ICON_EXTERNAL}
          </a>`;
 
     return `
@@ -352,7 +353,6 @@
         <div class="occ-head">
           <div class="verse-key">${esc(loc)}</div>
           <div class="surface-hit">${esc(o.surface_arabic)}</div>
-          <div class="occ-id">${esc(o.occurrence_id)}</div>
         </div>
         <div class="verse-panel">
           <div class="verse-ar">${highlightVerse(o)}</div>
@@ -428,9 +428,7 @@
           <div class="occ-list">${visible.map(occurrenceHtml).join("")}</div>
           ${visible.length < occs.length ? `
             <div class="more-row">
-              <button id="showMore" class="btn" type="button">
-                Show ${Math.min(PAGE_SIZE, occs.length - visible.length)} more
-              </button>
+              <button id="showMore" class="btn" type="button">Show more</button>
             </div>
           ` : ""}
         </div>
@@ -451,14 +449,25 @@
     state.visibleOccurrences = PAGE_SIZE;
     renderList();
     renderDetail();
+    if (window.matchMedia("(max-width: 760px)").matches) closeSidebar();
+  }
+
+  function setSidebarOpen(isOpen) {
+    const app = $("app");
+    const openButton = $("openSidebar");
+
+    app.classList.toggle("sidebar-collapsed", !isOpen);
+    openButton.setAttribute("aria-expanded", String(isOpen));
+    openButton.hidden = isOpen;
+    openButton.setAttribute("aria-hidden", String(isOpen));
   }
 
   function openSidebar() {
-    $("sidebar").classList.add("open");
+    setSidebarOpen(true);
   }
 
   function closeSidebar() {
-    $("sidebar").classList.remove("open");
+    setSidebarOpen(false);
   }
 
   async function load() {
@@ -490,6 +499,12 @@
       );
     }
 
+    if (window.matchMedia("(max-width: 760px)").matches) {
+      setSidebarOpen(false);
+    } else {
+      setSidebarOpen(true);
+    }
+
     $("loading").hidden = true;
     $("app").hidden = false;
 
@@ -504,6 +519,10 @@
   $("typeFilter").addEventListener("change", renderList);
   $("openSidebar").addEventListener("click", openSidebar);
   $("closeSidebar").addEventListener("click", closeSidebar);
+  $("sidebarBackdrop").addEventListener("click", closeSidebar);
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeSidebar();
+  });
 
   load().catch(err => {
     console.error(err);

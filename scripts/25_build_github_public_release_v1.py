@@ -21,6 +21,8 @@ README = r"""# Names & Descriptors of Allah in the Quran
 
 **A Quran-only, text-first research corpus. This is not a traditional “99 Names of Allah” list.**
 
+**Interactive viewer:** https://kwanite.github.io/quran-names-descriptors/
+
 This project asks a different question:
 
 > **What names and explicit descriptive expressions does the Quran itself use for Allah when the Quran is examined without beginning from a pre-existing list of divine names?**
@@ -37,7 +39,7 @@ Finite verbs are not converted into inferred divine descriptors merely because t
 
 ## Browse the data
 
-The GitHub Pages viewer is the easiest way to browse the corpus in a user-friendly form. After Pages is enabled for this repository, the site is served directly from the repository root.
+The GitHub Pages viewer is the easiest way to browse the corpus in a user-friendly form: https://kwanite.github.io/quran-names-descriptors/
 
 The viewer exposes:
 
@@ -395,24 +397,26 @@ INDEX_HTML = r'''<!doctype html>
   </div>
 
   <div id="app" class="app" hidden>
-    <aside id="sidebar" class="sidebar">
+    <aside id="sidebar" class="sidebar" aria-label="Descriptor browser">
       <div class="sidebar-head">
         <div class="eyebrow">Quran-only · text-first corpus</div>
-        <h1>Names &amp; Descriptors of Allah in the Quran</h1>
+        <h1>Names &amp; Descriptors of Allah</h1>
         <div class="small">225 reviewed identities · 5,373 combined occurrences</div>
-        <button id="closeSidebar" class="btn mobile-only sidebar-close" type="button">Close</button>
+        <button id="closeSidebar" class="icon-btn sidebar-close" type="button" aria-label="Close descriptor browser" title="Close browser">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
       </div>
 
       <div class="sidebar-controls">
         <label class="control-label" for="search">Search</label>
         <input id="search" class="search" type="search"
-          placeholder="Try rahman, rahim, alim, Arabic, or an English meaning…" autocomplete="off">
+          placeholder="Search Arabic, English, or transliteration…" autocomplete="off">
 
         <label class="control-label" for="typeFilter">Type</label>
         <select id="typeFilter" class="select">
           <option value="all">All descriptors</option>
-          <option value="one">One-word only</option>
-          <option value="multi">Multiword only</option>
+          <option value="one">Single words</option>
+          <option value="multi">Phrases</option>
         </select>
       </div>
 
@@ -425,10 +429,15 @@ INDEX_HTML = r'''<!doctype html>
 
     </aside>
 
+    <button id="sidebarBackdrop" class="sidebar-backdrop" type="button" aria-label="Close descriptor browser" tabindex="-1"></button>
+
     <main class="main">
-      <div class="mobile-bar">
-        <button id="openSidebar" class="btn mobile-only" type="button">Browse descriptors</button>
-        <div class="mobile-brand">Names &amp; Descriptors in the Quran</div>
+      <div class="viewer-bar">
+        <button id="openSidebar" class="btn sidebar-open-btn" type="button" aria-controls="sidebar" aria-expanded="true" aria-hidden="true" hidden title="Open descriptor browser">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <span>Browse</span>
+        </button>
+        <div class="mobile-brand">Names &amp; Descriptors of Allah</div>
       </div>
 
       <div id="detail" class="detail">
@@ -477,12 +486,46 @@ body {
 button, input, select { font: inherit; }
 button { cursor: pointer; }
 a { color: #b9d9cb; }
+
+.icon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid #34404d;
+  border-radius: 9px;
+  background: #11161c;
+  color: var(--muted);
+}
+
+.icon-btn:hover {
+  color: var(--text);
+  background: #19212a;
+}
 a:hover { color: #d5e9e0; }
 
 .app {
   min-height: 100vh;
   display: grid;
   grid-template-columns: var(--sidebar) minmax(0, 1fr);
+  transition: grid-template-columns .2s ease;
+}
+
+.app.sidebar-collapsed {
+  grid-template-columns: 0 minmax(0, 1fr);
 }
 
 .loading, .fatal {
@@ -503,8 +546,17 @@ a:hover { color: #d5e9e0; }
   min-width: 0;
   display: flex;
   flex-direction: column;
+  width: var(--sidebar);
   background: var(--sidebar-bg);
   border-right: 1px solid var(--line);
+  transform: translateX(0);
+  transition: transform .2s ease, box-shadow .2s ease;
+  z-index: 40;
+}
+
+.app.sidebar-collapsed .sidebar {
+  transform: translateX(-102%);
+  pointer-events: none;
 }
 
 .sidebar-head {
@@ -526,6 +578,13 @@ a:hover { color: #d5e9e0; }
   font-size: 20px;
   line-height: 1.2;
   max-width: 280px;
+  padding-right: 42px;
+}
+
+.sidebar-close {
+  position: absolute;
+  right: 13px;
+  top: 13px;
 }
 
 .sidebar-controls {
@@ -661,7 +720,32 @@ a:hover { color: #d5e9e0; }
   min-width: 0;
 }
 
-.mobile-bar { display: none; }
+.viewer-bar {
+  width: min(1180px, 100%);
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 auto 28px;
+}
+
+.sidebar-open-btn {
+  display: none !important;
+  gap: 7px;
+}
+
+.app.sidebar-collapsed .sidebar-open-btn {
+  display: inline-flex !important;
+}
+
+.app:not(.sidebar-collapsed) .sidebar-open-btn {
+  display: none !important;
+}
+
+.mobile-brand { display: none; }
+
+.sidebar-backdrop { display: none; }
 
 .utility-row {
   display: flex;
@@ -681,6 +765,7 @@ a:hover { color: #d5e9e0; }
   color: var(--text);
   border-radius: 9px;
   padding: 7px 10px;
+  gap: 7px;
   font-size: 12px;
   text-decoration: none;
 }
@@ -744,21 +829,27 @@ a:hover { color: #d5e9e0; }
 
 .descriptor-root-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 12px;
+  align-items: stretch;
 }
 
 .descriptor-root-card {
+  min-width: 0;
+  min-height: 174px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #354338;
-  border-radius: 11px;
+  border-radius: 12px;
   background: #0d1310;
-  padding: 14px;
+  padding: 16px;
 }
 
 .descriptor-root-head {
+  min-height: 42px;
   display: flex;
-  gap: 12px;
-  align-items: baseline;
+  gap: 10px;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -770,16 +861,17 @@ a:hover { color: #d5e9e0; }
 }
 
 .descriptor-root-meta {
-  margin-top: 7px;
+  flex: 1 1 auto;
+  margin-top: 9px;
   color: var(--muted);
   font-size: 12px;
-  line-height: 1.6;
+  line-height: 1.55;
 }
 
 .root-dictionary-link {
-  display: inline-flex;
-  margin-top: 11px;
-  text-decoration: none;
+  align-self: flex-start;
+  margin-top: 14px;
+  white-space: nowrap;
 }
 
 .root-inline-link {
@@ -883,7 +975,7 @@ a:hover { color: #d5e9e0; }
 
 .occ-head {
   display: grid;
-  grid-template-columns: 100px minmax(0, 1fr) auto;
+  grid-template-columns: 100px minmax(0, 1fr);
   gap: 12px;
   align-items: center;
   padding: 10px 12px;
@@ -906,12 +998,6 @@ a:hover { color: #d5e9e0; }
   overflow-wrap: anywhere;
 }
 
-.occ-id {
-  color: var(--dim);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 10px;
-  overflow-wrap: anywhere;
-}
 
 .verse-panel {
   border-top: 1px solid var(--line);
@@ -1035,50 +1121,48 @@ a:hover { color: #d5e9e0; }
   :root { --sidebar: 320px; }
   .main { padding: 24px 22px 60px; }
   .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .descriptor-root-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
 }
 
 @media (max-width: 760px) {
-  .app { display: block; }
+  .app,
+  .app.sidebar-collapsed {
+    display: block;
+  }
 
   .sidebar {
     position: fixed;
     inset: 0 auto 0 0;
     width: min(88vw, 350px);
-    z-index: 40;
-    transform: translateX(-102%);
-    transition: transform .2s ease;
     box-shadow: 14px 0 40px #000a;
   }
 
-  .sidebar.open { transform: translateX(0); }
-
-  .sidebar-close {
-    position: absolute;
-    right: 14px;
-    top: 14px;
+  .app.sidebar-collapsed .sidebar {
+    transform: translateX(-102%);
   }
+
+  .sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    border: 0;
+    padding: 0;
+    background: #0008;
+  }
+
+  .app:not(.sidebar-collapsed) .sidebar-backdrop { display: block; }
 
   .main { padding: 14px 14px 50px; }
 
-  .mobile-only { display: inline-flex; }
-
-  .mobile-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin-bottom: 16px;
+  .viewer-bar {
+    margin: 0 auto 22px;
   }
 
   .mobile-brand {
+    display: block;
     color: var(--muted);
     font-size: 12px;
     text-align: right;
-  }
-
-  .utility-row {
-    justify-content: flex-start;
-    overflow-x: auto;
   }
 
   .title-ar {
@@ -1086,23 +1170,28 @@ a:hover { color: #d5e9e0; }
     line-height: 1.38;
   }
 
-  .stats {
-    grid-template-columns: 1fr 1fr;
+  .stats { grid-template-columns: 1fr 1fr; }
+
+  .descriptor-root-grid { grid-template-columns: 1fr; }
+  .descriptor-root-card { min-height: 0; }
+
+  .section-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
   }
 
   .occ-head {
     grid-template-columns: 76px minmax(0, 1fr);
   }
 
-  .occ-id {
-    grid-column: 2 / 3;
-  }
 }
 
 @media (max-width: 430px) {
   .stats { grid-template-columns: 1fr 1fr; }
   .stat { padding: 11px 12px; }
   .title-ar { font-size: 36px; }
+  .mobile-brand { display: none; }
 }
 '''
 
@@ -1118,6 +1207,8 @@ APP_JS = r'''(() => {
   };
 
   const $ = (id) => document.getElementById(id);
+
+  const ICON_EXTERNAL = `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M19 13v6H5V5h6"/></svg>`;
 
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({
     "&": "&amp;",
@@ -1298,7 +1389,6 @@ APP_JS = r'''(() => {
     document.querySelectorAll(".descriptor-item").forEach(btn => {
       btn.addEventListener("click", () => {
         select(btn.dataset.id);
-        closeSidebar();
       });
     });
   }
@@ -1351,11 +1441,11 @@ APP_JS = r'''(() => {
             <div class="descriptor-root-meta">
               ${pos ? `<div><strong>Form:</strong> ${esc(pos)}</div>` : ""}
               ${Number.isFinite(Number(count))
-                ? `<div><strong>Occurrences of this form in the root dictionary:</strong> ${Number(count).toLocaleString()}</div>`
+                ? `<div><strong>Occurrences of this form:</strong> ${Number(count).toLocaleString()}</div>`
                 : ""}
             </div>
             ${url
-              ? `<a class="btn primary root-dictionary-link" target="_blank" rel="noopener noreferrer" href="${esc(url)}">Open full root dictionary ↗</a>`
+              ? `<a class="btn primary root-dictionary-link" target="_blank" rel="noopener noreferrer" href="${esc(url)}">View root ${ICON_EXTERNAL}</a>`
               : ""}
           </div>
         `;
@@ -1365,7 +1455,7 @@ APP_JS = r'''(() => {
         <section class="section">
           <div class="section-head">
             <h2>Root dictionary</h2>
-            <div class="section-sub">Exact one-word Quran Roots linkage</div>
+            <div class="section-sub">Root information for this descriptor</div>
           </div>
           <div class="section-body">
             <div class="descriptor-root-grid">${cards}</div>
@@ -1420,11 +1510,11 @@ APP_JS = r'''(() => {
           </div>
           <div class="descriptor-root-meta">
             ${r.descriptions.length
-              ? `<div><strong>Forms represented in this phrase:</strong> ${r.descriptions.map(esc).join(" · ")}</div>`
+              ? `<div><strong>Form:</strong> ${r.descriptions.map(esc).join(" · ")}</div>`
               : ""}
           </div>
           ${url
-            ? `<a class="btn primary root-dictionary-link" target="_blank" rel="noopener noreferrer" href="${esc(url)}">Open this root in the Quran Roots Dictionary ↗</a>`
+            ? `<a class="btn primary root-dictionary-link" target="_blank" rel="noopener noreferrer" href="${esc(url)}">View root ${ICON_EXTERNAL}</a>`
             : ""}
         </div>
       `;
@@ -1434,7 +1524,7 @@ APP_JS = r'''(() => {
       <section class="section">
         <div class="section-head">
           <h2>Roots in this phrase</h2>
-          <div class="section-sub">Constituent roots; the phrase remains one descriptor</div>
+          <div class="section-sub">One descriptor, linked to its constituent roots</div>
         </div>
         <div class="section-body">
           <div class="descriptor-root-grid">${cards}</div>
@@ -1452,7 +1542,7 @@ APP_JS = r'''(() => {
       ? ""
       : `<a class="btn primary" target="_blank" rel="noopener noreferrer"
             href="https://prayforthetruth.com/quran/${esc(String(o.verse_key || "").replace(":", "/"))}">
-           Read verse with English translation ↗
+           Read verse ${ICON_EXTERNAL}
          </a>`;
 
     return `
@@ -1460,7 +1550,6 @@ APP_JS = r'''(() => {
         <div class="occ-head">
           <div class="verse-key">${esc(loc)}</div>
           <div class="surface-hit">${esc(o.surface_arabic)}</div>
-          <div class="occ-id">${esc(o.occurrence_id)}</div>
         </div>
         <div class="verse-panel">
           <div class="verse-ar">${highlightVerse(o)}</div>
@@ -1536,9 +1625,7 @@ APP_JS = r'''(() => {
           <div class="occ-list">${visible.map(occurrenceHtml).join("")}</div>
           ${visible.length < occs.length ? `
             <div class="more-row">
-              <button id="showMore" class="btn" type="button">
-                Show ${Math.min(PAGE_SIZE, occs.length - visible.length)} more
-              </button>
+              <button id="showMore" class="btn" type="button">Show more</button>
             </div>
           ` : ""}
         </div>
@@ -1559,14 +1646,25 @@ APP_JS = r'''(() => {
     state.visibleOccurrences = PAGE_SIZE;
     renderList();
     renderDetail();
+    if (window.matchMedia("(max-width: 760px)").matches) closeSidebar();
+  }
+
+  function setSidebarOpen(isOpen) {
+    const app = $("app");
+    const openButton = $("openSidebar");
+
+    app.classList.toggle("sidebar-collapsed", !isOpen);
+    openButton.setAttribute("aria-expanded", String(isOpen));
+    openButton.hidden = isOpen;
+    openButton.setAttribute("aria-hidden", String(isOpen));
   }
 
   function openSidebar() {
-    $("sidebar").classList.add("open");
+    setSidebarOpen(true);
   }
 
   function closeSidebar() {
-    $("sidebar").classList.remove("open");
+    setSidebarOpen(false);
   }
 
   async function load() {
@@ -1598,6 +1696,12 @@ APP_JS = r'''(() => {
       );
     }
 
+    if (window.matchMedia("(max-width: 760px)").matches) {
+      setSidebarOpen(false);
+    } else {
+      setSidebarOpen(true);
+    }
+
     $("loading").hidden = true;
     $("app").hidden = false;
 
@@ -1612,6 +1716,10 @@ APP_JS = r'''(() => {
   $("typeFilter").addEventListener("change", renderList);
   $("openSidebar").addEventListener("click", openSidebar);
   $("closeSidebar").addEventListener("click", closeSidebar);
+  $("sidebarBackdrop").addEventListener("click", closeSidebar);
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeSidebar();
+  });
 
   load().catch(err => {
     console.error(err);
@@ -1725,7 +1833,7 @@ def main():
 
     print("GITHUB PUBLIC RELEASE STAGING: PASS")
     print(f"Target: {target}")
-    print("GitHub Pages viewer: dark research-viewer design v6 (descriptor-level roots only, no technical IDs, English meanings, fuzzy search)")
+    print("GitHub Pages viewer: dark research-viewer design v9 (improved Browse spacing, mobile-only auto-close, responsive root cards, fuzzy search)")
     print("LICENSE: copied from verified sibling Quran Roots repository")
     print("QF raw/API content: excluded")
     print("Project descriptor glosses/transliterations: included")

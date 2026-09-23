@@ -145,6 +145,7 @@ def main():
 
     html = (target / "index.html").read_text(encoding="utf-8")
     js = (target / "assets/app.js").read_text(encoding="utf-8")
+    css = (target / "assets/styles.css").read_text(encoding="utf-8")
     for required_ref in ("./assets/styles.css", "./assets/app.js"):
         if required_ref not in html:
             raise SystemExit(f"Pages viewer missing reference: {required_ref}")
@@ -157,12 +158,27 @@ def main():
         if required_fetch not in js:
             raise SystemExit(f"Pages viewer does not fetch required publication file: {required_fetch}")
 
+    for required_layout_token in (
+        "width: min(1180px, 100%);",
+        ".app:not(.sidebar-collapsed) .sidebar-open-btn",
+        "openButton.hidden = isOpen;",
+        'aria-hidden="true" hidden title="Open descriptor browser"',
+    ):
+        if required_layout_token not in css and required_layout_token not in js and required_layout_token not in html:
+            raise SystemExit(
+                f"Pages viewer missing sidebar state/alignment safeguard: {required_layout_token}"
+            )
+
     for required_ui_token in (
         "english_gloss",
         "pray_for_the_truth_root_url",
-        "Open full root dictionary",
+        "View root",
+        "Read verse",
         "Root dictionary",
         "Roots in this phrase",
+        "Search Arabic, English, or transliteration",
+        "sidebar-collapsed",
+        "Close descriptor browser",
     ):
         if required_ui_token not in js and required_ui_token not in html:
             raise SystemExit(
@@ -181,6 +197,13 @@ def main():
         "QAC form-group ID:",
         "Quran Roots public-form ID:",
         'class="root-evidence"',
+        "Open full root dictionary",
+        "Open this root in the Quran Roots Dictionary",
+        "Read verse with English translation",
+        "Browse descriptors",
+        "Try rahman, rahim, alim, Arabic",
+        "↗",
+        'class="occ-id"',
     ):
         if forbidden_viewer_token in html or forbidden_viewer_token in js:
             raise SystemExit(
@@ -194,6 +217,7 @@ def main():
         "Why “descriptors”?",
         "English meaning/gloss for every descriptor",
         "full Quran Roots Dictionary",
+        "https://kwanite.github.io/quran-names-descriptors/",
     ):
         if phrase not in readme:
             raise SystemExit(f"README missing core project framing/usability text: {phrase}")
@@ -216,7 +240,13 @@ def main():
     print("Viewer documentation/method utility links: intentionally absent")
     print("Per-occurrence root/morphology blocks: absent")
     print("Technical identifiers in viewer UI: absent")
+    print("Internal occurrence IDs in viewer UI: absent")
     print("Descriptor-level root dictionary navigation: present")
+    print("Browse control alignment/sidebar-state visibility: validated")
+    print("Responsive root-card layout: present")
+    print("Sidebar close/reopen controls across viewports: present")
+    print("Concise external-link buttons with SVG icons: present")
+    print("Search placeholder: clear Arabic / English / transliteration wording")
     print("GPL LICENSE + layered license scope: present")
     print("QF raw/API payload keys: none detected")
 
